@@ -1,0 +1,20 @@
+Qty.	Part no.			Description
+
+1		MIC39102			Micrel 1A adjustable LDO SMD SOIC-8
+1		lm2940				Texas Instruments 1A 5V fixed LDO SMD SOT-223
+3							2.54mm 1x3-pol pins
+1							2.54mm 2x2-pol pins
+1							2.54mm 2x4-pol pins
+1		FC681465			DC socket 2.1/2.5mm
+1		T93YB				10kOhm 10% tolerance trimmer
+2		CRCW08057k50		7.5kOhm resistor SMD 0805
+1		CRCW08051k20		1.2kOhm resistor SMD 0805
+2		MC01W080513k32		3.32kOhm resistor SMD 0805
+2		ERJP06F4990V		499Ohm resistor SMD 0805 0.5W
+2		TR3C476K016C0350	47muF 16V tantalum capacitor SMD 6032-28
+2		GRM32EC81C476KE15L	47muF 16V ceramic capacitor MLCC SMD 1210
+1-2		EMK325ABJ107MM-T	100muF 16V ceramic capacitor MLCC SMD 1210
+2		132134				SMA straight PCB jack, through hole, 50Ohm
+1		iC-HG iCSY HG8M		demo module DIL28 for iC-HG 3A Laser Switch
+1		DIL-28				28 pol DIL28 socket for ICs
+1		S7060R 				Thorlabs laser diode socket for 5.6mm package

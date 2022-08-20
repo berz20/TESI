@@ -1,0 +1,18 @@
+#Saved Data from the class odmr_logic on 28.07.2022 at 12h10m56s.
+#
+#Parameters:
+#===========
+#
+#Microwave CW Power (dBm): -5.0000000000000000e+00
+#Microwave Sweep Power (dBm): -5.0000000000000000e+00
+#Run Time (s): 6.0000000000000000e+02
+#Number of frequency sweeps (#): 0
+#Start Frequencies (Hz): [2750000000.0]
+#Stop Frequencies (Hz): [2990000000.0]
+#Step sizes (Hz): [2000000.0]
+#Clock Frequencies (Hz): 20
+#Channel: 0: /Dev1/Ctr3
+#
+#Data:
+#=====
+#count data (counts/s)
