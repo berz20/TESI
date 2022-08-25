@@ -16,7 +16,6 @@ u1 = np.sqrt(2/3)*np.array([0, 1, 1/np.sqrt(2)])
 u2 = np.sqrt(2/3)*np.array([0, -1, 1/np.sqrt(2)])
 u3 = np.sqrt(2/3)*np.array([1, 0, -1/np.sqrt(2)])
 u4 = np.sqrt(2/3)*np.array([-1, 0, -1/np.sqrt(2)])
-import package/module
 # import glob, os
 # os.chdir("/home/berz/Documents/TESI/data/ODMR")
 # for file in glob.glob("*.txt"):
