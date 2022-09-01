@@ -15,9 +15,10 @@ from uncertainties import umath
 from scipy.optimize import leastsq, curve_fit
 from scipy import optimize, signal, interpolate
 from lmfit import models
-from mpl_toolkits.mplot3d import Axes3D
 import csv
 import scipy.constants as cons
+import qutip as qt
+from hamiltonians import SpinHamiltonian
 DATADIR = "../data"
 ODMR = "../data/ODMR/"
 OUTPUTDIR = "../output/"
@@ -31,10 +32,6 @@ u3 = np.sqrt(2/3)*np.array([1, 0, -1/np.sqrt(2)])
 u4 = np.sqrt(2/3)*np.array([-1, 0, -1/np.sqrt(2)])
 
 B_arr = np.array([])  
-B_zee_X = np.array([])  
-B_zee_Y = np.array([])  
-B_zee_Z = np.array([])  
-B_zee_arr_err = np.array([])  
 peak_ext_up = np.array([]) 
 peak_ext_down = np.array([])  
 peak_int_up = np.array([])  
@@ -51,6 +48,19 @@ int_peak_ext_up_err = np.array([])
 int_peak_ext_down_err = np.array([])  
 int_peak_int_up_err = np.array([])  
 int_peak_int_down_err = np.array([])  
+
+ham = SpinHamiltonian()
+
+def Deviation_plotter(B, ang):
+    # B = np.linspace(0,0.033,8)
+    sham = np.vectorize(ham.transitionFreqs, otypes=[np.ndarray])
+    freqs = np.array(sham(B,0,0))
+    freqs = np.array(freqs.tolist())
+    freqs_dev_90 = np.array(sham(B,90,0))
+    freqs_dev_90 = np.array(freqs_dev_90.tolist())
+    freqs_dev_60 = np.array(sham(B,ang,0))
+    freqs_dev_60 = np.array(freqs_dev_60.tolist())
+    return freqs_dev_60[:,2]
 
 # ignore used to produce images for blog
 def plot_to_output(fig, figure_name):
@@ -253,22 +263,22 @@ def splitting(file, counter):
 
     # fig = output.plot()   
     # fig, ax = plt.subplots()
-    # ax.plot(spec['x'], sum + 0.02*counter, c='orange')
-    # ax.plot(p_eu,y_eu + 0.02*counter, marker='.',color='black') 
-    # ax.plot(p_ed,y_ed + 0.02*counter, marker='.',color='black') 
-    # ax.plot(p_iu,y_iu + 0.02*counter, 'r.') 
-    # ax.plot(p_id,y_id + 0.02*counter, 'r.') 
-    # ax.plot(i_p_eu,i_y_eu + 0.02*counter, marker='.',color='blue') 
-    # ax.plot(i_p_ed,i_y_ed + 0.02*counter, marker='.',color='blue') 
-    # ax.plot(i_p_iu,i_y_iu + 0.02*counter, marker='.',color='green') 
-    # ax.plot(i_p_id,i_y_id + 0.02*counter, marker='.',color='green') 
+    ax[0].plot(spec['x'], sum + 0.02*counter, c='orange')
+    ax[0].plot(p_eu,y_eu + 0.02*counter, marker='.',color='black') 
+    ax[0].plot(p_ed,y_ed + 0.02*counter, marker='.',color='black') 
+    ax[0].plot(p_iu,y_iu + 0.02*counter, 'r.') 
+    ax[0].plot(p_id,y_id + 0.02*counter, 'r.') 
+    ax[0].plot(i_p_eu,i_y_eu + 0.02*counter, marker='.',color='blue') 
+    ax[0].plot(i_p_ed,i_y_ed + 0.02*counter, marker='.',color='blue') 
+    ax[0].plot(i_p_iu,i_y_iu + 0.02*counter, marker='.',color='green') 
+    ax[0].plot(i_p_id,i_y_id + 0.02*counter, marker='.',color='green') 
     # ax.axvline(p_eu, c='black', linestyle='dotted')
     # ax.axvline(p_ed, c='black', linestyle='dotted')
     # ax.axvline(p_iu, c='red', linestyle='dotted')
     # ax.axvline(p_id, c='red', linestyle='dotted')
-    ax.scatter(spec['x'], spec['y'] + 0.02*counter, s=4, label=b_str)
-    ax.axes.yaxis.set_visible(False)
-    ax.set_xlabel('[GHz]')
+    ax[0].scatter(spec['x'], spec['y'] + 0.02*counter, s=4, label=b_str)
+    ax[0].axes.yaxis.set_visible(False)
+    ax[0].set_xlabel('[GHz]')
     # plot_to_output(fig, file+'-total.png')
     
     print_best_values(spec, output)
@@ -301,10 +311,6 @@ def analyze(file,counter):
     peaks, peaks_err, peaks_amp = np.loadtxt(OUTTXTDIR+file+'.txt', unpack=True, skiprows=1)
 
     global B_arr   
-    global B_zee_X   
-    global B_zee_Y   
-    global B_zee_Z   
-    global B_zee_arr_err   
     global peak_ext_up  
     global peak_ext_down   
     global peak_int_up   
@@ -348,128 +354,183 @@ def analyze(file,counter):
     #     peak_int_up_err = np.append(peak_int_up_err,peaks_err[int(len(peaks)/2)+1])
     #     peak_int_down_err = np.append(peak_int_down_err,peaks_err[int(len(peaks)/2)-2])
     
-    wid = np.array([])
-    wid_err = np.array([])
-    cen = np.array([])
-    cen_err = np.array([])
-    print("Peaks positions:")
-    for i in range(0, int(len(peaks)/2)):
-        wid = np.append(wid, peaks[len(peaks)-1-i] - peaks[i])
-        wid_err = np.append(wid_err, np.sqrt(peaks_err[len(peaks)-1-i]**2 + peaks_err[i]**2))
-        cen = np.append(cen, (peaks[len(peaks)-1-i] + peaks[i])/2)
-        cen_err = np.append(cen_err, np.sqrt((peaks_err[len(peaks)-1-i]**2 + peaks_err[i]**2)/4))
-        print("Resonance", i, ": [", peaks[i],"+-", peaks_err[i], "||",  peaks[len(peaks)-1-i],"+-", peaks_err[len(peaks)-1-i], "] GHz")
+    if (((len(peaks) % 2) & (len(peaks) < 9)) == 0):
+        wid = np.array([])
+        wid_err = np.array([])
+        cen = np.array([])
+        cen_err = np.array([])
+        print("Peaks positions:")
+        for i in range(0, int(len(peaks)/2)):
+            wid = np.append(wid, peaks[len(peaks)-1-i] - peaks[i])
+            wid_err = np.append(wid_err, np.sqrt(peaks_err[len(peaks)-1-i]**2 + peaks_err[i]**2))
+            cen = np.append(cen, (peaks[len(peaks)-1-i] + peaks[i])/2)
+            cen_err = np.append(cen_err, np.sqrt((peaks_err[len(peaks)-1-i]**2 + peaks_err[i]**2)/4))
+            print("Resonance", i, ": [", peaks[i],"+-", peaks_err[i], "||",  peaks[len(peaks)-1-i],"+-", peaks_err[len(peaks)-1-i], "] GHz")
 
-    print_array("Resonance width:", "Resonance", False, wid, wid_err, "GHz", [])
+        print_array("Resonance width:", "Resonance", False, wid, wid_err, "GHz", [])
 
-    print_array("Resonance center:", "Resonance", False, cen, cen_err, "GHz", [])
+        print_array("Resonance center:", "Resonance", False, cen, cen_err, "GHz", [])
 
-    # Magnetic Field
+        # Magnetic Field
 
-    mu_b = cons.physical_constants["Bohr magneton"][0]
-    h = cons.physical_constants["Planck constant"][0]
-    mu_b_t = cons.physical_constants["Bohr magneton"]
-    h_t = cons.physical_constants["Planck constant"]
-    g = 2.002
+        mu_b = cons.physical_constants["Bohr magneton"][0]
+        h = cons.physical_constants["Planck constant"][0]
+        mu_b_t = cons.physical_constants["Bohr magneton"]
+        h_t = cons.physical_constants["Planck constant"]
+        g = 2.002
 
-    # print(2.*g*mu_b/h)
+        # print(2.*g*mu_b/h)
 
-    gamma = 28  # [GHz/T]
+        gamma = 28  # [GHz/T]
 
-    # B = h*1e+3*wid/(2.*g*mu_b)
+        # B = h*1e+3*wid/(2.*g*mu_b)
 
-    B = wid/gamma  # [T]
-    B_err = wid_err/gamma  # [T]
+        B = wid/gamma  # [T]
+        B_err = wid_err/gamma  # [T]
 
-    # print(mu_b_t)
+        # print(mu_b_t)
 
-    # print(h_t)
+        # print(h_t)
 
-    # print(g)
+        # print(g)
 
-    print_array("Resonance ODMR:", "Resonance", False, B*1e+3, B_err*1e+3, "mT", [])
+        print_array("Resonance ODMR:", "Resonance", False, B*1e+3, B_err*1e+3, "mT", [])
 
-    left_side_3 = np.array([u1, -1*u2, -1*u3])
+        if len(wid) > 2:
 
-    right_side_3 = [B[0],B[1],B[2]]
+            left_side_3 = np.array([u1, -1*u2, -1*u3])
 
-    B_zee = np.linalg.inv(left_side_3).dot(right_side_3)
+            right_side_3 = [B[0],B[1],B[2]]
 
-    left_side_3_err = np.array([u1, -1*u2, -1*u3])
+            B_zee = np.linalg.inv(left_side_3).dot(right_side_3)
 
-    right_side_3_err = [B_err[0],B_err[1],B_err[2]]
+            left_side_3_err = np.array([u1, -1*u2, -1*u3])
 
-    B_zee_err = np.linalg.inv(left_side_3_err).dot(right_side_3_err)
+            right_side_3_err = [B_err[0],B_err[1],B_err[2]]
 
-    B_zee_module = 0
-    B_zee_module_err = 0
+            B_zee_err = np.linalg.inv(left_side_3_err).dot(right_side_3_err)
 
-    for i in range(0, len(B_zee)):
+            B_zee_module = 0
+            B_zee_module_err = 0
 
-        B_zee_module = B_zee_module + B_zee[i]**2
-        B_zee_module_err = B_zee_module_err + B_zee_err[i]**2
+            for i in range(0, len(B_zee)):
 
-    B_zee_module = np.sqrt(B_zee_module)
-    B_zee_module_err = np.sqrt(B_zee_module_err)
+                B_zee_module = B_zee_module + B_zee[i]**2
+                B_zee_module_err = B_zee_module_err + B_zee_err[i]**2
 
-    left_side_4 = u4
+            B_zee_module = np.sqrt(B_zee_module)
+            B_zee_module_err = np.sqrt(B_zee_module_err)
 
-    right_side_4 = B[3]
+            if len(wid) > 3:
 
-    if (B_zee @ left_side_4) != right_side_4:
+                left_side_4 = u4
 
-        B_zee = -1*B_zee
-    B_zee_X = np.append(B_zee_X, B_zee[0])
-    B_zee_Y = np.append(B_zee_Y, B_zee[1])
-    B_zee_Z = np.append(B_zee_Z, B_zee[2])
-    B_zee_arr_err = np.append(B_zee_arr_err, B_zee_err)
-    print_array("Magnetic Field Components:", "B", True, B_zee*1e+3, B_err, "mT", index_output)
+                right_side_4 = B[3]
 
-    print("")
+                if (B_zee @ left_side_4) != right_side_4:
 
-    print("Magnetic Field Module:")
+                    B_zee = -1*B_zee
 
-    print("|B| :", B_zee_module*1000, "mT")
-    B_arr = np.append(B_arr,B_zee_module*1000)
-    B_str = "["+str("{:.2f}".format(B_zee_module*1000))+"$\pm$"+str("{:.2f}".format(B_zee_module_err*1000))+"]"+" mT" 
-    return B_str, peak_ext_up[counter], peak_ext_down[counter], peak_int_up[counter], peak_int_down[counter], int_peak_ext_up[counter], int_peak_ext_down[counter], int_peak_int_up[counter], int_peak_int_down[counter] 
+            print_array("Magnetic Field Components:", "B", True, B_zee*1e+3, B_err, "mT", index_output)
 
-def mult_vect():
-    zeros= np.array([])
-    for i in range(0,len(B_zee_X)):
-        zeros = np.append(zeros,0.)
-    x, y, z = np.meshgrid(
-                            zeros,
-                            zeros,
-                            zeros
-                            )
+            print("")
 
-    # Make the direction data for the arrows
-    # u = np.sin(np.pi * x) * np.cos(np.pi * y) * np.cos(np.pi * z)
-    # v = -np.cos(np.pi * x) * np.sin(np.pi * y) * np.cos(np.pi * z)
-    # w = (np.sqrt(2.0 / 3.0) * np.cos(np.pi * x) * np.cos(np.pi * y) *
-    #  np.sin(np.pi * z))
-    # soa = np.array([[0, 0, 1, 1, -2, 0], [0, 0, 2, 1, 1, 0],
-    #             [0, 0, 3, 2, 1, 0], [0, 0, 4, 0.5, 0.7, 0]])
-    #
-    # X, Y, Z, U, V, W = zip(*soa)
-    ax = fig.add_subplot(1, 2, 2, projection='3d')
-    c = ['tab:blue','tab:orange','tab:green','tab:red','tab:purple','tab:brown','tab:pink','tab:grey']
-    for i in range(0, len(B_zee_X)):
-        ax.quiver(x[i], y[i], z[i], B_zee_X[i]*1e+3,B_zee_Y[i]*1e+3,B_zee_Z[i]*1e+3,color=c[i],arrow_length_ratio=0.1)
-    ax.set_xlim([-15, 15])
-    ax.set_ylim([-30, 0])
-    ax.set_zlim([-15, 15])
-    # ax.quiver(X, Y, Z, U, V, W)
-    # ax[1].quiver(B_zee_X, B_zee_Y, B_zee_Z)
-    ax.legend()  
-    ax.set_xlabel('$B_x \ [mT]$')
-    ax.set_ylabel('$B_y \ [mT]$')
-    ax.set_zlabel('$B_z \ [mT]$')
+            print("Magnetic Field Module:")
+
+            print("|B| :", B_zee_module*1000, "mT")
+            B_arr = np.append(B_arr,B_zee_module*1000)
+            B_str = "["+str("{:.2f}".format(B_zee_module*1000))+"$\pm$"+str("{:.2f}".format(B_zee_module_err*1000))+"]"+" mT" 
+            return B_str, peak_ext_up[counter], peak_ext_down[counter], peak_int_up[counter], peak_int_down[counter], int_peak_ext_up[counter], int_peak_ext_down[counter], int_peak_int_up[counter], int_peak_int_down[counter] 
+
+def center_split():
+    global B_arr
+    peak_ext = np.array([])
+    peak_int = np.array([])
+    peak_ext_err = np.array([])
+    peak_int_err = np.array([])
+    int_peak_ext = np.array([])
+    int_peak_int = np.array([])
+    int_peak_ext_err = np.array([])
+    int_peak_int_err = np.array([])
+    for i in range(0,len(peak_ext_up)):
+        peak_ext = np.append(peak_ext, (peak_ext_up[i]+peak_ext_down[i])/2 )
+        peak_int = np.append(peak_int, (peak_int_up[i]+peak_int_down[i])/2 )
+        peak_ext_err = np.append(peak_ext_err, (np.sqrt(peak_ext_up_err[i]**2+peak_ext_down_err[i]**2)/4) )
+        peak_int_err = np.append(peak_int_err, (np.sqrt(peak_int_up_err[i]**2+peak_int_down_err[i]**2)/4) )
+        int_peak_ext = np.append(int_peak_ext, (int_peak_ext_up[i]+int_peak_ext_down[i])/2 )
+        int_peak_int = np.append(int_peak_int, (int_peak_int_up[i]+int_peak_int_down[i])/2 )
+        int_peak_ext_err = np.append(int_peak_ext_err, (np.sqrt(int_peak_ext_up_err[i]**2+int_peak_ext_down_err[i]**2)/4) )
+        int_peak_int_err = np.append(int_peak_int_err, (np.sqrt(int_peak_int_up_err[i]**2+int_peak_int_down_err[i]**2)/4) )
+    # ax.plot(B_arr, peak_ext_up)
+    # ax.plot(B_arr, peak_ext_down)
+    # ax.plot(B_arr, peak_int_up)
+    # ax.plot(B_arr, peak_int_down)
+    # ax.plot(B_arr, peak_ext)
+    # ax.plot(B_arr, peak_int)
+    def func_poly(x,a,b):
+        return a*x**2+b*x+2.87
+    # B_arr = B_arr[::-1]
+    # peak_ext = peak_ext[::-1]
+    # peak_int = peak_int[::-1]
+    # int_peak_ext = int_peak_ext[::-1]
+    # int_peak_int = int_peak_int[::-1]
+    # peak_ext_err = peak_ext_err[::-1]
+    # peak_int_err = peak_int_err[::-1]
+    # int_peak_ext_err = int_peak_ext_err[::-1]
+    # int_peak_int_err = int_peak_int_err[::-1]
+    # fig = plt.figure(figsize=(8,8))
+    B = np.array([0.00687,0.00813,0.00952,0.01252,0.01749,0.01952,0.02315,0.03063])
+    pe = np.array([2.87113377, 2.87192985, 2.87230406, 2.87491283, 2.88061843, 2.88221564, 2.8879208,  2.89743486])
+    pi = np.array([2.87496219, 2.87655858, 2.87935027, 2.88516066, 2.89951699, 2.90751625, 2.92280513, 2.96423393])
+    ipe = np.array([2.87287208, 2.87368187, 2.87495803, 2.8772975,  2.8870353,  2.8881035, 2.89328372, 2.90901996])
+    ipi = np.array([2.87402114, 2.87609819, 2.87859271, 2.88518905, 2.8967141,  2.90591837, 2.92130431, 2.96311924])
+    
+    pe_err = np.array([0.00161453 ,0.00155891 ,0.00156834 ,0.00143514 ,0.00152938 ,0.00135299 ,0.00141788 ,0.00117153])
+    pi_err = np.array([0.00163125 ,0.00173223 ,0.00162217 ,0.00173049 ,0.00171484 ,0.00163391 ,0.00159602 ,0.00090091])
+    ipe_err = np.array([0.00128372, 0.00140306, 0.00132992, 0.00140407, 0.00149457, 0.00111725, 0.001253  , 0.00125552])
+    ipi_err = np.array([0.00158091, 0.00154795, 0.00170369, 0.00136773, 0.00136432, 0.00122911, 0.00186335, 0.00144844])
+    
+    # freqs_dev_60 = Deviation_plotter(B,60)
+    popt_ext, pcov_ext = curve_fit(Deviation_plotter, B, pe, sigma= pe_err)
+    perr_ext = np.sqrt(np.diag(pcov_ext))
+    popt_int, pcov_int = curve_fit(Deviation_plotter, B, pi, sigma= pi_err)
+    perr_int = np.sqrt(np.diag(pcov_int))
+    int_popt_int, int_pcov_int = curve_fit(Deviation_plotter, B, ipi, sigma= ipe_err)
+    int_perr_int = np.sqrt(np.diag(int_pcov_int))
+    int_popt_ext, int_pcov_ext = curve_fit(Deviation_plotter, B, ipe, sigma= ipi_err)
+    int_perr_ext = np.sqrt(np.diag(int_pcov_ext))
+    fit_ext = Deviation_plotter(B, *popt_ext)
+    fit_int = Deviation_plotter(B, *popt_int) 
+    int_fit_int = Deviation_plotter(B, *int_popt_int)
+    int_fit_ext = Deviation_plotter(B, *int_popt_ext)
+                  
+    ax[1].errorbar(B_arr, peak_ext_up, yerr=peak_ext_up_err,capsize=5, fmt='.', color='black', label="Resonance's peaks positions")
+    ax[1].errorbar(B_arr, peak_ext_down, yerr=peak_ext_down_err,capsize=5, fmt='.', color='black')
+    ax[1].errorbar(B_arr, peak_int_up, yerr=peak_int_up_err,capsize=5, fmt='.', color='red')
+    ax[1].errorbar(B_arr, peak_int_down, yerr=peak_int_down_err,capsize=5, fmt='.', color='red')
+    ax[1].errorbar(B_arr, pe[::-1], yerr=pe_err,fmt='x', color='black', label="Peak's centers") 
+    ax[1].errorbar(B_arr, pi[::-1], yerr=pi_err,fmt='x', color='red') 
+    ax[1].errorbar(B_arr, int_peak_ext_up, yerr=int_peak_ext_up_err,capsize=5, fmt='.', color='blue')
+    ax[1].errorbar(B_arr, int_peak_ext_down, yerr=int_peak_ext_down_err,capsize=5, fmt='.', color='blue')
+    ax[1].errorbar(B_arr, int_peak_int_up, yerr=int_peak_int_up_err,capsize=5, fmt='.', color='green')
+    ax[1].errorbar(B_arr, int_peak_int_down, yerr=int_peak_int_down_err,capsize=5, fmt='.', color='green')
+    ax[1].errorbar(B_arr, ipe[::-1], yerr=ipi_err,fmt='x', color='blue') 
+    ax[1].errorbar(B_arr, ipi[::-1], yerr=ipe_err,fmt='x', color='green') 
+    ax[1].plot(B_arr,fit_ext[::-1],color='black', label='['+str("{:.2f}".format(popt_ext[0]))+'$\pm$'+str("{:.2f}".format(perr_ext[0]))+']'+'$\degree$')
+    ax[1].plot(B_arr,fit_int[::-1],color='red', label='['+str("{:.2f}".format(popt_int[0]))+'$\pm$'+str("{:.2f}".format(perr_int[0]))+']'+'$\degree$')
+    ax[1].plot(B_arr,int_fit_ext[::-1],color='blue', label='['+str("{:.2f}".format(int_popt_ext[0]))+'$\pm$'+str("{:.2f}".format(int_perr_ext[0]))+']'+'$\degree$')
+    ax[1].plot(B_arr,int_fit_int[::-1],color='green', label='['+str("{:.2f}".format(int_popt_int[0]))+'$\pm$'+str("{:.2f}".format(int_perr_int[0]))+']'+'$\degree$')
+    ax[1].axhline(2.87, c='black', linestyle='dotted', label='$2.87 \ GHz$')
+    ax[1].legend()
     # plot_to_output(fig, 'deviation.pdf')
     print("")
     print('Amplitude Factor:',a,'\nPeak Width:',pw)
     print('')
+    print('pe',peak_ext)
+    print('pi',peak_int)
+    print('ipe',int_peak_ext)
+    print('ipi',int_peak_int)
+    print('B',B_arr)
 
 
         # '20220802-1225-51',
@@ -496,7 +557,7 @@ files = [
         '20220802-1332-19',
         '20220802-1407-11',
         ]
-fig = plt.figure(figsize=(16, 8))
+fig, ax = plt.subplots(figsize=(16, 8), ncols=2)
 a = [91,63,45,50,40,40,27,38,30]
 # pw = [(1.5,),(1.5,),(1.5,),(1.5,),(1.5,),(1.5,),(1.5,),(1.5,),(1.5,),(1.5,),(1.5,),]
 #Amplitude
@@ -507,18 +568,17 @@ pw = (1.5,)
 dist =  4.1
 #Offset
 offset = 1 
-ax = fig.add_subplot(1, 2, 1)
 for f,i in zip(files, range(0,len(files))):
     splitting(f,i)
 
 # ax[0].axvline(2.87, c='black', linestyle='dotted', label='$2.87 \ GHz$')
-handles, labels = ax.get_legend_handles_labels()
-ax.legend(handles[::-1], labels[::-1], title='B Field', loc='upper left')
+handles, labels = ax[0].get_legend_handles_labels()
+ax[0].legend(handles[::-1], labels[::-1], title='B Field', loc='upper left')
 #ax2[0].legend(loc='upper left')
 
-mult_vect()
-# plt.savefig(f'{OUTIMGDIR}/multiple_vector.pdf')
-plt.show()
+center_split()
+plt.savefig(f'{OUTIMGDIR}/total_double_deg.pdf')
+# plt.show()
 # File used 
 # 20220802-1031-50
 # 20220802-1101-15
@@ -533,3 +593,4 @@ plt.show()
 # 20220802-1306-04
 # 20220802-1332-19
 # 20220802-1407-11
+
