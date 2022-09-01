@@ -21,8 +21,8 @@ class SpinHamiltonian():
         By = B*math.sin(deg_to_rad(theta))*math.sin(deg_to_rad(phi))
         Bz = B*math.cos(deg_to_rad(theta))
 
-        Hs = self.D*((self.sz*self.sz)-(2/3)*qt.qeye(3)) + self.ge*( Bx*self.sx + By*self.sy + Bz*self.sz )      # Electric term ignored as it is negligible
-        
+        Hs = self.D*((self.sz*self.sz)-(2/3)*qt.qeye(3)) + self.ge*( Bx*self.sx + By*self.sy + Bz*self.sz )      # Electric term ignored right??
+
         return Hs.eigenstates()
 
     def transitionFreqs(self, B, theta, phi):
