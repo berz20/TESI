@@ -18,6 +18,7 @@ from lmfit import models
 from mpl_toolkits.mplot3d import Axes3D
 import csv
 import scipy.constants as cons
+from itertools import permutations
 DATADIR = "../data"
 ODMR = "../data/ODMR/"
 OUTPUTDIR = "../output/"
@@ -31,10 +32,10 @@ u3 = np.sqrt(2/3)*np.array([1, 0, -1/np.sqrt(2)])
 u4 = np.sqrt(2/3)*np.array([-1, 0, -1/np.sqrt(2)])
 
 B_arr = np.array([])  
-B_zee_X = np.array([])  
-B_zee_Y = np.array([])  
-B_zee_Z = np.array([])  
-B_zee_arr_err = np.array([])  
+B_xyz_X = np.array([])  
+B_xyz_Y = np.array([])  
+B_xyz_Z = np.array([])  
+B_xyz_arr_err = np.array([])  
 peak_ext_up = np.array([]) 
 peak_ext_down = np.array([])  
 peak_int_up = np.array([])  
@@ -301,10 +302,10 @@ def analyze(file,counter):
     peaks, peaks_err, peaks_amp = np.loadtxt(OUTTXTDIR+file+'.txt', unpack=True, skiprows=1)
 
     global B_arr   
-    global B_zee_X   
-    global B_zee_Y   
-    global B_zee_Z   
-    global B_zee_arr_err   
+    global B_xyz_X   
+    global B_xyz_Y   
+    global B_xyz_Z   
+    global B_xyz_arr_err   
     global peak_ext_up  
     global peak_ext_down   
     global peak_int_up   
@@ -388,55 +389,51 @@ def analyze(file,counter):
     # print(g)
 
     print_array("Resonance ODMR:", "Resonance", False, B*1e+3, B_err*1e+3, "mT", [])
-
-    left_side_3 = np.array([u1, -1*u2, -1*u3])
-
-    right_side_3 = [B[0],B[1],B[2]]
-
-    B_zee = np.linalg.inv(left_side_3).dot(right_side_3)
-
-    left_side_3_err = np.array([u1, -1*u2, -1*u3])
-
-    right_side_3_err = [B_err[0],B_err[1],B_err[2]]
-
-    B_zee_err = np.linalg.inv(left_side_3_err).dot(right_side_3_err)
-
-    B_zee_module = 0
-    B_zee_module_err = 0
-
-    for i in range(0, len(B_zee)):
-
-        B_zee_module = B_zee_module + B_zee[i]**2
-        B_zee_module_err = B_zee_module_err + B_zee_err[i]**2
-
-    B_zee_module = np.sqrt(B_zee_module)
-    B_zee_module_err = np.sqrt(B_zee_module_err)
-
-    left_side_4 = u4
-
-    right_side_4 = B[3]
-
-    if (B_zee @ left_side_4) != right_side_4:
-
-        B_zee = -1*B_zee
-    B_zee_X = np.append(B_zee_X, B_zee[0])
-    B_zee_Y = np.append(B_zee_Y, B_zee[1])
-    B_zee_Z = np.append(B_zee_Z, B_zee[2])
-    B_zee_arr_err = np.append(B_zee_arr_err, B_zee_err)
-    print_array("Magnetic Field Components:", "B", True, B_zee*1e+3, B_err, "mT", index_output)
-
+    B_list = list(permutations(B))
+    min = 100 # percentage difference
+    for i in range(0,len(B_list)):
+        left_side_3 = np.array([u1, u2, u3])
+        right_side_3 = [B_list[i][0],B_list[i][1],B_list[i][2]]
+        B_xyz = np.linalg.inv(left_side_3).dot(right_side_3)
+        left_side_3_err = np.array([u1, u2, u3])
+        right_side_3_err = [B_err[0],B_err[1],B_err[2]]
+        B_xyz_err = np.linalg.inv(left_side_3_err).dot(right_side_3_err)
+        B_xyz_module = 0
+        B_xyz_module_err = 0
+        for j in range(0, len(B_xyz)):
+            B_xyz_module = B_xyz_module + B_xyz[j]**2
+            B_xyz_module_err = B_xyz_module_err + B_xyz_err[j]**2
+        B_xyz_module = np.sqrt(B_xyz_module)
+        B_xyz_module_err = np.sqrt(B_xyz_module_err)
+        left_side_4 = u4
+        right_side_4 = B_list[i][3]
+        # print('permutation ', B_list[i])
+        check =np.dot(B_xyz,left_side_4) 
+        min_i = 2*np.abs(check - right_side_4)/(check + right_side_4)*100
+        if min_i < min:
+            min = min_i
+            B_xyz_t = B_xyz
+            print('B_check',B_xyz_t)
+            B_xyz_err_t = B_xyz_err
+            B_xyz_module_t = B_xyz_module
+            B_xyz_module_err_t = B_xyz_module_err
+    print_array("Magnetic Field Components:", "B", True, B_xyz_t*1e+3, B_xyz_err_t*1e3, "mT", index_output)
     print("")
-
     print("Magnetic Field Module:")
-
-    print("|B| :", B_zee_module*1000, "mT")
-    B_arr = np.append(B_arr,B_zee_module*1000)
-    B_str = "["+str("{:.2f}".format(B_zee_module*1000))+"$\pm$"+str("{:.2f}".format(B_zee_module_err*1000))+"]"+" mT" 
+    print("|B| :", B_xyz_module_t*1000, "mT")
+        # check_B(B_xyz,right_side_3)
+    print('min', min)
+    B_arr = np.append(B_arr,B_xyz_module_t*1000)
+    B_str = "["+str("{:.2f}".format(B_xyz_module_t*1000))+"$\pm$"+str("{:.2f}".format(B_xyz_module_err_t*1000))+"]"+" mT" 
+    B_xyz_X = np.append(B_xyz_X, B_xyz[0])
+    B_xyz_Y = np.append(B_xyz_Y, B_xyz[1])
+    B_xyz_Z = np.append(B_xyz_Z, B_xyz[2])
+    B_xyz_arr_err = np.append(B_xyz_arr_err, B_xyz_err)
     return B_str, peak_ext_up[counter], peak_ext_down[counter], peak_int_up[counter], peak_int_down[counter], int_peak_ext_up[counter], int_peak_ext_down[counter], int_peak_int_up[counter], int_peak_int_down[counter] 
 
 def mult_vect():
     zeros= np.array([])
-    for i in range(0,len(B_zee_X)):
+    for i in range(0,len(B_xyz_X)):
         zeros = np.append(zeros,0.)
     x, y, z = np.meshgrid(
                             zeros,
@@ -455,17 +452,17 @@ def mult_vect():
     # X, Y, Z, U, V, W = zip(*soa)
     ax = fig.add_subplot(1, 2, 2, projection='3d')
     c = ['tab:blue','tab:orange','tab:green','tab:red','tab:purple','tab:brown','tab:pink','tab:grey']
-    for i in range(0, len(B_zee_X)):
-        ax.quiver(x[i], y[i], z[i], B_zee_X[i]*1e+3,B_zee_Y[i]*1e+3,B_zee_Z[i]*1e+3,color=c[i],arrow_length_ratio=0.1)
-    ax.set_xlim([-15, 15])
-    ax.set_ylim([-30, 0])
-    ax.set_zlim([-15, 15])
+    for i in range(0, len(B_xyz_X)):
+        ax.quiver(x[i], y[i], z[i], B_xyz_Y[i]*1e+3,B_xyz_Z[i]*1e+3,B_xyz_X[i]*1e+3,color=c[i],arrow_length_ratio=0.1)
+    ax.set_xlim([-10, 10])
+    ax.set_ylim([-10, 10])
+    ax.set_zlim([  0, 30])
     # ax.quiver(X, Y, Z, U, V, W)
-    # ax[1].quiver(B_zee_X, B_zee_Y, B_zee_Z)
+    # ax[1].quiver(B_xyz_X, B_xyz_Y, B_xyz_Z)
     ax.legend()  
-    ax.set_xlabel('$B_x \ [mT]$')
-    ax.set_ylabel('$B_y \ [mT]$')
-    ax.set_zlabel('$B_z \ [mT]$')
+    ax.set_xlabel('$B_y \ [mT]$')
+    ax.set_ylabel('$B_z \ [mT]$')
+    ax.set_zlabel('$B_x \ [mT]$')
     # plot_to_output(fig, 'deviation.pdf')
     print("")
     print('Amplitude Factor:',a,'\nPeak Width:',pw)
@@ -517,8 +514,8 @@ ax.legend(handles[::-1], labels[::-1], title='B Field', loc='upper left')
 #ax2[0].legend(loc='upper left')
 
 mult_vect()
-# plt.savefig(f'{OUTIMGDIR}/multiple_vector.pdf')
-plt.show()
+plt.savefig(f'{OUTIMGDIR}/multiple_vector.pdf')
+# plt.show()
 # File used 
 # 20220802-1031-50
 # 20220802-1101-15

@@ -27,6 +27,7 @@ class SpinHamiltonian():
 
     def transitionFreqs(self, B, theta, phi):
         egvals = self.eigenstates(B, theta, phi)[0]
+        # print(self.eigenstates(B, theta, phi))
         if(B == 0): self.ms0 = egvals[0]
         f1 = abs(egvals[2] - egvals[0])
         f0 = abs(egvals[1] - egvals[0])
