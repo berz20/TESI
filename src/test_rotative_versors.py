@@ -362,9 +362,9 @@ def analyze(file,counter):
             right_side_4 = B_list[i][3]
             # print('permutation ', B_list[i])
             check =np.dot(B_xyz,left_side_4) 
-            min_i = 2*np.abs(check - right_side_4)/(check + right_side_4)*100
-            if min_i < min:
-                min = min_i
+            min_v = 2*np.abs(check - right_side_4)/(check + right_side_4)*100
+            if min_v < min:
+                min = min_v
                 B_xyz_t = B_xyz
                 print('B_check',B_xyz_t)
                 B_xyz_err_t = B_xyz_err
