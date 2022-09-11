@@ -361,7 +361,7 @@ def center_split():
     ax[1].axhline(2.87, c='black', linestyle='dotted', label='$2.87 \ GHz$')
     ax[1].legend()
     ax[1].set_xlabel('External magnetic field [mT]')
-    ax[1].set_ylabel('[GHz]')
+    ax[1].set_ylabel('transition frequencies [GHz]')
     # plot_to_output(fig, 'deviation.pdf')
     print("")
     print('Amplitude Factor:',a,'\nPeak Width:',pw)
@@ -405,7 +405,7 @@ ax[0].legend(handles[::-1], labels[::-1], title='B Field', loc='upper left')
 #ax2[0].legend(loc='upper left')
 
 center_split()
-plt.savefig(f'{OUTIMGDIR}/total_double_normal.pdf')
+plt.savefig(f'{OUTIMGDIR}/total_double_normal.svg')
 # File used 
 # 20220728-0912-42
 # 20220728-0947-12

@@ -514,7 +514,7 @@ ax.legend(handles[::-1], labels[::-1], title='B Field', loc='upper left')
 #ax2[0].legend(loc='upper left')
 
 mult_vect()
-plt.savefig(f'{OUTIMGDIR}/multiple_vector.pdf')
+plt.savefig(f'{OUTIMGDIR}/multiple_vector.svg')
 # plt.show()
 # File used 
 # 20220802-1031-50

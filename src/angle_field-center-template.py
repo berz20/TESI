@@ -35,7 +35,7 @@ def Deviation_plotter():
     ax.plot(B, freqs_dev_90[:,1],color='green')
     ax.legend()
     plt.grid()
-    plt.savefig(f'{OUTIMGDIR}/prova_deg.pdf')
+    plt.savefig(f'{OUTIMGDIR}/prova_deg.svg')
 
 # ax.set_xlabel('$B \ [T]$')
 # ax.set_ylabel('$Transition \ Frequency \ [GHz]$')

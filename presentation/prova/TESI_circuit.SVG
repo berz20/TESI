@@ -1,0 +1,2216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="1001px"
+   height="601px"
+   viewBox="-0.5 -0.5 1001 601"
+   content="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16xxM13b"
+   id="svg54711"
+   sodipodi:docname="TESI_circuit.SVG"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <sodipodi:namedview
+     id="namedview54713"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.55185066"
+     inkscape:cx="464.79966"
+     inkscape:cy="282.68517"
+     inkscape:window-width="1329"
+     inkscape:window-height="1020"
+     inkscape:window-x="582"
+     inkscape:window-y="51"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg54711" />
+  <defs
+     id="defs54052">
+    <style
+       type="text/css"
+       id="style54048">ul { margin-top: 0px; margin-bottom: 10px; }
+ol { margin-top: 0px; margin-bottom: 10px; }
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { margin-bottom: .5rem; font-weight: 500; line-height: 1.2; }
+h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: .5rem; }
+.h1, h1 { font-size: 2.5rem; }
+h2 { font-size: 1.5em; font-weight: bold; }
+h3 { font-size: 1.17em; font-weight: bold; }
+.h4, h4 { font-size: 1.5rem; }
+.h5, h5 { font-size: 1.25rem; }
+.h6, h6 { font-size: 1rem; }
+p { margin-top: 0; margin-bottom: 1rem; }
+a { color: #007bff; }
+ul { margin-top: 0px; margin-bottom: 10px; }
+ol { margin-top: 0px; margin-bottom: 10px; }
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { margin-bottom: .5rem; font-weight: 500; line-height: 1.2; }
+h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: .5rem; }
+.h1, h1 { font-size: 2.5rem; }
+h2 { font-size: 1.5em; font-weight: bold; }
+h3 { font-size: 1.17em; font-weight: bold; }
+.h4, h4 { font-size: 1.5rem; }
+.h5, h5 { font-size: 1.25rem; }
+.h6, h6 { font-size: 1rem; }
+p { margin-top: 0; margin-bottom: 1rem; }
+a { color: #007bff; }
+ul { margin-top: 0px; margin-bottom: 10px; }
+ol { margin-top: 0px; margin-bottom: 10px; }
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { margin-bottom: .5rem; font-weight: 500; line-height: 1.2; }
+h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: .5rem; }
+.h1, h1 { font-size: 2.5rem; }
+h2 { font-size: 1.5em; font-weight: bold; }
+h3 { font-size: 1.17em; font-weight: bold; }
+.h4, h4 { font-size: 1.5rem; }
+.h5, h5 { font-size: 1.25rem; }
+.h6, h6 { font-size: 1rem; }
+p { margin-top: 0; margin-bottom: 1rem; }
+a { color: #007bff; }
+</style>
+    <style
+       type="text/css"
+       id="style54050">@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap);
+@import url(https://fonts.googleapis.com/css2?family=-apple-system,+BlinkMacSystemFont,+Segoe+UI,+Roboto,+Helvetica+Neue,+Arial,+Noto+Sans,+sans-serif,+Apple+Color+Emoji,+Segoe+UI+Emoji,+Segoe+UI+Symbol,+Noto+Color+Emoji:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap);
+@import url(https://fonts.googleapis.com/css2?family=-apple-system,BlinkMacSystemFont,Segoe+UI,Roboto,Helvetica+Neue,Arial,Noto+Sans,sans-serif,Apple+Color+Emoji,Segoe+UI+Emoji,Segoe+UI+Symbol,Noto+Color+Emoji:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap);
+</style>
+  </defs>
+  <g
+     id="g54693">
+    <g
+       shape-node=""
+       id="g54056">
+      <path
+         cell-id="3wXI9LbIplzqWNrjtrVz-9"
+         d="M 840 163 L 840 153 L 769 153 L 769 169 L 734 169"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path54054" />
+    </g>
+    <g
+       shape-node=""
+       id="g54060">
+      <path
+         cell-id="3wXI9LbIplzqWNrjtrVz-10"
+         d="M 840 235 L 840 244.8 L 769 244.8 L 769 229 L 734 229"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path54058" />
+    </g>
+    <g
+       shape-node=""
+       id="g54066">
+      <ellipse
+         cell-id="QQv-EcaRPVJNOaY1T0K8-44"
+         cx="840.34"
+         cy="198.93"
+         rx="35.92"
+         ry="35.92"
+         fill="#ffffff"
+         stroke="#000000"
+         pointer-events="all"
+         id="ellipse54062" />
+      <path
+         cell-id="QQv-EcaRPVJNOaY1T0K8-44"
+         d="M 836.75 169.6 L 843.93 169.6 M 840.34 166.01 L 840.34 173.19 M 836.75 228.26 L 843.93 228.26"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path54064" />
+    </g>
+    <g
+       shape-node=""
+       id="g54070">
+      <path
+         cell-id="3wXI9LbIplzqWNrjtrVz-17"
+         d="M 512 120 L 512 136.9 L 674 136.9 L 674 164"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path54068" />
+    </g>
+    <g
+       shape-node=""
+       id="g54087">
+      <g
+         cell-id="TJjF060BRnTcxZF5mInm-13"
+         transform="translate(-0.5 -0.5)"
+         id="g54085">
+        <switch
+           cell-id="TJjF060BRnTcxZF5mInm-13"
+           id="switch54083">
+          <foreignObject
+             cell-id="TJjF060BRnTcxZF5mInm-13"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 154px; margin-left: 518px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 14px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; background-color: #ffffff; white-space: nowrap; ">
+                  <xhtml:div
+                     ani="">RF OUT</xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg54081">
+            <defs
+               id="defs54073">
+              <path
+                 id="8cADuMGGeWUinQMZ"
+                 d="M492.6166687011719,160.3000061035156 h51.76666259765625" />
+            </defs>
+            <text
+               fill="rgb(0, 0, 0)"
+               font-size="14px"
+               font-family="&quot;Helvetica&quot;, &quot;VP Default&quot;"
+               font-weight="400"
+               id="text54079"><textPath
+                 xlink:href="#8cADuMGGeWUinQMZ"
+                 startOffset="50%"
+                 text-anchor="middle"
+                 id="textPath54077"><tspan
+                   xml:space="preserve"
+                   id="tspan54075">RF OUT</tspan></textPath></text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g54091">
+      <rect
+         cell-id="bB8dqP7FYS2GWR04Ka5Q-3"
+         x="422.42"
+         y="60"
+         width="120"
+         height="59.86"
+         fill="#ffffff"
+         stroke="#000000"
+         pointer-events="all"
+         id="rect54089" />
+    </g>
+    <g
+       shape-node=""
+       id="g54108">
+      <g
+         cell-id="bB8dqP7FYS2GWR04Ka5Q-3"
+         transform="translate(-0.5 -0.5)"
+         id="g54106">
+        <switch
+           cell-id="bB8dqP7FYS2GWR04Ka5Q-3"
+           id="switch54104">
+          <foreignObject
+             cell-id="bB8dqP7FYS2GWR04Ka5Q-3"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 90px; margin-left: 423px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 20px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; ">
+                  <xhtml:div
+                     ani="">SWITCH</xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg54102">
+            <defs
+               id="defs54094">
+              <path
+                 id="icADuMGGeWUinQMa"
+                 d="M443.76666259765625,99 h76.4666748046875" />
+            </defs>
+            <text
+               fill="rgb(0, 0, 0)"
+               font-size="20px"
+               font-family="&quot;Helvetica&quot;, &quot;VP Default&quot;"
+               font-weight="400"
+               id="text54100"><textPath
+                 xlink:href="#icADuMGGeWUinQMa"
+                 startOffset="50%"
+                 text-anchor="middle"
+                 id="textPath54098"><tspan
+                   xml:space="preserve"
+                   id="tspan54096">SWITCH</tspan></textPath></text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g54112">
+      <image
+         cell-id="bB8dqP7FYS2GWR04Ka5Q-4"
+         x="918.92"
+         y="198.5"
+         width="80.13"
+         height="108.59"
+         xlink:href="https://cdn-v17-0.visual-paradigm.com/diagrams/img/lib/allied_telesis/computer_and_terminals/Personal_Computer.svg"
+         id="image54110" />
+    </g>
+    <g
+       shape-node=""
+       id="g54116">
+      <path
+         cell-id="3wXI9LbIplzqWNrjtrVz-15"
+         d="M 625 30 L 452 30 L 452 60"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path54114" />
+    </g>
+    <g
+       shape-node=""
+       id="g54133">
+      <g
+         cell-id="3wXI9LbIplzqWNrjtrVz-15"
+         transform="translate(-0.5 -0.5)"
+         id="g54131">
+        <switch
+           cell-id="3wXI9LbIplzqWNrjtrVz-15"
+           id="switch54129">
+          <foreignObject
+             cell-id="3wXI9LbIplzqWNrjtrVz-15"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 11px; margin-left: 452px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 14px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                  <xhtml:div
+                     ani="">
+                    <xhtml:font
+                       style="font-size: 14px">RF IN</xhtml:font>
+                  </xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg54127">
+            <defs
+               id="defs54119">
+              <path
+                 id="KcADuMGGeWUinQMb"
+                 d="M434.316650390625,18.2 h36.383331298828125" />
+            </defs>
+            <text
+               fill="rgb(0, 0, 0)"
+               font-size="14px"
+               font-family="&quot;Helvetica&quot;, &quot;VP Default&quot;"
+               font-weight="400"
+               id="text54125"><textPath
+                 xlink:href="#KcADuMGGeWUinQMb"
+                 startOffset="50%"
+                 text-anchor="middle"
+                 id="textPath54123"><tspan
+                   xml:space="preserve"
+                   id="tspan54121">RF IN</tspan></textPath></text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g54137">
+      <path
+         cell-id="xV_tRoPG8BEpDhfjFHFV-20"
+         d="M 745 30 L 959.5 30 L 959.5 199"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path54135" />
+    </g>
+    <g
+       shape-node=""
+       id="g54141">
+      <rect
+         cell-id="bB8dqP7FYS2GWR04Ka5Q-9"
+         x="624.54"
+         y="0"
+         width="120"
+         height="60"
+         fill="#ffffff"
+         stroke="#000000"
+         pointer-events="all"
+         id="rect54139" />
+    </g>
+    <g
+       shape-node=""
+       id="g54158">
+      <g
+         cell-id="bB8dqP7FYS2GWR04Ka5Q-9"
+         transform="translate(-0.5 -0.5)"
+         id="g54156">
+        <switch
+           cell-id="bB8dqP7FYS2GWR04Ka5Q-9"
+           id="switch54154">
+          <foreignObject
+             cell-id="bB8dqP7FYS2GWR04Ka5Q-9"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 30px; margin-left: 626px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 20px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; ">
+                  <xhtml:div
+                     ani="">
+                    <xhtml:font
+                       color="#000000">MW</xhtml:font>
+                  </xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg54152">
+            <defs
+               id="defs54144">
+              <path
+                 id="GcADuMGGeWUinQMc"
+                 d="M667.3333129882812,40.5 h35.31666564941406" />
+            </defs>
+            <text
+               fill="rgb(0, 0, 0)"
+               font-size="20px"
+               font-family="&quot;Helvetica&quot;, &quot;VP Default&quot;"
+               font-weight="400"
+               id="text54150"><textPath
+                 xlink:href="#GcADuMGGeWUinQMc"
+                 startOffset="50%"
+                 text-anchor="middle"
+                 id="textPath54148"><tspan
+                   xml:space="preserve"
+                   id="tspan54146">MW</tspan></textPath></text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g54162">
+      <path
+         cell-id="xV_tRoPG8BEpDhfjFHFV-8"
+         d="M 625 376 L 482 376 L 482 120"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path54160" />
+    </g>
+    <g
+       shape-node=""
+       id="g54179">
+      <g
+         cell-id="xV_tRoPG8BEpDhfjFHFV-8"
+         transform="translate(-0.5 -0.5)"
+         id="g54177">
+        <switch
+           cell-id="xV_tRoPG8BEpDhfjFHFV-8"
+           id="switch54175">
+          <foreignObject
+             cell-id="xV_tRoPG8BEpDhfjFHFV-8"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 154px; margin-left: 460px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 14px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                  <xhtml:div
+                     ani="">
+                    <xhtml:font
+                       style="font-size: 14px">TTL</xhtml:font>
+                  </xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg54173">
+            <defs
+               id="defs54165">
+              <path
+                 id="WcADuMGGeWUinQMd"
+                 d="M448.01666259765625,161.2 h24.9666748046875" />
+            </defs>
+            <text
+               fill="rgb(0, 0, 0)"
+               font-size="14px"
+               font-family="&quot;Helvetica&quot;, &quot;VP Default&quot;"
+               font-weight="400"
+               id="text54171"><textPath
+                 xlink:href="#WcADuMGGeWUinQMd"
+                 startOffset="50%"
+                 text-anchor="middle"
+                 id="textPath54169"><tspan
+                   xml:space="preserve"
+                   id="tspan54167">TTL</tspan></textPath></text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g54183">
+      <path
+         cell-id="xV_tRoPG8BEpDhfjFHFV-18"
+         d="M 685 346 L 685 326.8 L 958 326.8 L 958 305"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path54181" />
+    </g>
+    <g
+       shape-node=""
+       id="g54187">
+      <path
+         cell-id="TJjF060BRnTcxZF5mInm-2"
+         d="M 655 406 L 655 508"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path54185" />
+    </g>
+    <g
+       shape-node=""
+       id="g54191">
+      <path
+         cell-id="TJjF060BRnTcxZF5mInm-3"
+         d="M 685 406 L 685 508"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path54189" />
+    </g>
+    <g
+       shape-node=""
+       id="g54195">
+      <path
+         cell-id="BDP-dl5oN6H2CXiR1R3_-4"
+         d="M 655 346 L 655 325 L 227 325 L 227 371"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path54193" />
+    </g>
+    <g
+       shape-node=""
+       id="g54199">
+      <rect
+         cell-id="3wXI9LbIplzqWNrjtrVz-3"
+         x="624.54"
+         y="346"
+         width="120"
+         height="59.86"
+         fill="#ffffff"
+         stroke="#000000"
+         pointer-events="all"
+         id="rect54197" />
+    </g>
+    <g
+       shape-node=""
+       id="g54216">
+      <g
+         cell-id="3wXI9LbIplzqWNrjtrVz-3"
+         transform="translate(-0.5 -0.5)"
+         id="g54214">
+        <switch
+           cell-id="3wXI9LbIplzqWNrjtrVz-3"
+           id="switch54212">
+          <foreignObject
+             cell-id="3wXI9LbIplzqWNrjtrVz-3"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 376px; margin-left: 626px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 20px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; ">
+                  <xhtml:div
+                     ani="">PULSE STREAMER</xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg54210">
+            <defs
+               id="defs54202">
+              <path
+                 id="ucADuMGGeWUinQMe"
+                 d="M626,373 h118 M626,397 h118" />
+            </defs>
+            <text
+               fill="rgb(0, 0, 0)"
+               font-size="20px"
+               font-family="&quot;Helvetica&quot;, &quot;VP Default&quot;"
+               font-weight="400"
+               id="text54208"><textPath
+                 xlink:href="#ucADuMGGeWUinQMe"
+                 id="textPath54206"><tspan
+                   xml:space="preserve"
+                   id="tspan54204">PULSE STREAMER</tspan></textPath></text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g54220">
+      <path
+         cell-id="xV_tRoPG8BEpDhfjFHFV-19"
+         d="M 745 538 L 998 538 L 998 297"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path54218" />
+    </g>
+    <g
+       shape-node=""
+       id="g54224">
+      <rect
+         cell-id="3wXI9LbIplzqWNrjtrVz-4"
+         x="624.54"
+         y="508"
+         width="120"
+         height="59.86"
+         fill="#ffffff"
+         stroke="#000000"
+         pointer-events="all"
+         id="rect54222" />
+    </g>
+    <g
+       shape-node=""
+       id="g54241">
+      <g
+         cell-id="3wXI9LbIplzqWNrjtrVz-4"
+         transform="translate(-0.5 -0.5)"
+         id="g54239">
+        <switch
+           cell-id="3wXI9LbIplzqWNrjtrVz-4"
+           id="switch54237">
+          <foreignObject
+             cell-id="3wXI9LbIplzqWNrjtrVz-4"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 538px; margin-left: 626px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 20px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; ">
+                  <xhtml:div
+                     ani="">TIME TAGGER</xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg54235">
+            <defs
+               id="defs54227">
+              <path
+                 id="ecADuMGGeWUinQMf"
+                 d="M626,535 h118 M626,559 h118" />
+            </defs>
+            <text
+               fill="rgb(0, 0, 0)"
+               font-size="20px"
+               font-family="&quot;Helvetica&quot;, &quot;VP Default&quot;"
+               font-weight="400"
+               id="text54233"><textPath
+                 xlink:href="#ecADuMGGeWUinQMf"
+                 id="textPath54231"><tspan
+                   xml:space="preserve"
+                   id="tspan54229">TIME TAGGER</tspan></textPath></text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g54247">
+      <path
+         cell-id="3wXI9LbIplzqWNrjtrVz-8"
+         d="M 640.54 153.93 L 733.54 198.93 L 640.54 243.93 Z"
+         fill="#ffffff"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         transform="rotate(-180,684.54,198.93)"
+         pointer-events="all"
+         id="path54243" />
+      <path
+         cell-id="3wXI9LbIplzqWNrjtrVz-8"
+         d="M 635.54 168.93 L 640.54 168.93 M 635.54 228.93 L 640.54 228.93 M 695.54 163.93 L 695.54 180.43 M 695.54 217.43 L 695.54 233.93 M 643.54 168.93 L 649.54 168.93 M 643.54 228.93 L 649.54 228.93 M 646.54 225.93 L 646.54 231.93"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         transform="rotate(-180,684.54,198.93)"
+         pointer-events="all"
+         id="path54245" />
+    </g>
+    <g
+       shape-node=""
+       id="g54251">
+      <path
+         cell-id="xV_tRoPG8BEpDhfjFHFV-2"
+         d="M 310 54 L 310 44 L 512 44 L 512 60"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path54249" />
+    </g>
+    <g
+       shape-node=""
+       id="g54255">
+      <path
+         cell-id="xV_tRoPG8BEpDhfjFHFV-4"
+         d="M 310 126 L 310 135.8 L 452 135.8 L 452 120"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path54253" />
+    </g>
+    <g
+       shape-node=""
+       id="g54261">
+      <ellipse
+         cell-id="3wXI9LbIplzqWNrjtrVz-23"
+         cx="310.34"
+         cy="89.93"
+         rx="35.92"
+         ry="35.92"
+         fill="#ffffff"
+         stroke="#000000"
+         pointer-events="all"
+         id="ellipse54257" />
+      <path
+         cell-id="3wXI9LbIplzqWNrjtrVz-23"
+         d="M 306.75 60.6 L 313.93 60.6 M 310.34 57.01 L 310.34 64.19 M 306.75 119.26 L 313.93 119.26"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path54259" />
+    </g>
+    <g
+       shape-node=""
+       id="g54265">
+      <rect
+         cell-id="TJjF060BRnTcxZF5mInm-8"
+         x="672.42"
+         y="182.93"
+         width="47"
+         height="32"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect54263" />
+    </g>
+    <g
+       shape-node=""
+       id="g54282">
+      <g
+         cell-id="TJjF060BRnTcxZF5mInm-8"
+         transform="translate(-0.5 -0.5)"
+         id="g54280">
+        <switch
+           cell-id="TJjF060BRnTcxZF5mInm-8"
+           id="switch54278">
+          <foreignObject
+             cell-id="TJjF060BRnTcxZF5mInm-8"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 45px; height: 1px; padding-top: 190px; margin-left: 673px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 20px; font-family: &quot;Open Sans&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; ">
+                  <xhtml:div
+                     ani="">AMP</xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg54276">
+            <defs
+               id="defs54268">
+              <path
+                 id="hcADuMGGeWUinQMg"
+                 d="M674.1666870117188,211 h42.666656494140625" />
+            </defs>
+            <text
+               fill="rgb(0, 0, 0)"
+               font-size="20px"
+               font-family="&quot;Open Sans&quot;, &quot;VP Default&quot;"
+               font-weight="400"
+               id="text54274"><textPath
+                 xlink:href="#hcADuMGGeWUinQMg"
+                 startOffset="50%"
+                 text-anchor="middle"
+                 id="textPath54272"><tspan
+                   xml:space="preserve"
+                   id="tspan54270">AMP</tspan></textPath></text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g54286">
+      <rect
+         cell-id="TJjF060BRnTcxZF5mInm-15"
+         x="635.54"
+         y="405.86"
+         width="12"
+         height="25"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect54284" />
+    </g>
+    <g
+       shape-node=""
+       id="g54303">
+      <g
+         cell-id="TJjF060BRnTcxZF5mInm-15"
+         transform="translate(-0.5 -0.5)"
+         id="g54301">
+        <switch
+           cell-id="TJjF060BRnTcxZF5mInm-15"
+           id="switch54299">
+          <foreignObject
+             cell-id="TJjF060BRnTcxZF5mInm-15"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 10px; height: 1px; padding-top: 413px; margin-left: 637px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 14px; font-family: &quot;-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; ">
+                  <xhtml:div
+                     ani="">
+                    <xhtml:font
+                       style="font-size: 14px">2</xhtml:font>
+                  </xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg54297">
+            <defs
+               id="defs54289">
+              <path
+                 id="xcADuMGGeWUinQMh"
+                 d="M638.11669921875,425.09999389648436 h7.76666259765625" />
+            </defs>
+            <text
+               fill="rgb(0, 0, 0)"
+               font-size="14px"
+               font-family="&quot;-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji&quot;, &quot;VP Default&quot;"
+               font-weight="400"
+               id="text54295"><textPath
+                 xlink:href="#xcADuMGGeWUinQMh"
+                 startOffset="50%"
+                 text-anchor="middle"
+                 id="textPath54293"><tspan
+                   xml:space="preserve"
+                   id="tspan54291">2</tspan></textPath></text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g54307">
+      <rect
+         cell-id="TJjF060BRnTcxZF5mInm-16"
+         x="635.54"
+         y="481"
+         width="12"
+         height="25"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect54305" />
+    </g>
+    <g
+       shape-node=""
+       id="g54324">
+      <g
+         cell-id="TJjF060BRnTcxZF5mInm-16"
+         transform="translate(-0.5 -0.5)"
+         id="g54322">
+        <switch
+           cell-id="TJjF060BRnTcxZF5mInm-16"
+           id="switch54320">
+          <foreignObject
+             cell-id="TJjF060BRnTcxZF5mInm-16"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 10px; height: 1px; padding-top: 488px; margin-left: 637px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 14px; font-family: &quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; ">
+                  <xhtml:div
+                     ani="">3</xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg54318">
+            <defs
+               id="defs54310">
+              <path
+                 id="JcADuMGGeWUinQMi"
+                 d="M638.11669921875,502.7 h7.76666259765625" />
+            </defs>
+            <text
+               fill="rgb(0, 0, 0)"
+               font-size="14px"
+               font-family="&quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;"
+               font-weight="400"
+               id="text54316"><textPath
+                 xlink:href="#JcADuMGGeWUinQMi"
+                 startOffset="50%"
+                 text-anchor="middle"
+                 id="textPath54314"><tspan
+                   xml:space="preserve"
+                   id="tspan54312">3</tspan></textPath></text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g54328">
+      <rect
+         cell-id="TJjF060BRnTcxZF5mInm-17"
+         x="689.92"
+         y="481"
+         width="12"
+         height="25"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect54326" />
+    </g>
+    <g
+       shape-node=""
+       id="g54345">
+      <g
+         cell-id="TJjF060BRnTcxZF5mInm-17"
+         transform="translate(-0.5 -0.5)"
+         id="g54343">
+        <switch
+           cell-id="TJjF060BRnTcxZF5mInm-17"
+           id="switch54341">
+          <foreignObject
+             cell-id="TJjF060BRnTcxZF5mInm-17"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 10px; height: 1px; padding-top: 488px; margin-left: 691px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 14px; font-family: &quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; ">
+                  <xhtml:div
+                     ani="">4</xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg54339">
+            <defs
+               id="defs54331">
+              <path
+                 id="pcADuMGGeWUinQMj"
+                 d="M692.11669921875,502.7 h7.76666259765625" />
+            </defs>
+            <text
+               fill="rgb(0, 0, 0)"
+               font-size="14px"
+               font-family="&quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;"
+               font-weight="400"
+               id="text54337"><textPath
+                 xlink:href="#pcADuMGGeWUinQMj"
+                 startOffset="50%"
+                 text-anchor="middle"
+                 id="textPath54335"><tspan
+                   xml:space="preserve"
+                   id="tspan54333">4</tspan></textPath></text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g54349">
+      <rect
+         cell-id="TJjF060BRnTcxZF5mInm-19"
+         x="689.92"
+         y="405.86"
+         width="12"
+         height="25"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect54347" />
+    </g>
+    <g
+       shape-node=""
+       id="g54366">
+      <g
+         cell-id="TJjF060BRnTcxZF5mInm-19"
+         transform="translate(-0.5 -0.5)"
+         id="g54364">
+        <switch
+           cell-id="TJjF060BRnTcxZF5mInm-19"
+           id="switch54362">
+          <foreignObject
+             cell-id="TJjF060BRnTcxZF5mInm-19"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 10px; height: 1px; padding-top: 413px; margin-left: 691px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 14px; font-family: &quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; ">
+                  <xhtml:div
+                     ani="">3</xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg54360">
+            <defs
+               id="defs54352">
+              <path
+                 id="5cADuMGGeWUinQMk"
+                 d="M692.11669921875,427.7 h7.76666259765625" />
+            </defs>
+            <text
+               fill="rgb(0, 0, 0)"
+               font-size="14px"
+               font-family="&quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;"
+               font-weight="400"
+               id="text54358"><textPath
+                 xlink:href="#5cADuMGGeWUinQMk"
+                 startOffset="50%"
+                 text-anchor="middle"
+                 id="textPath54356"><tspan
+                   xml:space="preserve"
+                   id="tspan54354">3</tspan></textPath></text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g54370">
+      <rect
+         cell-id="TJjF060BRnTcxZF5mInm-20"
+         x="609.42"
+         y="346"
+         width="12"
+         height="25"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect54368" />
+    </g>
+    <g
+       shape-node=""
+       id="g54387">
+      <g
+         cell-id="TJjF060BRnTcxZF5mInm-20"
+         transform="translate(-0.5 -0.5)"
+         id="g54385">
+        <switch
+           cell-id="TJjF060BRnTcxZF5mInm-20"
+           id="switch54383">
+          <foreignObject
+             cell-id="TJjF060BRnTcxZF5mInm-20"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 10px; height: 1px; padding-top: 353px; margin-left: 610px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 14px; font-family: &quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; ">
+                  <xhtml:div
+                     ani="">1</xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg54381">
+            <defs
+               id="defs54373">
+              <path
+                 id="FcADuMGGeWUinQMl"
+                 d="M611.11669921875,367.7 h7.76666259765625" />
+            </defs>
+            <text
+               fill="rgb(0, 0, 0)"
+               font-size="14px"
+               font-family="&quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;"
+               font-weight="400"
+               id="text54379"><textPath
+                 xlink:href="#FcADuMGGeWUinQMl"
+                 startOffset="50%"
+                 text-anchor="middle"
+                 id="textPath54377"><tspan
+                   xml:space="preserve"
+                   id="tspan54375">1</tspan></textPath></text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g54391">
+      <rect
+         cell-id="TJjF060BRnTcxZF5mInm-22"
+         x="635.54"
+         y="321"
+         width="12"
+         height="25"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect54389" />
+    </g>
+    <g
+       shape-node=""
+       id="g54408">
+      <g
+         cell-id="TJjF060BRnTcxZF5mInm-22"
+         transform="translate(-0.5 -0.5)"
+         id="g54406">
+        <switch
+           cell-id="TJjF060BRnTcxZF5mInm-22"
+           id="switch54404">
+          <foreignObject
+             cell-id="TJjF060BRnTcxZF5mInm-22"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 10px; height: 1px; padding-top: 328px; margin-left: 637px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 14px; font-family: &quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; ">
+                  <xhtml:div
+                     ani="">0</xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg54402">
+            <defs
+               id="defs54394">
+              <path
+                 id="VcADuMGGeWUinQMm"
+                 d="M638.11669921875,342.7 h7.76666259765625" />
+            </defs>
+            <text
+               fill="rgb(0, 0, 0)"
+               font-size="14px"
+               font-family="&quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;"
+               font-weight="400"
+               id="text54400"><textPath
+                 xlink:href="#VcADuMGGeWUinQMm"
+                 startOffset="50%"
+                 text-anchor="middle"
+                 id="textPath54398"><tspan
+                   xml:space="preserve"
+                   id="tspan54396">0</tspan></textPath></text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g54412">
+      <rect
+         cell-id="TJjF060BRnTcxZF5mInm-23"
+         x="791.26"
+         y="296"
+         width="85"
+         height="25"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect54410" />
+    </g>
+    <g
+       shape-node=""
+       id="g54429">
+      <g
+         cell-id="TJjF060BRnTcxZF5mInm-23"
+         transform="translate(-0.5 -0.5)"
+         id="g54427">
+        <switch
+           cell-id="TJjF060BRnTcxZF5mInm-23"
+           id="switch54425">
+          <foreignObject
+             cell-id="TJjF060BRnTcxZF5mInm-23"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 83px; height: 1px; padding-top: 303px; margin-left: 792px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 14px; font-family: &quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; ">
+                  <xhtml:div
+                     ani="">ETHERNET</xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg54423">
+            <defs
+               id="defs54415">
+              <path
+                 id="1cADuMGGeWUinQMn"
+                 d="M798.1666870117188,317.7 h70.66665649414062" />
+            </defs>
+            <text
+               fill="rgb(0, 0, 0)"
+               font-size="14px"
+               font-family="&quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;"
+               font-weight="400"
+               id="text54421"><textPath
+                 xlink:href="#1cADuMGGeWUinQMn"
+                 startOffset="50%"
+                 text-anchor="middle"
+                 id="textPath54419"><tspan
+                   xml:space="preserve"
+                   id="tspan54417">ETHERNET</tspan></textPath></text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g54433">
+      <rect
+         cell-id="TJjF060BRnTcxZF5mInm-24"
+         x="797.84"
+         y="508"
+         width="85"
+         height="25"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect54431" />
+    </g>
+    <g
+       shape-node=""
+       id="g54450">
+      <g
+         cell-id="TJjF060BRnTcxZF5mInm-24"
+         transform="translate(-0.5 -0.5)"
+         id="g54448">
+        <switch
+           cell-id="TJjF060BRnTcxZF5mInm-24"
+           id="switch54446">
+          <foreignObject
+             cell-id="TJjF060BRnTcxZF5mInm-24"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 83px; height: 1px; padding-top: 515px; margin-left: 799px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 14px; font-family: &quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; ">
+                  <xhtml:div
+                     ani="">ETHERNET</xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg54444">
+            <defs
+               id="defs54436">
+              <path
+                 id="NcADuMGGeWUinQMo"
+                 d="M805.1666870117188,529.7 h70.66665649414062" />
+            </defs>
+            <text
+               fill="rgb(0, 0, 0)"
+               font-size="14px"
+               font-family="&quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;"
+               font-weight="400"
+               id="text54442"><textPath
+                 xlink:href="#NcADuMGGeWUinQMo"
+                 startOffset="50%"
+                 text-anchor="middle"
+                 id="textPath54440"><tspan
+                   xml:space="preserve"
+                   id="tspan54438">ETHERNET</tspan></textPath></text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g54454">
+      <rect
+         cell-id="TJjF060BRnTcxZF5mInm-27"
+         x="791.26"
+         y="0"
+         width="85"
+         height="25"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect54452" />
+    </g>
+    <g
+       shape-node=""
+       id="g54471">
+      <g
+         cell-id="TJjF060BRnTcxZF5mInm-27"
+         transform="translate(-0.5 -0.5)"
+         id="g54469">
+        <switch
+           cell-id="TJjF060BRnTcxZF5mInm-27"
+           id="switch54467">
+          <foreignObject
+             cell-id="TJjF060BRnTcxZF5mInm-27"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 83px; height: 1px; padding-top: 7px; margin-left: 792px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 14px; font-family: &quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; ">
+                  <xhtml:div
+                     ani="">USB</xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg54465">
+            <defs
+               id="defs54457">
+              <path
+                 id="tcADuMGGeWUinQMp"
+                 d="M819.75,21.7 h27.48333740234375" />
+            </defs>
+            <text
+               fill="rgb(0, 0, 0)"
+               font-size="14px"
+               font-family="&quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;"
+               font-weight="400"
+               id="text54463"><textPath
+                 xlink:href="#tcADuMGGeWUinQMp"
+                 startOffset="50%"
+                 text-anchor="middle"
+                 id="textPath54461"><tspan
+                   xml:space="preserve"
+                   id="tspan54459">USB</tspan></textPath></text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g54475">
+      <rect
+         cell-id="TJjF060BRnTcxZF5mInm-29"
+         x="509.42"
+         y="29.01"
+         width="33"
+         height="25"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect54473" />
+    </g>
+    <g
+       shape-node=""
+       id="g54492">
+      <g
+         cell-id="TJjF060BRnTcxZF5mInm-29"
+         transform="translate(-0.5 -0.5)"
+         id="g54490">
+        <switch
+           cell-id="TJjF060BRnTcxZF5mInm-29"
+           id="switch54488">
+          <foreignObject
+             cell-id="TJjF060BRnTcxZF5mInm-29"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 31px; height: 1px; padding-top: 36px; margin-left: 510px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 14px; font-family: &quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; ">
+                  <xhtml:div
+                     ani="">+5V</xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg54486">
+            <defs
+               id="defs54478">
+              <path
+                 id="9cADuMGGeWUinQMq"
+                 d="M513.7000122070312,50.7 h23.583343505859375" />
+            </defs>
+            <text
+               fill="rgb(0, 0, 0)"
+               font-size="14px"
+               font-family="&quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;"
+               font-weight="400"
+               id="text54484"><textPath
+                 xlink:href="#9cADuMGGeWUinQMq"
+                 startOffset="50%"
+                 text-anchor="middle"
+                 id="textPath54482"><tspan
+                   xml:space="preserve"
+                   id="tspan54480">+5V</tspan></textPath></text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g54496">
+      <rect
+         cell-id="TJjF060BRnTcxZF5mInm-30"
+         x="389.42"
+         y="128.93"
+         width="33"
+         height="25"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect54494" />
+    </g>
+    <g
+       shape-node=""
+       id="g54513">
+      <g
+         cell-id="TJjF060BRnTcxZF5mInm-30"
+         transform="translate(-0.5 -0.5)"
+         id="g54511">
+        <switch
+           cell-id="TJjF060BRnTcxZF5mInm-30"
+           id="switch54509">
+          <foreignObject
+             cell-id="TJjF060BRnTcxZF5mInm-30"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 31px; height: 1px; padding-top: 136px; margin-left: 390px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 14px; font-family: &quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; ">
+                  <xhtml:div
+                     ani="">-5V</xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg54507">
+            <defs
+               id="defs54499">
+              <path
+                 id="DcADuMGGeWUinQMr"
+                 d="M395.16668701171875,150.7 h20.666656494140625" />
+            </defs>
+            <text
+               fill="rgb(0, 0, 0)"
+               font-size="14px"
+               font-family="&quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;"
+               font-weight="400"
+               id="text54505"><textPath
+                 xlink:href="#DcADuMGGeWUinQMr"
+                 startOffset="50%"
+                 text-anchor="middle"
+                 id="textPath54503"><tspan
+                   xml:space="preserve"
+                   id="tspan54501">-5V</tspan></textPath></text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g54517">
+      <rect
+         cell-id="TJjF060BRnTcxZF5mInm-32"
+         x="32"
+         y="346"
+         width="390.42"
+         height="254"
+         fill="#ffffff"
+         stroke="#000000"
+         pointer-events="all"
+         id="rect54515" />
+    </g>
+    <g
+       shape-node=""
+       id="g54521">
+      <rect
+         cell-id="BDP-dl5oN6H2CXiR1R3_-1"
+         x="238.34"
+         y="501"
+         width="144"
+         height="32"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect54519" />
+    </g>
+    <g
+       shape-node=""
+       id="g54538">
+      <g
+         cell-id="BDP-dl5oN6H2CXiR1R3_-1"
+         transform="translate(-0.5 -0.5)"
+         id="g54536">
+        <switch
+           cell-id="BDP-dl5oN6H2CXiR1R3_-1"
+           id="switch54534">
+          <foreignObject
+             cell-id="BDP-dl5oN6H2CXiR1R3_-1"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 142px; height: 1px; padding-top: 508px; margin-left: 239px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 20px; font-family: &quot;Open Sans&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; ">
+                  <xhtml:div
+                     ani="">CONFOCAL MICORSCOP</xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg54532">
+            <defs
+               id="defs54524">
+              <path
+                 id="jcADuMGGeWUinQMs"
+                 d="M239,529 h142 M239,553 h142" />
+            </defs>
+            <text
+               fill="rgb(0, 0, 0)"
+               font-size="20px"
+               font-family="&quot;Open Sans&quot;, &quot;VP Default&quot;"
+               font-weight="400"
+               id="text54530"><textPath
+                 xlink:href="#jcADuMGGeWUinQMs"
+                 id="textPath54528"><tspan
+                   xml:space="preserve"
+                   id="tspan54526">CONFOCAL MICORSCOP</tspan></textPath></text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g54542">
+      <rect
+         cell-id="BDP-dl5oN6H2CXiR1R3_-2"
+         x="167.21"
+         y="371"
+         width="120"
+         height="59.86"
+         fill="#ffffff"
+         stroke="#000000"
+         pointer-events="all"
+         id="rect54540" />
+    </g>
+    <g
+       shape-node=""
+       id="g54559">
+      <g
+         cell-id="BDP-dl5oN6H2CXiR1R3_-2"
+         transform="translate(-0.5 -0.5)"
+         id="g54557">
+        <switch
+           cell-id="BDP-dl5oN6H2CXiR1R3_-2"
+           id="switch54555">
+          <foreignObject
+             cell-id="BDP-dl5oN6H2CXiR1R3_-2"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 401px; margin-left: 168px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 20px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; ">
+                  <xhtml:div
+                     ani="">LASER</xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg54553">
+            <defs
+               id="defs54545">
+              <path
+                 id="TcADuMGGeWUinQMt"
+                 d="M194.28334045410156,410 h65.41665649414062" />
+            </defs>
+            <text
+               fill="rgb(0, 0, 0)"
+               font-size="20px"
+               font-family="&quot;Helvetica&quot;, &quot;VP Default&quot;"
+               font-weight="400"
+               id="text54551"><textPath
+                 xlink:href="#TcADuMGGeWUinQMt"
+                 startOffset="50%"
+                 text-anchor="middle"
+                 id="textPath54549"><tspan
+                   xml:space="preserve"
+                   id="tspan54547">LASER</tspan></textPath></text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g54563">
+      <path
+         cell-id="BDP-dl5oN6H2CXiR1R3_-5"
+         d="M 47 473 L 0 473 L 0 284 L 674 284 L 674 234"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path54561" />
+    </g>
+    <g
+       shape-node=""
+       id="g54567">
+      <rect
+         cell-id="BDP-dl5oN6H2CXiR1R3_-3"
+         x="47.21"
+         y="443.07"
+         width="120"
+         height="59.86"
+         fill="#ffffff"
+         stroke="#000000"
+         pointer-events="all"
+         id="rect54565" />
+    </g>
+    <g
+       shape-node=""
+       id="g54584">
+      <g
+         cell-id="BDP-dl5oN6H2CXiR1R3_-3"
+         transform="translate(-0.5 -0.5)"
+         id="g54582">
+        <switch
+           cell-id="BDP-dl5oN6H2CXiR1R3_-3"
+           id="switch54580">
+          <foreignObject
+             cell-id="BDP-dl5oN6H2CXiR1R3_-3"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 473px; margin-left: 48px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 20px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; ">
+                  <xhtml:div
+                     ani="">ANTENNA</xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg54578">
+            <defs
+               id="defs54570">
+              <path
+                 id="LcADuMGGeWUinQMu"
+                 d="M59.616668701171875,482 h94.75" />
+            </defs>
+            <text
+               fill="rgb(0, 0, 0)"
+               font-size="20px"
+               font-family="&quot;Helvetica&quot;, &quot;VP Default&quot;"
+               font-weight="400"
+               id="text54576"><textPath
+                 xlink:href="#LcADuMGGeWUinQMu"
+                 startOffset="50%"
+                 text-anchor="middle"
+                 id="textPath54574"><tspan
+                   xml:space="preserve"
+                   id="tspan54572">ANTENNA</tspan></textPath></text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g54588">
+      <path
+         cell-id="3wXI9LbIplzqWNrjtrVz-9"
+         d="M 840 163 L 840 153 L 769 153 L 769 169 L 734 169"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path54586" />
+    </g>
+    <g
+       shape-node=""
+       id="g54592">
+      <path
+         cell-id="3wXI9LbIplzqWNrjtrVz-10"
+         d="M 840 235 L 840 244.8 L 769 244.8 L 769 229 L 734 229"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path54590" />
+    </g>
+    <g
+       shape-node=""
+       id="g54596">
+      <path
+         cell-id="3wXI9LbIplzqWNrjtrVz-17"
+         d="M 512 120 L 512 136.9 L 674 136.9 L 674 164"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path54594" />
+    </g>
+    <g
+       shape-node=""
+       id="g54613">
+      <g
+         cell-id="TJjF060BRnTcxZF5mInm-13"
+         transform="translate(-0.5 -0.5)"
+         id="g54611">
+        <switch
+           cell-id="TJjF060BRnTcxZF5mInm-13"
+           id="switch54609">
+          <foreignObject
+             cell-id="TJjF060BRnTcxZF5mInm-13"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 154px; margin-left: 518px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 14px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; background-color: #ffffff; white-space: nowrap; ">
+                  <xhtml:div
+                     ani="">RF OUT</xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg54607">
+            <defs
+               id="defs54599">
+              <path
+                 id="rcADuMGGeWUinQMv"
+                 d="M492.6166687011719,160.3000061035156 h51.76666259765625" />
+            </defs>
+            <text
+               fill="rgb(0, 0, 0)"
+               font-size="14px"
+               font-family="&quot;Helvetica&quot;, &quot;VP Default&quot;"
+               font-weight="400"
+               id="text54605"><textPath
+                 xlink:href="#rcADuMGGeWUinQMv"
+                 startOffset="50%"
+                 text-anchor="middle"
+                 id="textPath54603"><tspan
+                   xml:space="preserve"
+                   id="tspan54601">RF OUT</tspan></textPath></text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g54617">
+      <path
+         cell-id="3wXI9LbIplzqWNrjtrVz-15"
+         d="M 625 30 L 452 30 L 452 60"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path54615" />
+    </g>
+    <g
+       shape-node=""
+       id="g54634">
+      <g
+         cell-id="3wXI9LbIplzqWNrjtrVz-15"
+         transform="translate(-0.5 -0.5)"
+         id="g54632">
+        <switch
+           cell-id="3wXI9LbIplzqWNrjtrVz-15"
+           id="switch54630">
+          <foreignObject
+             cell-id="3wXI9LbIplzqWNrjtrVz-15"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 11px; margin-left: 452px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 14px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                  <xhtml:div
+                     ani="">
+                    <xhtml:font
+                       style="font-size: 14px">RF IN</xhtml:font>
+                  </xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg54628">
+            <defs
+               id="defs54620">
+              <path
+                 id="7cADuMGGeWUinQMw"
+                 d="M434.316650390625,18.2 h36.383331298828125" />
+            </defs>
+            <text
+               fill="rgb(0, 0, 0)"
+               font-size="14px"
+               font-family="&quot;Helvetica&quot;, &quot;VP Default&quot;"
+               font-weight="400"
+               id="text54626"><textPath
+                 xlink:href="#7cADuMGGeWUinQMw"
+                 startOffset="50%"
+                 text-anchor="middle"
+                 id="textPath54624"><tspan
+                   xml:space="preserve"
+                   id="tspan54622">RF IN</tspan></textPath></text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g54638">
+      <path
+         cell-id="xV_tRoPG8BEpDhfjFHFV-20"
+         d="M 745 30 L 959.5 30 L 959.5 199"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path54636" />
+    </g>
+    <g
+       shape-node=""
+       id="g54642">
+      <path
+         cell-id="xV_tRoPG8BEpDhfjFHFV-8"
+         d="M 625 376 L 482 376 L 482 120"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path54640" />
+    </g>
+    <g
+       shape-node=""
+       id="g54659">
+      <g
+         cell-id="xV_tRoPG8BEpDhfjFHFV-8"
+         transform="translate(-0.5 -0.5)"
+         id="g54657">
+        <switch
+           cell-id="xV_tRoPG8BEpDhfjFHFV-8"
+           id="switch54655">
+          <foreignObject
+             cell-id="xV_tRoPG8BEpDhfjFHFV-8"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 154px; margin-left: 460px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 14px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                  <xhtml:div
+                     ani="">
+                    <xhtml:font
+                       style="font-size: 14px">TTL</xhtml:font>
+                  </xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg54653">
+            <defs
+               id="defs54645">
+              <path
+                 id="ncADuMGGeWUinQMx"
+                 d="M448.01666259765625,161.2 h24.9666748046875" />
+            </defs>
+            <text
+               fill="rgb(0, 0, 0)"
+               font-size="14px"
+               font-family="&quot;Helvetica&quot;, &quot;VP Default&quot;"
+               font-weight="400"
+               id="text54651"><textPath
+                 xlink:href="#ncADuMGGeWUinQMx"
+                 startOffset="50%"
+                 text-anchor="middle"
+                 id="textPath54649"><tspan
+                   xml:space="preserve"
+                   id="tspan54647">TTL</tspan></textPath></text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g54663">
+      <path
+         cell-id="xV_tRoPG8BEpDhfjFHFV-18"
+         d="M 685 346 L 685 326.8 L 958 326.8 L 958 305"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path54661" />
+    </g>
+    <g
+       shape-node=""
+       id="g54667">
+      <path
+         cell-id="TJjF060BRnTcxZF5mInm-2"
+         d="M 655 406 L 655 508"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path54665" />
+    </g>
+    <g
+       shape-node=""
+       id="g54671">
+      <path
+         cell-id="TJjF060BRnTcxZF5mInm-3"
+         d="M 685 406 L 685 508"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path54669" />
+    </g>
+    <g
+       shape-node=""
+       id="g54675">
+      <path
+         cell-id="BDP-dl5oN6H2CXiR1R3_-4"
+         d="M 655 346 L 655 325 L 227 325 L 227 371"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path54673" />
+    </g>
+    <g
+       shape-node=""
+       id="g54679">
+      <path
+         cell-id="xV_tRoPG8BEpDhfjFHFV-19"
+         d="M 745 538 L 998 538 L 998 297"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path54677" />
+    </g>
+    <g
+       shape-node=""
+       id="g54683">
+      <path
+         cell-id="xV_tRoPG8BEpDhfjFHFV-2"
+         d="M 310 54 L 310 44 L 512 44 L 512 60"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path54681" />
+    </g>
+    <g
+       shape-node=""
+       id="g54687">
+      <path
+         cell-id="xV_tRoPG8BEpDhfjFHFV-4"
+         d="M 310 126 L 310 135.8 L 452 135.8 L 452 120"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path54685" />
+    </g>
+    <g
+       shape-node=""
+       id="g54691">
+      <path
+         cell-id="BDP-dl5oN6H2CXiR1R3_-5"
+         d="M 47 473 L 0 473 L 0 284 L 674 284 L 674 234"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path54689" />
+    </g>
+  </g>
+  <switch
+     id="switch54701">
+    <g
+       requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+       id="g54695" />
+    <a
+       transform="translate(0,-5)"
+       id="a54699">
+      <text
+         text-anchor="middle"
+         font-size="10px"
+         x="50%"
+         y="100%"
+         id="text54697" />
+    </a>
+  </switch>
+  <g
+     fill="#787878"
+     font-family="Arial,Helvetica"
+     pointer-events="none"
+     font-size="12px"
+     id="g54705" />
+</svg>

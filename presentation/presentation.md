@@ -1,0 +1,31 @@
+*Title: Presentation goals*
+  - Title nv lattice 
+  - NV center lattice, creation of defect 
+    - Tipo difetto 
+    - Orientazioni
+    - Campione usato
+  - Energetic model, Hamiltonian
+    - Hamiltoniana
+    - Tripletto 
+  - Zeeman effect, energetic scheme with magnetic field
+    - Tripletto splittato 
+    - Matematica effetto Zeeman
+  - Confocal microscop
+    - Principio funzionamento 
+    - Aggiunte (filtro grigio, passa alto, copertura, movimentatore 3d)
+  - General circuit
+    - Controllo sistema da pc senza interventi esterni 
+  - ODMR technique
+    - ESR e PL 
+  - Single splitting
+    - figura senza B
+    - Figura splittata (2 picchi), con freccia 2 gamma B 
+    - Disegno difetto con campo mag direzionato
+  - Total splitting 
+    - figura 8 picchi e singole componenti 
+  - Magnetic field extraction technique single
+  - Magnetic field extraction technique total (module)
+  - (vector)
+  - Deviation theory
+  - Deviation single
+  - Deviation total

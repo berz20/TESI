@@ -522,7 +522,7 @@ def center_split():
     ax[1].plot(B_arr,int_fit_int[::-1],color='green', label='['+str("{:.2f}".format(int_popt_int[0]))+'$\pm$'+str("{:.2f}".format(int_perr_int[0]))+']'+'$\degree$')
     ax[1].axhline(2.87, c='black', linestyle='dotted', label='$2.87 \ GHz$')
     ax[1].set_xlabel('B [mT]')
-    ax[1].set_ylabel('Tansition frequencies [GHz]')
+    ax[1].set_ylabel('Transition frequencies [GHz]')
     ax[1].legend()
     # plot_to_output(fig, 'deviation.pdf')
     print("")
@@ -579,7 +579,7 @@ ax[0].legend(handles[::-1], labels[::-1], title='B Field', loc='upper left')
 #ax2[0].legend(loc='upper left')
 
 center_split()
-plt.savefig(f'{OUTIMGDIR}/total_double_deg.pdf')
+plt.savefig(f'{OUTIMGDIR}/total_double_deg.svg')
 # plt.show()
 # File used 
 # 20220802-1031-50
