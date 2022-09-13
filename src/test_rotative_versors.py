@@ -55,13 +55,13 @@ ham = SpinHamiltonian()
 def Deviation_plotter(B, ang):
     # B = np.linspace(0,0.033,8)
     sham = np.vectorize(ham.transitionFreqs, otypes=[np.ndarray])
-    freqs = np.array(sham(B,0,0))
-    freqs = np.array(freqs.tolist())
-    freqs_dev_90 = np.array(sham(B,90,0))
-    freqs_dev_90 = np.array(freqs_dev_90.tolist())
-    freqs_dev_60 = np.array(sham(B,ang,0))
-    freqs_dev_60 = np.array(freqs_dev_60.tolist())
-    return freqs_dev_60[:,2]
+    # freqs = np.array(sham(B,0,0))
+    # freqs = np.array(freqs.tolist())
+    # freqs_dev_90 = np.array(sham(B,90,0))
+    # freqs_dev_90 = np.array(freqs_dev_90.tolist())
+    freqs_dev = np.array(sham(B,ang,0))
+    freqs_dev = np.array(freqs_dev.tolist())
+    return freqs_dev[:,2]
 
 # ignore used to produce images for blog
 def plot_to_output(fig, figure_name):
@@ -343,9 +343,10 @@ def analyze(file,counter):
 
         print_array("Resonance ODMR:", "Resonance", False, B*1e+3, B_err*1e+3, "mT", [])
         B_list = list(permutations(B))
+        perm = list(permutations([1,2,3,4]))
         min = 100 # percentage difference
         for i in range(0,len(B_list)):
-            left_side_3 = np.array([u1, u2, u3])
+            left_side_3 = np.array([u1, -1*u2, -1*u3])
             right_side_3 = [B_list[i][0],B_list[i][1],B_list[i][2]]
             B_xyz = np.linalg.inv(left_side_3).dot(right_side_3)
             left_side_3_err = np.array([u1, u2, u3])
@@ -370,6 +371,7 @@ def analyze(file,counter):
                 B_xyz_err_t = B_xyz_err
                 B_xyz_module_t = B_xyz_module
                 B_xyz_module_err_t = B_xyz_module_err
+                print('permutation',perm[i])
 
         print_array("Magnetic Field Components:", "B", True, B_xyz_t*1e+3, B_xyz_err_t*1e3, "mT", index_output)
         print("")
@@ -480,17 +482,17 @@ center_split()
 plt.show()
 
 # File used 
-# 20220802-1031-50
-# 20220802-1101-15
-# 20220802-1121-27
-# 20220802-1136-53
-# 20220802-1153-00
-# 20220802-1208-48
-# 20220802-1031-50
-# 20220802-1225-51
-# 20220802-1238-26
-# 20220802-1252-09
-# 20220802-1306-04
-# 20220802-1332-19
-# 20220802-1407-11
+# '20220802-1031-50',
+# '20220802-1101-15',
+# '20220802-1121-27',
+# '20220802-1136-53',
+# '20220802-1153-00',
+# '20220802-1208-48',
+# '20220802-1031-50',
+# '20220802-1225-51',
+# '20220802-1238-26',
+# '20220802-1252-09',
+# '20220802-1306-04',
+# '20220802-1332-19',
+# '20220802-1407-11',
 

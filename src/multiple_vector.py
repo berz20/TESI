@@ -26,10 +26,14 @@ OUTIMGDIR = "../output/prova/"
 OUTTXTDIR = "../output/txt/"
 OUTTXTDIRPROVA = "../output/prova/"
 index_output = ["x", "y", "z"]  # z direction confocal
-u1 = np.sqrt(2/3)*np.array([0, 1, 1/np.sqrt(2)])
-u2 = np.sqrt(2/3)*np.array([0, -1, 1/np.sqrt(2)])
-u3 = np.sqrt(2/3)*np.array([1, 0, -1/np.sqrt(2)])
-u4 = np.sqrt(2/3)*np.array([-1, 0, -1/np.sqrt(2)])
+u1 = -1*np.sqrt(2/3)*np.array([0, 1, 1/np.sqrt(2)])
+u2 = -1*np.sqrt(2/3)*np.array([0, -1, 1/np.sqrt(2)])
+u3 = -1*np.sqrt(2/3)*np.array([1, 0, -1/np.sqrt(2)])
+u4 = -1*np.sqrt(2/3)*np.array([-1, 0, -1/np.sqrt(2)])
+# u1 = np.sqrt(1/3)*np.array([1, 1, 1])
+# u2 = np.sqrt(1/3)*np.array([1, -1, -1])
+# u3 = np.sqrt(1/3)*np.array([-1, 1, -1])
+# u4 = np.sqrt(1/3)*np.array([-1, -1, 1])
 
 B_arr = np.array([])  
 B_xyz_X = np.array([])  
@@ -61,6 +65,16 @@ def plot_to_output(fig, figure_name):
 
     fig.savefig(filename)
     return filename
+
+def complete_perm(arr):
+    perm_list = list(permutations(arr))
+    perm_sign = list(permutations([-1,-1,1,1]))
+    perm = []
+    
+    for i in range(0,len(perm_list)):
+        for j in range(0,len(perm_sign)):
+            perm.append(list(np.multiply(perm_list[i],perm_sign[j])))
+    return perm
 
 def generate_model(spec):
     composite_model = None
@@ -389,7 +403,8 @@ def analyze(file,counter):
     # print(g)
 
     print_array("Resonance ODMR:", "Resonance", False, B*1e+3, B_err*1e+3, "mT", [])
-    B_list = list(permutations(B))
+    B_list = complete_perm(B)
+    perm = complete_perm([1,2,3,4])
     min = 100 # percentage difference
     for i in range(0,len(B_list)):
         left_side_3 = np.array([u1, u2, u3])
@@ -409,14 +424,16 @@ def analyze(file,counter):
         right_side_4 = B_list[i][3]
         # print('permutation ', B_list[i])
         check =np.dot(B_xyz,left_side_4) 
-        min_i = 2*np.abs(check - right_side_4)/(check + right_side_4)*100
-        if min_i < min:
-            min = min_i
+        min_v = 2*np.abs(check - right_side_4)/(check + right_side_4)*100
+        if np.abs(min_v) < np.abs(min):
+            min = min_v
             B_xyz_t = B_xyz
             print('B_check',B_xyz_t)
             B_xyz_err_t = B_xyz_err
             B_xyz_module_t = B_xyz_module
             B_xyz_module_err_t = B_xyz_module_err
+            print('permutation',perm[i])
+
     print_array("Magnetic Field Components:", "B", True, B_xyz_t*1e+3, B_xyz_err_t*1e3, "mT", index_output)
     print("")
     print("Magnetic Field Module:")
@@ -514,8 +531,8 @@ ax.legend(handles[::-1], labels[::-1], title='B Field', loc='upper left')
 #ax2[0].legend(loc='upper left')
 
 mult_vect()
-plt.savefig(f'{OUTIMGDIR}/multiple_vector.svg')
-# plt.show()
+# plt.savefig(f'{OUTIMGDIR}/multiple_vector.svg')
+plt.show()
 # File used 
 # 20220802-1031-50
 # 20220802-1101-15

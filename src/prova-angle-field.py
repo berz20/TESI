@@ -398,7 +398,8 @@ def analyze(file,counter):
 
         if len(wid) > 2:
 
-            left_side_3 = np.array([u1, -1*u2, -1*u3])
+            left_side_3 = np.array([u4, -1*u3, -1*u1])
+            print('left side', left_side_3)
 
             right_side_3 = [B[0],B[1],B[2]]
 
@@ -423,10 +424,10 @@ def analyze(file,counter):
 
             if len(wid) > 3:
 
-                left_side_4 = u4
+                left_side_4 = u3
 
                 right_side_4 = B[3]
-
+                print('compare',B_zee @ left_side_4,right_side_4)
                 if (B_zee @ left_side_4) != right_side_4:
 
                     B_zee = -1*B_zee
@@ -579,8 +580,8 @@ ax[0].legend(handles[::-1], labels[::-1], title='B Field', loc='upper left')
 #ax2[0].legend(loc='upper left')
 
 center_split()
-plt.savefig(f'{OUTIMGDIR}/total_double_deg.svg')
-# plt.show()
+# plt.savefig(f'{OUTIMGDIR}/total_double_deg.svg')
+plt.show()
 # File used 
 # 20220802-1031-50
 # 20220802-1101-15

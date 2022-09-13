@@ -190,7 +190,7 @@ def splitting(file):
     for i in peaks_found:
         ax.axvline(x=spec['x'][i], c='black', linestyle='dotted')
     
-    plot_to_output(fig, file+'-peaks.png')
+    plot_to_output(fig, file+'-peaks.svg')
     
     model, params = generate_model(spec)
     output = model.fit(spec['y'], params, x=spec['x'])
@@ -204,7 +204,7 @@ def splitting(file):
     for i, model in enumerate(spec['model']):
         sum = sum + components[f'm{i}_']
         ax.plot(spec['x'], components[f'm{i}_'] + offset)
-    plot_to_output(fig, file+'-complex-components.png')
+    plot_to_output(fig, file+'-complex-components.svg')
 
     # fig = output.plot()
     fig, ax = plt.subplots()
@@ -212,7 +212,7 @@ def splitting(file):
     ax.scatter(spec['x'], spec['y'] + offset, s=4)
     plt.xlabel('[GHz]')
     plt.ylabel('[Normalized Counts / s]')
-    plot_to_output(fig, file+'-total.png')
+    plot_to_output(fig, file+'-total.svg')
     
     
     print_best_values(spec, output)
@@ -354,7 +354,7 @@ def analyze(file):
 # f = '20220801-1459-10'
 # f = '20220610-1616-16'
 # f = '20220610-1729-34'
-# f = '20220801-1053-22'
+f = '20220801-1053-22'
 # f = '20220610-1637-35'
 # f = '20220729-1853-26'
 # f = '20220802-1136-53'
@@ -404,14 +404,14 @@ def analyze(file):
 # f = '20220728-1351-20'
 # f = '20220801-1657-14'
 # f = '20220729-1418-49'
-f = '20220802-1356-34'
+# f = '20220802-1356-34'
 
 #Amplitude
-a = 1/0.0449
+a = 1/0.0289
 #Peaks width
 pw = (1.5,)
 #Peaks distance
-dist =  6.2
+dist =  1.2
 #Offset
 offset = 1 
 splitting(f)
