@@ -117,8 +117,8 @@ def analyze(file,counter):
         # print(2.*g*mu_b/h)
         gamma = 28  # [GHz/T]
         # B = h*1e+3*wid/(2.*g*mu_b)
-        B = wid/gamma  # [T]
-        B_err = wid_err/gamma  # [T]
+        B = wid/(2*gamma)  # [T]
+        B_err = wid_err/(2*gamma)  # [T]
         # print(mu_b_t)
         # print(h_t)
         # print(g)
@@ -159,11 +159,17 @@ def center_split():
     popt_ext, pcov_ext = curve_fit(Deviation_plotter, B, peak_ext, sigma= peak_ext_err)
     perr_ext = np.sqrt(np.diag(pcov_ext))
     fit_ext = Deviation_plotter(B, *popt_ext)
+    fit_0_plus = Deviation_plotter_plus(B, 0)
+    fit_0_minus = Deviation_plotter_minus(B, 0)
+    fit_0 = Deviation_plotter(B, 90)
 
     ax[1].errorbar(B_arr, peak_ext_up, yerr=peak_ext_up_err,capsize=5, fmt='.', color='black', label="Resonance's peaks positions")
     ax[1].errorbar(B_arr, peak_ext_down, yerr=peak_ext_down_err,capsize=5, fmt='.', color='black')
     ax[1].errorbar(B_arr, peak_ext, yerr=peak_ext_err,fmt='x', color='black', label="Peak's centers") 
     ax[1].plot(B_arr,fit_ext,color='black', label='['+str("{:.2f}".format(popt_ext[0]))+'$\pm$'+str("{:.2f}".format(perr_ext[0]))+']'+'$\degree$')
+    ax[1].plot(B_arr,fit_0,color='orange', label='0')
+    ax[1].plot(B_arr,fit_0_plus,color='orange', label='0')
+    ax[1].plot(B_arr,fit_0_minus,color='orange', label='0')
     ax[1].axhline(2.87, c='black', linestyle='dotted', label='$2.87 \ GHz$')
     ax[1].legend()
     ax[1].set_xlabel('External magnetic field [mT]')

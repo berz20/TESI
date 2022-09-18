@@ -131,9 +131,9 @@ def mult_vect():
     c = ['tab:blue','tab:orange','tab:green','tab:red','tab:purple','tab:brown','tab:pink','tab:grey']
     for i in range(0, len(B_xyz_X)):
         ax.quiver(x[i], y[i], z[i], B_xyz_Y[i]*1e+3,B_xyz_Z[i]*1e+3,B_xyz_X[i]*1e+3,color=c[i],arrow_length_ratio=0.1)
-    ax.set_xlim([-10, 10])
-    ax.set_ylim([-10, 10])
-    ax.set_zlim([  0, 30])
+    ax.set_xlim([-7.5, 7.5])
+    ax.set_ylim([-7.5, 7.5])
+    ax.set_zlim([  0, 15])
     # ax.quiver(X, Y, Z, U, V, W)
     # ax[1].quiver(B_xyz_X, B_xyz_Y, B_xyz_Z)
     ax.legend()  
@@ -191,8 +191,8 @@ ax.legend(handles[::-1], labels[::-1], title='B Field', loc='upper left')
 #ax2[0].legend(loc='upper left')
 
 mult_vect()
-# plt.savefig(f'{OUTIMGDIR}/multiple_vector.svg')
-plt.show()
+plt.savefig(f'{OUTIMGDIR}/multiple_vector.svg')
+# plt.show()
 # File used 
 # 20220802-1031-50
 # 20220802-1101-15

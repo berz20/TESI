@@ -149,9 +149,9 @@ def Deviation_plotter_plus(B, ang):
     # freqs = np.array(freqs.tolist())
     # freqs_dev_90 = np.array(sham(B,90,0))
     # freqs_dev_90 = np.array(freqs_dev_90.tolist())
-    freqs_dev = np.array(sham(B,40,0))
+    freqs_dev = np.array(sham(B,ang,0))
     freqs_dev = np.array(freqs_dev.tolist())
-    return (freqs_dev[:,0]+freqs_dev[:,1])/2
+    return freqs_dev[:,1]
 
 def Deviation_plotter_minus(B, ang):
     # B = np.linspace(0,0.033,8)
@@ -160,9 +160,9 @@ def Deviation_plotter_minus(B, ang):
     # freqs = np.array(freqs.tolist())
     # freqs_dev_90 = np.array(sham(B,90,0))
     # freqs_dev_90 = np.array(freqs_dev_90.tolist())
-    freqs_dev = np.array(sham(B,30,0))
+    freqs_dev = np.array(sham(B,ang,0))
     freqs_dev = np.array(freqs_dev.tolist())
-    return (freqs_dev[:,0]+freqs_dev[:,1])/2
+    return freqs_dev[:,0]
 
 def print_array(title, word, bool, array, array_err, unit, index):
     print("")
@@ -228,8 +228,8 @@ def B_calc(B_arr,peaks,peaks_err):
 
     # B = h*1e+3*wid/(2.*g*mu_b)
 
-    B = wid/gamma  # [T]
-    B_err = wid_err/gamma  # [T]
+    B = wid/(2*gamma)  # [T]
+    B_err = wid_err/(2*gamma)  # [T]
 
     # print(mu_b_t)
 
