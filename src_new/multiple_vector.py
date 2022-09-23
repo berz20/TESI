@@ -5,6 +5,10 @@ from utilities import * # My functions: pair_dat_err, uncertainties_to_root_grap
 from functions import * 
 from variables import * 
 
+B_xyz_X = np.array([])  
+B_xyz_Y = np.array([])  
+B_xyz_Z = np.array([])  
+
 def splitting(file, counter):
 
     ft = ODMR+file+'_ODMR_data_ch0_range0.dat'
@@ -101,7 +105,7 @@ def analyze(file,counter):
     int_peak_int_up_err = np.append(int_peak_int_up_err,peaks_err[int(len(peaks)/2)+1])
     int_peak_int_down_err = np.append(int_peak_int_down_err,peaks_err[int(len(peaks)/2)-2])
     
-    B_xyz, B_xyz_err, B_str, B_arr = B_calc(B_arr,peaks,peaks_err)
+    B_xyz, B_xyz_err, B_str, B_arr = B_calc(file,B_arr,peaks,peaks_err)
     B_xyz_X = np.append(B_xyz_X, B_xyz[0])
     B_xyz_Y = np.append(B_xyz_Y, B_xyz[1])
     B_xyz_Z = np.append(B_xyz_Z, B_xyz[2])
@@ -130,10 +134,10 @@ def mult_vect():
     ax = fig.add_subplot(1, 2, 2, projection='3d')
     c = ['tab:blue','tab:orange','tab:green','tab:red','tab:purple','tab:brown','tab:pink','tab:grey']
     for i in range(0, len(B_xyz_X)):
-        ax.quiver(x[i], y[i], z[i], B_xyz_Y[i]*1e+3,B_xyz_Z[i]*1e+3,B_xyz_X[i]*1e+3,color=c[i],arrow_length_ratio=0.1)
-    ax.set_xlim([-7.5, 7.5])
-    ax.set_ylim([-7.5, 7.5])
-    ax.set_zlim([  0, 15])
+        ax.quiver(x[i], y[i], z[i], B_xyz_Y[i]*1e+3,B_xyz_Z[i]*1e+3,B_xyz_X[i]*1e+3,color=c[i],arrow_length_ratio=0.1, linestyle='-', linewidth=0.9)
+    ax.set_xlim([-5, 5])
+    ax.set_ylim([-5, 5])
+    ax.set_zlim([  0, 10])
     # ax.quiver(X, Y, Z, U, V, W)
     # ax[1].quiver(B_xyz_X, B_xyz_Y, B_xyz_Z)
     ax.legend()  

@@ -25,7 +25,7 @@ def splitting(file, counter):
     
     model, params = generate_model(spec)
     output = model.fit(spec['y'], params, x=spec['x'])
-
+    print('Chi',output.chisqr)
     components = output.eval_components(x=spec['x'])
     sum = 0
     for i, model in enumerate(spec['model']):
@@ -111,7 +111,7 @@ def analyze(file,counter):
     int_peak_int_down_err = np.append(int_peak_int_down_err,peaks_err[int(len(peaks)/2)-2])
     
     if (((len(peaks) % 2) & (len(peaks) < 9)) == 0):
-        B_xyz, B_xyz_err, B_str, B_arr = B_calc(B_arr,peaks,peaks_err)
+        B_xyz, B_xyz_err, B_str, B_arr = B_calc(file,B_arr,peaks,peaks_err)
         theta = rad_to_deg(np.arctan(B_xyz[0]/B_xyz[2]))
         print('theta',theta)
         return B_str, peak_ext_up[counter], peak_ext_down[counter], peak_int_up[counter], peak_int_down[counter], int_peak_ext_up[counter], int_peak_ext_down[counter], int_peak_int_up[counter], int_peak_int_down[counter] 
@@ -152,11 +152,45 @@ def center_split():
     int_fit_int = Deviation_plotter(B, *int_popt_int)
     int_fit_ext = Deviation_plotter(B, *int_popt_ext)
 
+    popt_ext_plus, pcov_ext_plus = curve_fit(Deviation_plotter_plus, B, peak_ext_up, sigma= peak_ext_up_err)
+    perr_ext_plus = np.sqrt(np.diag(pcov_ext_plus))
+    popt_int_plus, pcov_int_plus = curve_fit(Deviation_plotter_plus, B, peak_int_up, sigma= peak_int_up_err)
+    perr_int_plus = np.sqrt(np.diag(pcov_int_plus))
+    int_popt_int_plus, int_pcov_int_plus = curve_fit(Deviation_plotter_plus, B, int_peak_int_up, sigma= int_peak_int_up_err)
+    int_perr_int_plus = np.sqrt(np.diag(int_pcov_int_plus))
+    int_popt_ext_plus, int_pcov_ext_plus = curve_fit(Deviation_plotter_plus, B, int_peak_ext_up, sigma= int_peak_ext_up_err)
+    int_perr_ext_plus = np.sqrt(np.diag(int_pcov_ext_plus))
+    fit_ext_plus = Deviation_plotter_plus(B, *popt_ext_plus)
+    fit_int_plus = Deviation_plotter_plus(B, *popt_int_plus) 
+    int_fit_int_plus = Deviation_plotter_plus(B, *int_popt_int_plus)
+    int_fit_ext_plus = Deviation_plotter_plus(B, *int_popt_ext_plus)
 
-    fit_0_plus = Deviation_plotter_plus(B,0)
-    fit_0_minus = Deviation_plotter_minus(B,0)
-    ax[1].plot(B_arr,fit_0_plus,color='orange', label='0'+'$\degree$')
-    ax[1].plot(B_arr,fit_0_minus,color='orange')
+
+    popt_ext_minus, pcov_ext_minus = curve_fit(Deviation_plotter_minus, B, peak_ext_down, sigma= peak_ext_down_err)
+    perr_ext_minus = np.sqrt(np.diag(pcov_ext_minus))
+    popt_int_minus, pcov_int_minus = curve_fit(Deviation_plotter_minus, B, peak_int_down, sigma= peak_int_down_err)
+    perr_int_minus = np.sqrt(np.diag(pcov_int_minus))
+    int_popt_int_minus, int_pcov_int_minus = curve_fit(Deviation_plotter_minus, B, int_peak_int_down, sigma= int_peak_int_down_err)
+    int_perr_int_minus = np.sqrt(np.diag(int_pcov_int_minus))
+    int_popt_ext_minus, int_pcov_ext_minus = curve_fit(Deviation_plotter_minus, B, int_peak_ext_down, sigma= int_peak_ext_down_err)
+    int_perr_ext_minus = np.sqrt(np.diag(int_pcov_ext_minus))
+    fit_ext_minus = Deviation_plotter_minus(B, *popt_ext_minus)
+    fit_int_minus = Deviation_plotter_minus(B, *popt_int_minus) 
+    int_fit_int_minus = Deviation_plotter_minus(B, *int_popt_int_minus)
+    int_fit_ext_minus = Deviation_plotter_minus(B, *int_popt_ext_minus)
+
+    ax[1].plot(B_arr,fit_ext_minus,color='black', label='['+str("{:.2f}".format(popt_ext_minus[0]))+'$\pm$'+str("{:.2f}".format(perr_ext_minus[0]))+']'+'$\degree$')
+    ax[1].plot(B_arr,fit_int_minus,color='red')
+    ax[1].plot(B_arr,int_fit_ext_minus,color='blue', label='['+str("{:.2f}".format(int_popt_ext_minus[0]))+'$\pm$'+str("{:.2f}".format(int_perr_ext_minus[0]))+']'+'$\degree$')
+    ax[1].plot(B_arr,int_fit_int_minus,color='green')
+    ax[1].plot(B_arr,fit_ext_plus,color='black')
+    ax[1].plot(B_arr,int_fit_ext_plus,color='blue')
+    ax[1].plot(B_arr,int_fit_int_plus,color='green', label='['+str("{:.2f}".format(int_popt_int_plus[0]))+'$\pm$'+str("{:.2f}".format(int_perr_int_plus[0]))+']'+'$\degree$')
+    ax[1].plot(B_arr,fit_int_plus,color='red', label='['+str("{:.2f}".format(popt_int_plus[0]))+'$\pm$'+str("{:.2f}".format(perr_int_plus[0]))+']'+'$\degree$')
+    # fit_0_plus = Deviation_plotter_plus(B,0)
+    # fit_0_minus = Deviation_plotter_minus(B,0)
+    # ax[1].plot(B_arr,fit_0_plus,color='orange', label='0'+'$\degree$')
+    # ax[1].plot(B_arr,fit_0_minus,color='orange')
     # plot peaks position (dot)
     ax[1].errorbar(B_arr, peak_ext_up, yerr=peak_ext_up_err,capsize=5, fmt='.', color='black', label="Resonance's peaks positions")
     ax[1].errorbar(B_arr, peak_ext_down, yerr=peak_ext_down_err,capsize=5, fmt='.', color='black')
@@ -167,15 +201,15 @@ def center_split():
     ax[1].errorbar(B_arr, int_peak_int_up, yerr=int_peak_int_up_err,capsize=5, fmt='.', color='green')
     ax[1].errorbar(B_arr, int_peak_int_down, yerr=int_peak_int_down_err,capsize=5, fmt='.', color='green')
     # Plot center of peaks (x)
-    ax[1].errorbar(B_arr, peak_ext, yerr=peak_ext_err,fmt='x', color='black', label="Peak's centers") 
-    ax[1].errorbar(B_arr, peak_int, yerr=peak_int_err,fmt='x', color='red') 
-    ax[1].errorbar(B_arr, int_peak_ext, yerr=int_peak_int_err,fmt='x', color='blue') 
-    ax[1].errorbar(B_arr, int_peak_int, yerr=int_peak_ext_err,fmt='x', color='green') 
+    # ax[1].errorbar(B_arr, peak_ext, yerr=peak_ext_err,fmt='x', color='black', label="Peak's centers") 
+    # ax[1].errorbar(B_arr, peak_int, yerr=peak_int_err,fmt='x', color='red') 
+    # ax[1].errorbar(B_arr, int_peak_ext, yerr=int_peak_int_err,fmt='x', color='blue') 
+    # ax[1].errorbar(B_arr, int_peak_int, yerr=int_peak_ext_err,fmt='x', color='green') 
     #Plot fit center with frequencies hamiltonian
-    ax[1].plot(B_arr,fit_ext,color='black', label='['+str("{:.2f}".format(popt_ext[0]))+'$\pm$'+str("{:.2f}".format(perr_ext[0]))+']'+'$\degree$')
-    ax[1].plot(B_arr,fit_int,color='red', label='['+str("{:.2f}".format(popt_int[0]))+'$\pm$'+str("{:.2f}".format(perr_int[0]))+']'+'$\degree$')
-    ax[1].plot(B_arr,int_fit_ext,color='blue', label='['+str("{:.2f}".format(int_popt_ext[0]))+'$\pm$'+str("{:.2f}".format(int_perr_ext[0]))+']'+'$\degree$')
-    ax[1].plot(B_arr,int_fit_int,color='green', label='['+str("{:.2f}".format(int_popt_int[0]))+'$\pm$'+str("{:.2f}".format(int_perr_int[0]))+']'+'$\degree$')
+    # ax[1].plot(B_arr,fit_ext,color='black', label='['+str("{:.2f}".format(popt_ext[0]))+'$\pm$'+str("{:.2f}".format(perr_ext[0]))+']'+'$\degree$')
+    # ax[1].plot(B_arr,fit_int,color='red', label='['+str("{:.2f}".format(popt_int[0]))+'$\pm$'+str("{:.2f}".format(perr_int[0]))+']'+'$\degree$')
+    # ax[1].plot(B_arr,int_fit_ext,color='blue', label='['+str("{:.2f}".format(int_popt_ext[0]))+'$\pm$'+str("{:.2f}".format(int_perr_ext[0]))+']'+'$\degree$')
+    # ax[1].plot(B_arr,int_fit_int,color='green', label='['+str("{:.2f}".format(int_popt_int[0]))+'$\pm$'+str("{:.2f}".format(int_perr_int[0]))+']'+'$\degree$')
     # 2.87 GHz line
     ax[1].axhline(2.87, c='black', linestyle='dotted', label='$2.87 \ GHz$')
     # Labels
@@ -187,6 +221,25 @@ def center_split():
     print('Amplitude Factor:',a,'\nPeak Width:',pw)
     print('')
 files = [
+        # #(3-11)
+        # '20220802-1407-11',
+        # '20220802-1332-19',
+        # '20220802-1306-04',
+        # '20220802-1252-09',
+        # # '20220802-1238-26',
+        # '20220802-1153-00',
+        # '20220802-1136-53',
+        # # '20220802-1101-15',
+        # #(3-15)
+        # '20220802-1407-11',
+        # # '20220802-1332-19',
+        # '20220802-1306-04',
+        # '20220802-1252-09',
+        # # '20220802-1238-26',
+        # # '20220802-1153-00',
+        # '20220802-1136-53',
+        # '20220802-1101-15',
+        #(All)
         '20220802-1407-11',
         '20220802-1332-19',
         '20220802-1306-04',
@@ -201,6 +254,10 @@ fig, ax = plt.subplots(figsize=(16, 8), ncols=2)
 ## PARAMETER DATA
 #  Peaks amplitude-contrast
 a = [30,38,27,40,40,50,55,95]
+#(3-11)
+# a = [30,38,27,40,50,55]
+#(3-15)
+# a = [30,27,40,55,95]
 #  Peaks width
 pw = (1.5,)
 #  Peaks distance
@@ -216,7 +273,8 @@ handles, labels = ax[0].get_legend_handles_labels()
 ax[0].legend(title='B Field', loc='upper left')
 
 center_split()
-# plt.savefig(f'{OUTIMGDIR}/total_double_deg.pdf')
+plt.savefig(f'{OUTIMGDIR}/total_double_deg.pdf')
+plt.savefig(f'{OUTIMGDIR}/total_double_deg.svg')
 plt.show()
 
 # File used 

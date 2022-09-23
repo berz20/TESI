@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1663425694 "hamiltonian.tex" "hamiltonian.pdf" "hamiltonian" 1663425694
+["pdflatex"] 1663931347 "hamiltonian.tex" "hamiltonian.pdf" "hamiltonian" 1663931347
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1650183167 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1650183167 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1650183167 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -45,8 +45,8 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1650183167 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1661697491 4278762 af3ac1370db81a450c1118eabf1fe718 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1661697483 2927668 4ebd79c26d6d8c9bb2cb470f4507cef9 ""
-  "hamiltonian.aux" 1663425694 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "hamiltonian.tex" 1663425692 1235 83c2abe4a522aad48d5c7c16468156e3 ""
+  "hamiltonian.aux" 1663931347 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "hamiltonian.tex" 1663931345 1441 d2e83bee2e4991df4c7430c2f54a1449 ""
   (generated)
   "hamiltonian.aux"
   "hamiltonian.log"

@@ -108,6 +108,12 @@ def write_file(x, x_err, y, file, DIR):
         for i in range(0, len(x)):
             f_writer.writerow([x[i], x_err[i], y[i]])
 
+def write_field(name,x, x_err, y, y_err, z, z_err, file, DIR):
+    with open(DIR+file+'.txt', mode='a', newline='') as f:
+        f_writer = csv.writer(f, delimiter= '\t', quotechar='#', quoting=csv.QUOTE_MINIMAL)
+        # f_writer.writerow(['x', 'x_err', 'y', 'y_err', 'z', 'z_err'])
+        f_writer.writerow([name,x*1e3, x_err*1e3, y*1e3, y_err*1e3, z*1e3, z_err*1e3])
+
 def print_best_values(spec, output, f, DIR):
     sigma = []
     center = []
@@ -151,7 +157,7 @@ def Deviation_plotter_plus(B, ang):
     # freqs_dev_90 = np.array(freqs_dev_90.tolist())
     freqs_dev = np.array(sham(B,ang,0))
     freqs_dev = np.array(freqs_dev.tolist())
-    return freqs_dev[:,1]
+    return freqs_dev[:,0]
 
 def Deviation_plotter_minus(B, ang):
     # B = np.linspace(0,0.033,8)
@@ -162,7 +168,7 @@ def Deviation_plotter_minus(B, ang):
     # freqs_dev_90 = np.array(freqs_dev_90.tolist())
     freqs_dev = np.array(sham(B,ang,0))
     freqs_dev = np.array(freqs_dev.tolist())
-    return freqs_dev[:,0]
+    return freqs_dev[:,1]
 
 def print_array(title, word, bool, array, array_err, unit, index):
     print("")
@@ -197,7 +203,7 @@ def complete_perm(arr):
             perm.append(list(np.multiply(perm_list[i],perm_sign[j])))
     return perm
 
-def B_calc(B_arr,peaks,peaks_err):
+def B_calc(file,B_arr,peaks,peaks_err):
     wid = np.array([])
     wid_err = np.array([])
     cen = np.array([])
@@ -238,44 +244,73 @@ def B_calc(B_arr,peaks,peaks_err):
     # print(g)
 
     print_array("Resonance ODMR:", "Resonance", False, B*1e+3, B_err*1e+3, "mT", [])
-    B_list = complete_perm(B)
-    perm = complete_perm([1,2,3,4])
-    min = 100 # percentage difference
-    for i in range(0,len(B_list)):
-        left_side_3 = np.array([u1, u2, u3])
-        right_side_3 = [B_list[i][0],B_list[i][1],B_list[i][2]]
-        B_xyz = np.linalg.inv(left_side_3).dot(right_side_3)
+    if len(wid)<3:
+        B_list = B
+        left_side_3 = np.array([-1*u1, -1*u2, 1*u3])
+        right_side_3 = [B_list[0],B_list[0],B_list[0]]
+        B_xyz_t = np.linalg.inv(left_side_3).dot(right_side_3)
         left_side_3_err = np.array([u1, u2, u3])
-        right_side_3_err = [B_err[0],B_err[1],B_err[2]]
-        B_xyz_err = np.linalg.inv(left_side_3_err).dot(right_side_3_err)
+        right_side_3_err = [B_err[0],B_err[0],B_err[0]]
+        B_xyz_err_t = np.linalg.inv(left_side_3_err).dot(right_side_3_err)
         B_xyz_module = 0
         B_xyz_module_err = 0
-        for j in range(0, len(B_xyz)):
-            B_xyz_module = B_xyz_module + B_xyz[j]**2
-            B_xyz_module_err = B_xyz_module_err + B_xyz_err[j]**2
-        B_xyz_module = np.sqrt(B_xyz_module)
-        B_xyz_module_err = np.sqrt(B_xyz_module_err)
-        left_side_4 = u4
-        right_side_4 = B_list[i][3]
-        # print('permutation ', B_list[i])
-        check =np.dot(B_xyz,left_side_4) 
-        min_v = 2*np.abs(check - right_side_4)/(check + right_side_4)*100
-        if np.abs(min_v) < np.abs(min):
-            min = min_v
-            B_xyz_t = B_xyz
-            print('B_check',B_xyz_t)
-            B_xyz_err_t = B_xyz_err
-            B_xyz_module_t = B_xyz_module
-            B_xyz_module_err_t = B_xyz_module_err
-            print('permutation',perm[i])
+        for j in range(0, len(B_xyz_t)):
+            B_xyz_module = B_xyz_module + B_xyz_t[j]**2
+            B_xyz_module_err = B_xyz_module_err + B_xyz_err_t[j]**2
+        B_xyz_module_t = np.sqrt(B_xyz_module)
+        B_xyz_module_err_t = np.sqrt(B_xyz_module_err)
+
+    if len(wid)>2:
+        B_list = complete_perm(B)
+        perm = complete_perm([1,2,3,4])
+        min = 100 # percentage difference
+        for i in range(0,len(B_list)):
+            left_side_3 = np.array([u1, u2, u3])
+            right_side_3 = [B_list[i][0],B_list[i][1],B_list[i][2]]
+            B_xyz = np.linalg.inv(left_side_3).dot(right_side_3)
+            left_side_3_err = np.array([u1, u2, u3])
+            right_side_3_err = [B_err[0],B_err[1],B_err[2]]
+            B_xyz_err = np.linalg.inv(left_side_3_err).dot(right_side_3_err)
+            B_xyz_module = 0
+            B_xyz_module_err = 0
+            for j in range(0, len(B_xyz)):
+                B_xyz_module = B_xyz_module + B_xyz[j]**2
+                B_xyz_module_err = B_xyz_module_err + B_xyz_err[j]**2
+            B_xyz_module = np.sqrt(B_xyz_module)
+            B_xyz_module_err = np.sqrt(B_xyz_module_err)
+            left_side_4 = u4
+            right_side_4 = B_list[i][3]
+            # print('permutation ', B_list[i])
+            check =np.dot(B_xyz,left_side_4) 
+            min_v = 2*np.abs(check - right_side_4)/(check + right_side_4)*100
+            # if np.abs(min_v) < np.abs(min):
+            #     min = min_v
+            #     B_xyz_t = B_xyz
+            #     print('B_check',B_xyz_t)
+            #     B_xyz_err_t = B_xyz_err
+            #     B_xyz_module_t = B_xyz_module
+            #     B_xyz_module_err_t = B_xyz_module_err
+            #     print('permutation',perm[i])
+            if perm[i] == [-3,-2,4,1] :
+                min = min_v
+                B_xyz_t = B_xyz
+                print('B_check',B_xyz_t)
+                B_xyz_err_t = B_xyz_err
+                B_xyz_module_t = B_xyz_module
+                B_xyz_module_err_t = B_xyz_module_err
+                print('permutation',perm[i])
 
     print_array("Magnetic Field Components:", "B", True, B_xyz_t*1e+3, B_xyz_err_t*1e3, "mT", index_output)
+    # if len(wid)>2:
+    #     # write_field(file,B_xyz_t[0],B_xyz_err_t[0],B_xyz_t[1],B_xyz_err_t[1],B_xyz_t[2],B_xyz_err_t[2], 'total_B','../data/')
+    # else:
+    #     write_field(file,B_xyz_t[0],B_xyz_err_t[0],B_xyz_t[1],B_xyz_err_t[1],B_xyz_t[2],B_xyz_err_t[2], 'normal_B','../data/')
     print("")
     print("Magnetic Field Module:")
     print("|B| :", B_xyz_module_t*1000, "mT")
         # check_B(B_xyz,right_side_3)
-    print('min', min)
+    # print('min', min)
     B_arr = np.append(B_arr,B_xyz_module_t*1000)
     B_str = "["+str("{:.2f}".format(B_xyz_module_t*1000))+"$\pm$"+str("{:.2f}".format(B_xyz_module_err_t*1000))+"]"+" mT" 
-    return B_xyz, B_xyz_err, B_str, B_arr  
+    return B_xyz_t, B_xyz_err_t, B_str, B_arr  
 

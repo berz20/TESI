@@ -80,6 +80,10 @@ def analyze(file,counter):
 
     global B_arr   
     global B_arr_err   
+    global B_xyz_X   
+    global B_xyz_Y   
+    global B_xyz_Z   
+    global B_xyz_arr_err   
     global peak_ext_up  
     global peak_ext_down   
     global peak_ext_up_err   
@@ -89,62 +93,12 @@ def analyze(file,counter):
     peak_ext_up_err = np.append(peak_ext_up_err,peaks_err[-1])
     peak_ext_down_err = np.append(peak_ext_down_err,peaks_err[0])
     
-    if (((len(peaks) % 2) & (len(peaks) < 9)) == 0):
-        wid = np.array([])
-        wid_err = np.array([])
-        cen = np.array([])
-        cen_err = np.array([])
-        print("Peaks positions:")
-        for i in range(0, int(len(peaks)/2)):
-            wid = np.append(wid, peaks[len(peaks)-1-i] - peaks[i])
-            wid_err = np.append(wid_err, np.sqrt(peaks_err[len(peaks)-1-i]**2 + peaks_err[i]**2))
-            cen = np.append(cen, (peaks[len(peaks)-1-i] + peaks[i])/2)
-            cen_err = np.append(cen_err, np.sqrt((peaks_err[len(peaks)-1-i]**2 + peaks_err[i]**2)/4))
-            print("Resonance", i, ": [", peaks[i],"+-", peaks_err[i], "||",  peaks[len(peaks)-1-i],"+-", peaks_err[len(peaks)-1-i], "] GHz")
-
-        print_array("Resonance width:", "Resonance", False, wid, wid_err, "GHz", [])
-
-        print_array("Resonance center:", "Resonance", False, cen, cen_err, "GHz", [])
-
-        # Magnetic Field
-
-        mu_b = cons.physical_constants["Bohr magneton"][0]
-        h = cons.physical_constants["Planck constant"][0]
-        mu_b_t = cons.physical_constants["Bohr magneton"]
-        h_t = cons.physical_constants["Planck constant"]
-        g = 2.002
-
-        # print(2.*g*mu_b/h)
-        gamma = 28  # [GHz/T]
-        # B = h*1e+3*wid/(2.*g*mu_b)
-        B = wid/(2*gamma)  # [T]
-        B_err = wid_err/(2*gamma)  # [T]
-        # print(mu_b_t)
-        # print(h_t)
-        # print(g)
-        print_array("Resonance ODMR:", "Resonance", False, B*1e+3, B_err*1e+3, "mT", [])
-        if len(wid) > 2:
-            left_side_3 = np.array([u1, -1*u2, -1*u3])
-            right_side_3 = [B[0],B[1],B[2]]
-            B_zee = np.linalg.inv(left_side_3).dot(right_side_3)
-            B_zee_module = 0
-            for i in range(0, len(B_zee)):
-                B_zee_module = B_zee_module + B_zee[i]**2
-            B_zee_module = np.sqrt(B_zee_module)
-            if len(wid) > 3:
-                left_side_4 = u4
-                right_side_4 = B[3]
-                if (B_zee @ left_side_4) != right_side_4:
-                    B_zee = -1*B_zee
-
-            print_array("Magnetic Field Components:", "B", True, B_zee*1e+3, B_err, "mT", index_output)
-            print("")
-            print("Magnetic Field Module:")
-            print("|B| :", B_zee_module*1000, "mT")
-        B_arr = np.append(B_arr,B[0]*1000)
-        B_arr_err = np.append(B_arr_err,B_err[0]*1000)
-        B_str = "["+str("{:.2f}".format(B[0]*1000))+"$\pm$"+str("{:.2f}".format(B_err[0]*1000))+"]"+" mT" 
-        return B_str,peak_ext_up[counter],peak_ext_down[counter]
+    B_xyz, B_xyz_err, B_str, B_arr = B_calc(file,B_arr,peaks,peaks_err)
+    B_xyz_X = np.append(B_xyz_X, B_xyz[0])
+    B_xyz_Y = np.append(B_xyz_Y, B_xyz[1])
+    B_xyz_Z = np.append(B_xyz_Z, B_xyz[2])
+    B_xyz_arr_err = np.append(B_xyz_arr_err, B_xyz_err)
+    return B_str,peak_ext_up[counter],peak_ext_down[counter]
 
 def center_split():
     peak_ext = np.array([])
@@ -156,20 +110,23 @@ def center_split():
     # SpinHamiltonian class takes mag module in [T]
     B = B_arr/1e3
     # Curve fitting with frequencies extracted form autovalues of hamiltonian
-    popt_ext, pcov_ext = curve_fit(Deviation_plotter, B, peak_ext, sigma= peak_ext_err)
-    perr_ext = np.sqrt(np.diag(pcov_ext))
-    fit_ext = Deviation_plotter(B, *popt_ext)
-    fit_0_plus = Deviation_plotter_plus(B, 0)
-    fit_0_minus = Deviation_plotter_minus(B, 0)
-    fit_0 = Deviation_plotter(B, 90)
+    # popt_ext, pcov_ext = curve_fit(Deviation_plotter, B, peak_ext, sigma= peak_ext_err)
+    # perr_ext = np.sqrt(np.diag(pcov_ext))
+    # fit_ext = Deviation_plotter(B, *popt_ext)
+    popt_plus, pcov_plus = curve_fit(Deviation_plotter_plus, B, peak_ext_up, sigma= peak_ext_up_err)
+    perr_plus = np.sqrt(np.diag(pcov_plus))
+    fit_0_plus = Deviation_plotter_plus(B, *popt_plus)
+    popt_minus, pcov_minus = curve_fit(Deviation_plotter_minus, B, peak_ext_down, sigma= peak_ext_down_err)
+    perr_minus = np.sqrt(np.diag(pcov_minus))
+    fit_0_minus = Deviation_plotter_minus(B, *popt_minus)
 
     ax[1].errorbar(B_arr, peak_ext_up, yerr=peak_ext_up_err,capsize=5, fmt='.', color='black', label="Resonance's peaks positions")
     ax[1].errorbar(B_arr, peak_ext_down, yerr=peak_ext_down_err,capsize=5, fmt='.', color='black')
-    ax[1].errorbar(B_arr, peak_ext, yerr=peak_ext_err,fmt='x', color='black', label="Peak's centers") 
-    ax[1].plot(B_arr,fit_ext,color='black', label='['+str("{:.2f}".format(popt_ext[0]))+'$\pm$'+str("{:.2f}".format(perr_ext[0]))+']'+'$\degree$')
-    ax[1].plot(B_arr,fit_0,color='orange', label='0')
-    ax[1].plot(B_arr,fit_0_plus,color='orange', label='0')
-    ax[1].plot(B_arr,fit_0_minus,color='orange', label='0')
+    # ax[1].errorbar(B_arr, peak_ext, yerr=peak_ext_err,fmt='x', color='black', label="Peak's centers") 
+    # ax[1].plot(B_arr,fit_ext,color='black', label='['+str("{:.2f}".format(popt_ext[0]))+'$\pm$'+str("{:.2f}".format(perr_ext[0]))+']'+'$\degree$')
+    # ax[1].plot(B_arr,fit_0,color='orange', label='0')
+    ax[1].plot(B_arr,fit_0_plus,color='orange')
+    ax[1].plot(B_arr,fit_0_minus,color='orange', label='['+str("{:.2f}".format(popt_minus[0]))+'$\pm$'+str("{:.2f}".format(perr_minus[0]))+']'+'$\degree$')
     ax[1].axhline(2.87, c='black', linestyle='dotted', label='$2.87 \ GHz$')
     ax[1].legend()
     ax[1].set_xlabel('External magnetic field [mT]')
@@ -213,11 +170,12 @@ for f,i in zip(files, range(0,len(files))):
 
 # ax[0].axvline(2.87, c='black', linestyle='dotted', label='$2.87 \ GHz$')
 handles, labels = ax[0].get_legend_handles_labels()
-ax[0].legend(handles[::-1], labels[::-1], title='B Field', loc='upper left')
+ax[0].legend(handles[::-1], labels[::-1], title='$B_i \ Field$', loc='upper left')
 #ax2[0].legend(loc='upper left')
 
 center_split()
-# plt.savefig(f'{OUTIMGDIR}/total_double_normal.svg')
+plt.savefig(f'{OUTIMGDIR}/total_double_normal.svg')
+plt.savefig(f'{OUTIMGDIR}/total_double_normal.pdf')
 plt.show()
 # File used 
 # 20220728-0912-42

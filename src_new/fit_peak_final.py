@@ -17,6 +17,7 @@ from scipy import optimize, signal, interpolate
 from lmfit import models
 import csv
 import scipy.constants as cons
+from functions import * 
 DATADIR = "../data"
 ODMR = "../data/ODMR/"
 OUTPUTDIR = "../output/"
@@ -210,11 +211,12 @@ def splitting(file):
     fig, ax = plt.subplots()
     for i in peaks_found:
         ax.axvline(x=spec['x'][i], c='black', linestyle='dotted')
-    ax.plot(spec['x'], sum + offset, c='orange', label='$[ 0.32 \pm 0.18 ] mT$' )
+    ax.plot(spec['x'], sum + offset, c='orange', label='$\mid B \mid=[0.27 \pm 0.17]mT$'+'\n'+  '$\ \ B_i = [ 0.16 \pm 0.09 ] mT$' )
     ax.scatter(spec['x'], spec['y'] + offset, s=4)
     ax.legend()
     plt.xlabel('[GHz]')
     plt.ylabel('[Normalized Counts / s]')
+    plt.show() 
     plot_to_output(fig, file+'-total.svg')
     
     
@@ -246,84 +248,85 @@ def diff_peaks(peaks, freq):
 
 def analyze(file):
     peaks, peaks_err, peaks_amp = np.loadtxt(OUTTXTDIR+file+'.txt', unpack=True, skiprows=1)
-    if (((len(peaks) % 2) & (len(peaks) < 9)) == 0):
-        wid = np.array([])
-        wid_err = np.array([])
-        cen = np.array([])
-        cen_err = np.array([])
-        print("Peaks positions:")
-        for i in range(0, int(len(peaks)/2)):
-            wid = np.append(wid, peaks[len(peaks)-1-i] - peaks[i])
-            wid_err = np.append(wid_err, np.sqrt(peaks_err[len(peaks)-1-i]**2 + peaks_err[i]**2))
-            cen = np.append(cen, (peaks[len(peaks)-1-i] + peaks[i])/2)
-            cen_err = np.append(cen_err, np.sqrt((peaks_err[len(peaks)-1-i]**2 + peaks_err[i]**2)/4))
-            print("Resonance", i, ": [", peaks[i],"+-", peaks_err[i], "||",  peaks[len(peaks)-1-i],"+-", peaks_err[len(peaks)-1-i], "] GHz")
-
-        print_array("Resonance width:", "Resonance", False, wid, wid_err, "GHz", [])
-
-        print_array("Resonance center:", "Resonance", False, cen, cen_err, "GHz", [])
-
-        # Magnetic Field
-
-        mu_b = cons.physical_constants["Bohr magneton"][0]
-        h = cons.physical_constants["Planck constant"][0]
-        mu_b_t = cons.physical_constants["Bohr magneton"]
-        h_t = cons.physical_constants["Planck constant"]
-        g = 2.002
-
-        # print(2.*g*mu_b/h)
-
-        gamma = 28  # [GHz/T]
-
-        # B = h*1e+3*wid/(2.*g*mu_b)
-
-        B = wid/gamma  # [T]
-        B_err = wid_err/gamma  # [T]
-
-        # print(mu_b_t)
-
-        # print(h_t)
-
-        # print(g)
-
-        print_array("Resonance ODMR:", "Resonance", False, B*1e+3, B_err*1e+3, "mT", [])
-
-        if len(wid) > 2:
-
-            left_side_3 = np.array([u1, -1*u2, -1*u3])
-
-            right_side_3 = [B[0],B[1],B[2]]
-
-            B_zee = np.linalg.inv(left_side_3).dot(right_side_3)
-
-            B_zee_module = 0
-
-            for i in range(0, len(B_zee)):
-
-                B_zee_module = B_zee_module + B_zee[i]**2
-
-            B_zee_module = np.sqrt(B_zee_module)
-
-            if len(wid) > 3:
-
-                left_side_4 = u4
-
-                right_side_4 = B[3]
-
-                if (B_zee @ left_side_4) != right_side_4:
-
-                    B_zee = -1*B_zee
-
-            print_array("Magnetic Field Components:", "B", True, B_zee*1e+3, B_err, "mT", index_output)
-
-            print("")
-
-            print("Magnetic Field Module:")
-
-            print("|B| :", B_zee_module*1000, "mT")
-    print("")
-    print('Amplitude Factor:',a,'\nPeak Width:',pw)
-    print('')
+    # if (((len(peaks) % 2) & (len(peaks) < 9)) == 0):
+    #     wid = np.array([])
+    #     wid_err = np.array([])
+    #     cen = np.array([])
+    #     cen_err = np.array([])
+    #     print("Peaks positions:")
+    #     for i in range(0, int(len(peaks)/2)):
+    #         wid = np.append(wid, peaks[len(peaks)-1-i] - peaks[i])
+    #         wid_err = np.append(wid_err, np.sqrt(peaks_err[len(peaks)-1-i]**2 + peaks_err[i]**2))
+    #         cen = np.append(cen, (peaks[len(peaks)-1-i] + peaks[i])/2)
+    #         cen_err = np.append(cen_err, np.sqrt((peaks_err[len(peaks)-1-i]**2 + peaks_err[i]**2)/4))
+    #         print("Resonance", i, ": [", peaks[i],"+-", peaks_err[i], "||",  peaks[len(peaks)-1-i],"+-", peaks_err[len(peaks)-1-i], "] GHz")
+    #
+    #     print_array("Resonance width:", "Resonance", False, wid, wid_err, "GHz", [])
+    #
+    #     print_array("Resonance center:", "Resonance", False, cen, cen_err, "GHz", [])
+    #
+    #     # Magnetic Field
+    #
+    #     mu_b = cons.physical_constants["Bohr magneton"][0]
+    #     h = cons.physical_constants["Planck constant"][0]
+    #     mu_b_t = cons.physical_constants["Bohr magneton"]
+    #     h_t = cons.physical_constants["Planck constant"]
+    #     g = 2.002
+    #
+    #     # print(2.*g*mu_b/h)
+    #
+    #     gamma = 28  # [GHz/T]
+    #
+    #     # B = h*1e+3*wid/(2.*g*mu_b)
+    #
+    #     B = wid/(2*gamma)  # [T]
+    #     B_err = wid_err/(2*gamma)  # [T]
+    #
+    #     # print(mu_b_t)
+    #
+    #     # print(h_t)
+    #
+    #     # print(g)
+    #
+    #     print_array("Resonance ODMR:", "Resonance", False, B*1e+3, B_err*1e+3, "mT", [])
+    #
+    #     if len(wid) > 2:
+    #
+    #         left_side_3 = np.array([u1, -1*u2, -1*u3])
+    #
+    #         right_side_3 = [B[0],B[1],B[2]]
+    #
+    #         B_zee = np.linalg.inv(left_side_3).dot(right_side_3)
+    #
+    #         B_zee_module = 0
+    #
+    #         for i in range(0, len(B_zee)):
+    #
+    #             B_zee_module = B_zee_module + B_zee[i]**2
+    #
+    #         B_zee_module = np.sqrt(B_zee_module)
+    #
+    #         if len(wid) > 3:
+    #
+    #             left_side_4 = u4
+    #
+    #             right_side_4 = B[3]
+    #
+    #             if (B_zee @ left_side_4) != right_side_4:
+    #
+    #                 B_zee = -1*B_zee
+    #
+    #         print_array("Magnetic Field Components:", "B", True, B_zee*1e+3, B_err, "mT", index_output)
+    #
+    #         print("")
+    #
+    #         print("Magnetic Field Module:")
+    #
+    #         print("|B| :", B_zee_module*1000, "mT")
+    # print("")
+    # print('Amplitude Factor:',a,'\nPeak Width:',pw)
+    # print('')
+    B_calc(file,B_arr,peaks,peaks_err)
 
 # f = '20220801-1233-32'
 # f = '20220715-1334-31'
@@ -357,7 +360,7 @@ def analyze(file):
 # f = '20220801-1459-10'
 # f = '20220610-1616-16'
 # f = '20220610-1729-34'
-f = '20220801-1053-22'
+# f = '20220801-1053-22'
 # f = '20220610-1637-35'
 # f = '20220729-1853-26'
 # f = '20220802-1136-53'
@@ -403,14 +406,14 @@ f = '20220801-1053-22'
 # f = '20220802-1049-25'
 # f = '20220802-1225-51'
 # f = '20220802-1153-00'
-# f = '20220801-1030-48'
+f = '20220801-1030-48'
 # f = '20220728-1351-20'
 # f = '20220801-1657-14'
 # f = '20220729-1418-49'
 # f = '20220802-1356-34'
 
 #Amplitude
-a = 1/0.0289
+a = 1/0.0689
 #Peaks width
 pw = (1.5,)
 #Peaks distance
