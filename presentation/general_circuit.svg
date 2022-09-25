@@ -1,3 +1,1236 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1001px" height="608px" viewBox="-0.5 -0.5 1001 608" content="3cU2FsddGVkX1g9I+HyaBN8Xc1RkvrYZV4QOiqcwYDzi0HpwBJJuI=N8TwOwP5ZeazCdV3GZlTLqU7OO2DVr+yevdlwh6OWfq+VOhjqS/gbtvlJ4F7Vku9owf5IP6nRSd5iYbHRfRLyqJuUycUSn125fI31iNAk1UI4dqcejdd7K18wuzFDkWoG9VCWLrjZ7nS3lpOVyZ81oeFKkbULFDXPM2V6k0POg4npl3ZXJpEMm+C27HsbjfSQEOU0tuzLx5F8etntrcK7jlfhA+MWBETUXdfr9+0gtqoj4NaUSPzhixvlH/AIZRNWPNWxfPcOu+a2nT8caEnxXeG3FW4RIyKJ9J8O9MCY3vsNNMdiLZuGIKbOPm0RZcGhvjx78kbjhVTOdoQE3ru+aKolcqxQ9tGvptg5hMOo3TE2VcRlcjSuhvAzqdmxsgQq6JzXrZxDOxqY6Vo0EjRSzMm7+L2tZdT0YFci7YXOyjkRexWds9R1PHwgE0C5zJLbjhwn3V5zxGp40GsjrjpK23Q6hq6u1bwyY+OLpoZu1DfhSLXla1Su5MCkkG/SE11uk87SprGDButsMy+KMl1/M0plvwfWdpbBswqvHTJtqK+qfSvAHYZ5ktWhv4HrmfjTwUjwkLAQ3zRrSwx5K1k7ETZxRs8GzKARS6LBGihmjXXLNozNCAY7LQh27ErScDnoPXqzlKbT0MRxm/4ypF2O3V/mG2JlqPDt9O5347tCw9PfTbmwlsTslS6ImZJ0F3wlL3vzKy04j/muCeyPLxyrAcg73inrl/N3p3MPN3ctxempPCY9tQZ6juJrP6F7dGQqqb+gnEUHKgSfTK6i/dZYw1wswe1had8gUzsAnJ+XAaeEutBkaIOpbr2pmGLTLjgbUx24gGi4MVs4bkuceMA/wvSWgP33F4JfGttLfdsccuNV3JPi/4lwCHelB8a4xkHWE+7UyC+2f1HaqX+kJitBKWAHjKbsRCj9/M57NGWU4tZRycx5ipFXp6KhOq9X85pGJf4auAPHzkvXPG5lX9EYVZ31CoQ8Q9RnCuXR7PYnot+IF1BT4/FaFo2gvcWSkUNZ5aaqKbrOf/n6Si87uAYvCGuWlXF5xxGHsxveuOcHusQGhkLDoMdbucDOAw7LdzoqaK5WCVtEPbOdy9huqpfXMv0p5VCJQqwCaTb7zy1ChEztow8+tgmnMnYSLIA6b6pyZCSvsqS7mxHHRZH3TrWY6y4CdL9mdlGtaW6NaKUBQbwicZRGP/Pk/0iIDF0uoaA5+kiGXwjxp2vI3oHeQminEBt7gBGoQBqsxHW6ZlYpNiU6nX+8UdPbOPLrh4Tw+0ADnBiYy5dfGb96BLDngFesG9Ii8ySMzViDRBVE6Ya/vapX3zDyuZJPdQc3W6bzDXlxW2tKwQgI1NE6Su9ffGgNpNfDD6W+3h1PAwuCRylzLaSMtvNnwo9tcdV0375D+zliWZRm0IeAJSpg3s/ldISOw7toO4uRTuj9TPlj4s3tWbX2RZLd3ilaxRF6cHtxpmsamzBTMqjPoZgy+apL0P1y+HqceAYfZv3rvejTw8yRLRZc7PlwCl3Sg1r/SzkYhfEa1ZAkFguc0HMKT2w7M/E1Ho214pz6DYeh0BKkX+6vQexyNdX5KrT41hexEZL5F7LxPyifyV+AkeSkEma2fpvVprvqNlpEVrc2pjFmArwCYB7OEa1DaCobo2dG3zrUBDE4g6/jrxjJ01bF2x8nlgnfXj30yg4AGbcmjPvTNmEyrypSlnmUNLH1L7q33ihltqtacbC+RX0Iv7ok7CSvabAOaibR00RK/3YfKgz5fg2IjSAFy4Ug19MxjoXRggRrArR02TJTvGi+BJ7ilvFhLdfCYAJU1d3ytNmISNfyOKJl8RlJevWUV70C+dovUFWUhWEEpukRotgAWLYSz7J6MQF7FdjWqcR+++MaKmpW7s78t4vwsjKjwKqjtEiTIvNjJmoDaDGL3NM+bGrkDkp9+IIEzKpry5QYZCl79zV6u2I1psEUjQ59Yb/SO1v5fUGjJzbMN98bZqF4bWtLXYXnUC4fkG5yu7LV0PMOV6VpgGIDq3NUA24GxvdTu0xjjCv2mGmBnhpNCdWXtiFzMBCLTw0Y5L7HwpH1y785AUa3gmxTmVBkCElTo8aR60BT/KsC3Mt/JwIKhLS3Yz9W/n6mq4xdL/LGbj/zm9v0LHenCGQyVpLCZwuBrZsb7/A5cFKD/hqXWPTQ/gd9qkt7NIR1m6MPbYa9GLVeS5H6IXyvELuYsNE8PaIBSLkaDkgOa3ZKvCTRiq9q+PS42oHuqLWvT8EHqCR7WKTb21sKbFMjefkxk0yOSIsz545ROC+X3axm0OVV3VHk8ryDyooHfgD8Il63jo38dSBFbZ5rs2EexCmqOtTcAEaEUB0VPNaZWRltFBkK4DbK0PyHQ5tC45n1ZAchoD863AfNepc6ViTdLrvpEpNnpRV3xDB0p+dyzCDnC23j8PQZFfYa2q2Z3Mpq4e1u58uA89CQzjl8PMRge8u84NjoanAWs85y9CI3KLdNW7LcIJqSdrWcLsCTfUDnS/4OCB67hLJVaSe9WN5IhhydDKxpwroP/MjOA4bd8Lfv1DmrWIdSyJz3et7ronJjMlaaZRwI9RWXE1JIqHKG1Qh+Ftz+EqjeGbkokEowIyZ9yVvtIVqn+4MTr6ZCJ5kn0W46MpNw9uP6B4sOHWZeW9+QvCyfYzkZ0WSj9tgVbQmh4cqQsr8bPYwN/lQazvzpjof9uwjMZcOWtGC6kGSvHdLYqHZhrmzt10PIpvLdYL49+tfnEQv6koNJOnMqLs246ncONBbH3YZM/9ViuS6cvPK3mHLs/z+EQLaoEYrzSEGRtxOItoiFsx0PVr0CuWGVqxFTYRIQvUNZNytw3w7zwouZEUTcCDwydxO5whgoS1XS/0bi9htnUIhaSpDdLOmsH6W001+iHaS6NhSXu2zO/KbUonYNrce/llA1aR1xFvbk1at80ql+JLrvosjf4GClRd44O/3NkQZ4KdZLXxIUtTZG52QgLpVKDJtvRiVyaGgPzso/jPBXB0uB/OGS6jwHoehA3wMlSfDxMIJRPcSMZUyu3WNsxSFxKXRpKqY3q3WWa6xYhy/g8n3FxHcBok2sBxxAIdKhtqKJmFoLBtiuW+9ZTtCUSYAIV2PqK2Mq1Ykd9hhZP0qav5bgwefbqD81ECdFukrQOCcfFMxgMEVj75+aNJp957c2ioLwi6wxxraO+vrmG+2T9KLSUMgoZRqrqA2dJN3cJYxElHGwlCvBQuCbLKsXhV9k/u2W4l01I9wViSMEasMC5XJjREYnVA38dxgO8Xvh2WBThllliyu3bH+8YGDOCLdW6y79+aOa45kmRkYH0AhqFaI5/c+6aVfAENVvKhPANBLbIPTQc9lZnY0/yEH0EQvGJ8t9LQgiBWzfuQ+nDy98qz+sAPJnrgrfFiXyufI/CrCuCCkP+WuPV2IQN+MoXu8EbPefStUrknHQo34zLeH1cyTUrQW6kJw9gaLNIr2+UTPd1a9diPttYJzTezdILmzV7/6bZgJnE+/hmEzN3HLQ/VB3g3AcjVx2YzmYIOXc89+Z0KKH+0kbe9EwJxa6b+bMkQNemQcSEKPe8ABq57AFUXh6bEkpsKS/btFEDP+QqeqpLgUL9POlzApTBlcxx2T3EDjR5eR2n22cYbxIqC/8/FMPOsYeh/1YnMGrFFWrcbNTrDlQUGYHzWSswxhX0ACZfrpipTswz9hXIO6KoBxIAvOGVFCI3rdTjhyGWWHpZUUZUgWk5TCU2iUuBMnAlsY6E1pap1n3adfehkc0lY/JJqUtGExCMfLrpASBq3gN8F7fOF+D8U5XhoyNRk0A4dKs4UUOYRYv3lxjytHULFPDRyvy4jQdAs6ycIA1d+KdwOfVxJLGtZf9PixhiR125AHt/DQXxlcPwJsTYO56SNsOfIHC3Zi15FDAWE1yWp0XgFGe3it2Fk3L1ZhNuEtt1eGj1nMGVc37m03ucaQtCuSN9u0ke7JMFDMDzIKCCugrCep28yoPkUs1iUtMYzO8l1OaZ82P1XzT5QQSOpVqD4dRIYClpEMgPo3J89g5Br1n2NoyRov2w7S3wrnVAFQrAdInMQmjw7ZKcUfLe0do5Z6bSJRaXR90ij1Zhk+QE3mCNY6xycQdHcRbnaNzvVnxMR4zoW/aEoD7WFS57eZi0OpeVCwrw8OWhqkOPFsjOKlf+tvTtiBzrupgGpB8VScUjGGeZeLz5tbFBE83zuF/UAdVCDVeI22VQhCyZ/OupqsP7eM6XINxA4xcPh2V5oFYCv+X/X53PH4GhsMuM5MQfLmg5HJ8sLHtbrSMGCzFC8+ltRt2pmpzVcSrAWsrYZSv2g11HCOm7RdrUSx4q7+zBS0sq6uX3DFC2DQ+RQcKAnYquIa/vo6A2gSj19fr2MGwHltjlwbosYhnwYM1CJpkMbSjP8CyAPvksUotaPRO8cTls5mcO84PFJhIXn90pS6A9wHAjZCY9yHxksMNONMj1xPbcQqbXKfCw0YyNlf4wuesUivAVbpZRqZlk3PF6muLksjbbvk0BVv1GtFG7WB2qGkMy3aH8uZmwsxXZScCW2k/5QsteIyCdMqSbqhIo0g0fQbgsIJHNdRFx9aveiLrf9ETGZS0yEQsTpt5S8exC81BiDtHPY7l6rfO8I6ChvbrVCf4Xf3UdUXgJfy8T0SLWa45bCROgTNdyOcDTYQHZBDH1octBiwUrGfibwdAN0JzDD9DmyUeBds4F7iZGnQ/oWNSFjO2YLqAQ1TDcDplZ7dBluUgBbBYT7fNALXBGWp6SoKc+Dk8i+xXu49BD/uHT5+3J0hvdBMC9zALlwzs9vV0yRTSRMeizM6ogdF7ScOYaV7IJ8zeDeOyIUMQdguWkW7OFLuU3bP/JURtHX9+8RZeXAJTSo/9eR9TMx5aVv3vrpe/kURA7Wi9Zlg+3i3xVEkSvlkcoyiPt6syaNlqCE51rAvOid6WK5G9Bg9/+7JoE+0qULSc7rE7is+TH+n38NDOfXXXnLSqS2Ca2a30tRQpZI19eLfHQ+ZSXiuvMTRzR5Fy5UXdFvlOl68Z477mbvzTGVBdW5dPJCZ3hGmeM7n2bQrPYzQkynS72XBmqUIrS4ZpatD2hOOAmSEdvSee/rVvq6raZmVkKIr37Bn2DKBtXp0ShXdwTxm2OyLBbZq9vTh8fk/ZBLkpaxNXuu7/S5ewkkjWfjiGTT0HQIzJDtCc13cowekvXxvChYdLBRv4uFm9Ia5Oi61tGAZcmiSNr9I2qv9UAd73jEth9d8V2x+bcghTevwhM6pC/PKFdb6IzU5cXzIQCaF0OAQSuIFNHeDN9SxQ07swg/bVTkdayRdYNivd561cgL6+azcq9+bVsSUHUbt+wSYOqzN7PQAj+zwwE7rTNGOyc6tItTOH0ZzO//ivrk7X/0caXZRiRCoqS7inMlEJTAdjY677Z7OaooEjjO/1Ng7+yS29ILOOvNOhuNkI0F+bwBtry5DYpK8VckV4gQHHsezPmaA9FQxJsfjOKw5aEGrB6flsDf3hbme2PCE7kbaWqO/bxm1M8c8m5AKg7MKt3FUAuzdtTsxih/G4Yf1hBrTgKKIoAPJJG4L19H151pcYIO6Zh85YeJ09uPh+HIRG4GEQfj6734UIHVyat3IppoBw2dFR2ZrnrFibpTQP4r/05hvXERTCwU0aLHK33BESCJGQ8Zujt9OsB7h+ehIuGCArgTSMlYwUMVZYj7VzqoSdn4ZR5s2uSZ6TncpkuxZ1q8v4O2lbr94Ecy4fFTcAdEBuStGiY062wbe9GVX7v2YQpMrOytr0dWKl5FvNwoiqNvT1iLtZk0yyNWAFG3SnN/qZaP8UaDZ3howFjpaXDAT3FD3/iOe1Uj5fFbR5yktAbpqSupjX1eDxIfjgbPi3Lh6NPDXabQU8ItJDhuo7Z9vDZhYLk4Y3dvNmRD8azdzg95LtXILr54rJHuMGmWsS6IGiyupsI4hzNNg8787Z5o1MdZss1DjYgQRljSrUwi3gTG9vR+T43kgWA1W+aem0BcdwT2OST2itDwFtNudY5LzuVlfDOmbNog0lIyGj9A0gqq3myq7JHGj73I+Q7zrQtjORcsOlqEBegZSuJ1gCohXjdfuCtp+pFli8DmqiY/JjDNDhAOZy0/zhilzBkF5y1LAKrvfv4UW8M21MHSHOOvCO39T4xRYWvZS2nhQvcLdSs05PrB0wr3HybRXSASd0Mgsx/W/PH0HbbVyVnpWzmWab9xXLI7fvrgZNe3gAYdRIycuKL5Aub2ah4XAsFE9RvTx2MAEAnE8y+Mfl6k89IhdeRoYF3XWpXvjtSTthpkRHA0/MlWobQnlyzjL2oMCUTFrb1OEg5CZzSIzJnIv6EQoS6EjEknLXGuJg1tFMLxDnHyDev6asiQPFwHM8hayECiKdBDq3nC6Lodvxw0iXYdIZ8bPloMAFT5pxPaJQTAhO90niZHv1cEGvV3WxfCgSuKAf37NfOp/xIDIQ1xJa8gG6EZ9qw+yWoUX8alBy6V3pZXCl4QdOchY6D4tJVguUWi7YXKzFVMa+zB7sfqqvfuyQpsf2mTI2umqjdvhKyqLQkDhKKFpEBaMB8oTFv+9K0nxJX/LgiuXSK8yTS/DTjqG9hRhyzKc7h1ANTd4fo6QThkQv/+UJdUlwHgNH7o72MxkzYtAWnDQv86AViryNQEMpxk6Qjz1KliSINe670vU0g/W0wulLoS8E5xZvq0Rs0/bU6dKPzTIy3BCPLj0WhJIL7A9O9kyculwogeSOC5NcSYgOuAbazV6XnwhlFGTr3tG0ic8cjN471IWjgu073s4eVoCRM7+N5q6jQzizhjEQ1UcQuqwfZlCN8fXLVkViiCopkXXv6PJh0uwVOncTm0HOddH6d98lw8b23MKQ8eRV+MD0Nyhe4ol0sWTeQvRhuGbOnA00JbYwYxpsw/cD8fv1yEKAOwrb3VW9n4gvI/0vCV5/RPJXdgVe+y3JTe0/EBWeefwdhTkvhANR8k42yStma5ianfnWr47j4s/XAkzRvjRAcD5NNgxBd+7ooM2Kp7PIr+csyHNl3jurWnKTkE7f9nrctg6scAY9e2ZdrF62JiRjuZikKRKPEHZn1EgX4ijOPIB2kc2jsMmDfq8T7RAcsGGYfa8xU4pcxV2CSaVuD0PREuZuWb62FvVI1gffqrB7r/QhGkgu8NtjG5n23foW3cBXJx+sPqI/CXQMkoNTUdZYNkXZ49bDc+2WZrJUG/xOkrQyn3idlp1OotexUI89woTIZqdjkHJS16rLfFijMwnE5eM+aJRs/VBYuizgHrconxdE0jNc4lSdO31CZLh2eEMqwS7VhwJ67dKawinmvuRwbsdnzGlfc5pSDY2TddphcqKftnuaNWy3P24DSjEtllNOtgG0uTVLKLAD3Hnf6DrRpSkcrMI2xx/fo8QWUPwN/NaRCIMn4zg2y1ySykkeUokcJQR/oo4fJuE1KecxhGKQU3CJFzfk+CVAQVgprP62zAKInNF/AukR70ajmx39EfKuefEm0gik7K0bSZTamn3crHsMugBGW5EP69HwSD6Lb3dW/COlwelefNhZH5+OSvrH0Mj6/KN0Xd6j2FsBxcKhurJRsW2DXLCHGb7dFZbiM855TaiOa4fEvcLkqiJF1Yc2SVX1IeMWGZ9l9A6NVar35+Pl8Kstb2WPwPsbUzYqIChm4l63MR+SgB+yigk18svJ140"><defs><style type="text/css">ul { margin-top: 0px; margin-bottom: 10px; }&#xa;ol { margin-top: 0px; margin-bottom: 10px; }&#xa;.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { margin-bottom: .5rem; font-weight: 500; line-height: 1.2; }&#xa;h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: .5rem; }&#xa;.h1, h1 { font-size: 2.5rem; }&#xa;h2 { font-size: 1.5em; font-weight: bold; }&#xa;h3 { font-size: 1.17em; font-weight: bold; }&#xa;.h4, h4 { font-size: 1.5rem; }&#xa;.h5, h5 { font-size: 1.25rem; }&#xa;.h6, h6 { font-size: 1rem; }&#xa;p { margin-top: 0; margin-bottom: 1rem; }&#xa;a { color: #007bff; }&#xa;ul { margin-top: 0px; margin-bottom: 10px; }&#xa;ol { margin-top: 0px; margin-bottom: 10px; }&#xa;.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { margin-bottom: .5rem; font-weight: 500; line-height: 1.2; }&#xa;h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: .5rem; }&#xa;.h1, h1 { font-size: 2.5rem; }&#xa;h2 { font-size: 1.5em; font-weight: bold; }&#xa;h3 { font-size: 1.17em; font-weight: bold; }&#xa;.h4, h4 { font-size: 1.5rem; }&#xa;.h5, h5 { font-size: 1.25rem; }&#xa;.h6, h6 { font-size: 1rem; }&#xa;p { margin-top: 0; margin-bottom: 1rem; }&#xa;a { color: #007bff; }&#xa;ul { margin-top: 0px; margin-bottom: 10px; }&#xa;ol { margin-top: 0px; margin-bottom: 10px; }&#xa;.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { margin-bottom: .5rem; font-weight: 500; line-height: 1.2; }&#xa;h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: .5rem; }&#xa;.h1, h1 { font-size: 2.5rem; }&#xa;h2 { font-size: 1.5em; font-weight: bold; }&#xa;h3 { font-size: 1.17em; font-weight: bold; }&#xa;.h4, h4 { font-size: 1.5rem; }&#xa;.h5, h5 { font-size: 1.25rem; }&#xa;.h6, h6 { font-size: 1rem; }&#xa;p { margin-top: 0; margin-bottom: 1rem; }&#xa;a { color: #007bff; }&#xa;</style><style type="text/css">@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap);&#xa;@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap);&#xa;@import url(https://fonts.googleapis.com/css2?family=-apple-system,+BlinkMacSystemFont,+Segoe+UI,+Roboto,+Helvetica+Neue,+Arial,+Noto+Sans,+sans-serif,+Apple+Color+Emoji,+Segoe+UI+Emoji,+Segoe+UI+Symbol,+Noto+Color+Emoji:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap);&#xa;@import url(https://fonts.googleapis.com/css2?family=-apple-system,BlinkMacSystemFont,Segoe+UI,Roboto,Helvetica+Neue,Arial,Noto+Sans,sans-serif,Apple+Color+Emoji,Segoe+UI+Emoji,Segoe+UI+Symbol,Noto+Color+Emoji:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap);&#xa;</style></defs><g><g shape-node=""><path cell-id="3wXI9LbIplzqWNrjtrVz-9" d="M 840 163 L 840 153 L 769 153 L 769 169 L 734 169" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><path cell-id="3wXI9LbIplzqWNrjtrVz-10" d="M 840 235 L 840 244.8 L 769 244.8 L 769 229 L 734 229" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><ellipse cell-id="QQv-EcaRPVJNOaY1T0K8-44" cx="840.34" cy="198.93" rx="35.92" ry="35.92" fill="#ffffff" stroke="#000000" pointer-events="all"/><path cell-id="QQv-EcaRPVJNOaY1T0K8-44" d="M 836.75 169.6 L 843.93 169.6 M 840.34 166.01 L 840.34 173.19 M 836.75 228.26 L 843.93 228.26" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/></g><g shape-node=""><path cell-id="3wXI9LbIplzqWNrjtrVz-17" d="M 512 120 L 512 136.9 L 674 136.9 L 674 164" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><g cell-id="TJjF060BRnTcxZF5mInm-13" transform="translate(-0.5 -0.5)"><switch cell-id="TJjF060BRnTcxZF5mInm-13"><foreignObject cell-id="TJjF060BRnTcxZF5mInm-13" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 154px; margin-left: 518px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 14px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; background-color: #ffffff; white-space: nowrap; "><div ani="">RF OUT</div></div></div></div></foreignObject><svg width="100%" height="100%"><defs><path id="pvKjNMGBkEn4ZwMZ" d="M492.6166687011719,160.3000061035156 h51.76666259765625"/></defs><text fill="rgb(0, 0, 0)" font-size="14px" font-family="&quot;Helvetica&quot;, &quot;VP Default&quot;" font-weight="400"><textPath xlink:href="#pvKjNMGBkEn4ZwMZ" startOffset="50%" text-anchor="middle"><tspan xml:space="preserve">RF OUT</tspan></textPath></text></svg></switch></g></g><g shape-node=""><rect cell-id="bB8dqP7FYS2GWR04Ka5Q-3" x="422.42" y="60" width="120" height="59.86" fill="#ffffff" stroke="#000000" pointer-events="all"/></g><g shape-node=""><g cell-id="bB8dqP7FYS2GWR04Ka5Q-3" transform="translate(-0.5 -0.5)"><switch cell-id="bB8dqP7FYS2GWR04Ka5Q-3"><foreignObject cell-id="bB8dqP7FYS2GWR04Ka5Q-3" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 90px; margin-left: 423px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 20px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; "><div ani="">SWITCH</div></div></div></div></foreignObject><svg width="100%" height="100%"><defs><path id="5vKjNMGBkEn4ZwMa" d="M443.76666259765625,99 h76.4666748046875"/></defs><text fill="rgb(0, 0, 0)" font-size="20px" font-family="&quot;Helvetica&quot;, &quot;VP Default&quot;" font-weight="400"><textPath xlink:href="#5vKjNMGBkEn4ZwMa" startOffset="50%" text-anchor="middle"><tspan xml:space="preserve">SWITCH</tspan></textPath></text></svg></switch></g></g><g shape-node=""><image cell-id="bB8dqP7FYS2GWR04Ka5Q-4" x="918.92" y="198.5" width="80.13" height="108.59" xlink:href="https://cdn-v17-0.visual-paradigm.com/diagrams/img/lib/allied_telesis/computer_and_terminals/Personal_Computer.svg"/></g><g shape-node=""><path cell-id="3wXI9LbIplzqWNrjtrVz-15" d="M 625 30 L 452 30 L 452 60" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><g cell-id="3wXI9LbIplzqWNrjtrVz-15" transform="translate(-0.5 -0.5)"><switch cell-id="3wXI9LbIplzqWNrjtrVz-15"><foreignObject cell-id="3wXI9LbIplzqWNrjtrVz-15" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 11px; margin-left: 452px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 14px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; "><div ani=""><font style="font-size: 14px">RF IN</font></div></div></div></div></foreignObject><svg width="100%" height="100%"><defs><path id="lvKjNMGBkEn4ZwMb" d="M434.316650390625,18.2 h36.383331298828125"/></defs><text fill="rgb(0, 0, 0)" font-size="14px" font-family="&quot;Helvetica&quot;, &quot;VP Default&quot;" font-weight="400"><textPath xlink:href="#lvKjNMGBkEn4ZwMb" startOffset="50%" text-anchor="middle"><tspan xml:space="preserve">RF IN</tspan></textPath></text></svg></switch></g></g><g shape-node=""><path cell-id="xV_tRoPG8BEpDhfjFHFV-20" d="M 745 30 L 959.5 30 L 959.5 199" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><rect cell-id="bB8dqP7FYS2GWR04Ka5Q-9" x="624.54" y="0" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="all"/></g><g shape-node=""><g cell-id="bB8dqP7FYS2GWR04Ka5Q-9" transform="translate(-0.5 -0.5)"><switch cell-id="bB8dqP7FYS2GWR04Ka5Q-9"><foreignObject cell-id="bB8dqP7FYS2GWR04Ka5Q-9" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 30px; margin-left: 626px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 20px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; "><div ani=""><font color="#000000">MW</font></div></div></div></div></foreignObject><svg width="100%" height="100%"><defs><path id="1vKjNMGBkEn4ZwMc" d="M667.3333129882812,40.5 h35.31666564941406"/></defs><text fill="rgb(0, 0, 0)" font-size="20px" font-family="&quot;Helvetica&quot;, &quot;VP Default&quot;" font-weight="400"><textPath xlink:href="#1vKjNMGBkEn4ZwMc" startOffset="50%" text-anchor="middle"><tspan xml:space="preserve">MW</tspan></textPath></text></svg></switch></g></g><g shape-node=""><path cell-id="xV_tRoPG8BEpDhfjFHFV-8" d="M 625 376 L 482 376 L 482 120" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><g cell-id="xV_tRoPG8BEpDhfjFHFV-8" transform="translate(-0.5 -0.5)"><switch cell-id="xV_tRoPG8BEpDhfjFHFV-8"><foreignObject cell-id="xV_tRoPG8BEpDhfjFHFV-8" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 154px; margin-left: 460px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 14px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; "><div ani=""><font style="font-size: 14px">TTL</font></div></div></div></div></foreignObject><svg width="100%" height="100%"><defs><path id="NvKjNMGBkEn4ZwMd" d="M448.01666259765625,161.2 h24.9666748046875"/></defs><text fill="rgb(0, 0, 0)" font-size="14px" font-family="&quot;Helvetica&quot;, &quot;VP Default&quot;" font-weight="400"><textPath xlink:href="#NvKjNMGBkEn4ZwMd" startOffset="50%" text-anchor="middle"><tspan xml:space="preserve">TTL</tspan></textPath></text></svg></switch></g></g><g shape-node=""><path cell-id="xV_tRoPG8BEpDhfjFHFV-18" d="M 685 346 L 685 326.8 L 958 326.8 L 958 305" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><path cell-id="TJjF060BRnTcxZF5mInm-2" d="M 655 406 L 655 508" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><path cell-id="TJjF060BRnTcxZF5mInm-3" d="M 685 406 L 685 508" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><path cell-id="BDP-dl5oN6H2CXiR1R3_-4" d="M 655 346 L 655 325 L 227 325 L 227 371" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><rect cell-id="3wXI9LbIplzqWNrjtrVz-3" x="624.54" y="346" width="120" height="59.86" fill="#ffffff" stroke="#000000" pointer-events="all"/></g><g shape-node=""><g cell-id="3wXI9LbIplzqWNrjtrVz-3" transform="translate(-0.5 -0.5)"><switch cell-id="3wXI9LbIplzqWNrjtrVz-3"><foreignObject cell-id="3wXI9LbIplzqWNrjtrVz-3" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 376px; margin-left: 626px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 20px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; "><div ani="">PULSE STREAMER</div></div></div></div></foreignObject><svg width="100%" height="100%"><defs><path id="dvKjNMGBkEn4ZwMe" d="M626,373 h118 M626,397 h118"/></defs><text fill="rgb(0, 0, 0)" font-size="20px" font-family="&quot;Helvetica&quot;, &quot;VP Default&quot;" font-weight="400"><textPath xlink:href="#dvKjNMGBkEn4ZwMe"><tspan xml:space="preserve">PULSE STREAMER</tspan></textPath></text></svg></switch></g></g><g shape-node=""><path cell-id="xV_tRoPG8BEpDhfjFHFV-19" d="M 745 538 L 998 538 L 998 297" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><rect cell-id="3wXI9LbIplzqWNrjtrVz-4" x="624.54" y="508" width="120" height="59.86" fill="#ffffff" stroke="#000000" pointer-events="all"/></g><g shape-node=""><g cell-id="3wXI9LbIplzqWNrjtrVz-4" transform="translate(-0.5 -0.5)"><switch cell-id="3wXI9LbIplzqWNrjtrVz-4"><foreignObject cell-id="3wXI9LbIplzqWNrjtrVz-4" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 538px; margin-left: 626px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 20px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; "><div ani="">TIME TAGGER</div></div></div></div></foreignObject><svg width="100%" height="100%"><defs><path id="9vKjNMGBkEn4ZwMf" d="M626,535 h118 M626,559 h118"/></defs><text fill="rgb(0, 0, 0)" font-size="20px" font-family="&quot;Helvetica&quot;, &quot;VP Default&quot;" font-weight="400"><textPath xlink:href="#9vKjNMGBkEn4ZwMf"><tspan xml:space="preserve">TIME TAGGER</tspan></textPath></text></svg></switch></g></g><g shape-node=""><path cell-id="3wXI9LbIplzqWNrjtrVz-8" d="M 640.54 153.93 L 733.54 198.93 L 640.54 243.93 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" transform="rotate(-180,684.54,198.93)" pointer-events="all"/><path cell-id="3wXI9LbIplzqWNrjtrVz-8" d="M 635.54 168.93 L 640.54 168.93 M 635.54 228.93 L 640.54 228.93 M 695.54 163.93 L 695.54 180.43 M 695.54 217.43 L 695.54 233.93 M 643.54 168.93 L 649.54 168.93 M 643.54 228.93 L 649.54 228.93 M 646.54 225.93 L 646.54 231.93" fill="none" stroke="#000000" stroke-miterlimit="10" transform="rotate(-180,684.54,198.93)" pointer-events="all"/></g><g shape-node=""><path cell-id="xV_tRoPG8BEpDhfjFHFV-2" d="M 310 54 L 310 44 L 512 44 L 512 60" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><path cell-id="xV_tRoPG8BEpDhfjFHFV-4" d="M 310 126 L 310 135.8 L 452 135.8 L 452 120" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><ellipse cell-id="3wXI9LbIplzqWNrjtrVz-23" cx="310.34" cy="89.93" rx="35.92" ry="35.92" fill="#ffffff" stroke="#000000" pointer-events="all"/><path cell-id="3wXI9LbIplzqWNrjtrVz-23" d="M 306.75 60.6 L 313.93 60.6 M 310.34 57.01 L 310.34 64.19 M 306.75 119.26 L 313.93 119.26" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/></g><g shape-node=""><rect cell-id="TJjF060BRnTcxZF5mInm-8" x="672.42" y="182.93" width="47" height="32" fill="none" stroke="none" pointer-events="all"/></g><g shape-node=""><g cell-id="TJjF060BRnTcxZF5mInm-8" transform="translate(-0.5 -0.5)"><switch cell-id="TJjF060BRnTcxZF5mInm-8"><foreignObject cell-id="TJjF060BRnTcxZF5mInm-8" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 45px; height: 1px; padding-top: 190px; margin-left: 673px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 20px; font-family: &quot;Open Sans&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; "><div ani="">AMP</div></div></div></div></foreignObject><svg width="100%" height="100%"><defs><path id="TvKjNMGBkEn4ZwMg" d="M674.1666870117188,211 h42.666656494140625"/></defs><text fill="rgb(0, 0, 0)" font-size="20px" font-family="&quot;Open Sans&quot;, &quot;VP Default&quot;" font-weight="400"><textPath xlink:href="#TvKjNMGBkEn4ZwMg" startOffset="50%" text-anchor="middle"><tspan xml:space="preserve">AMP</tspan></textPath></text></svg></switch></g></g><g shape-node=""><rect cell-id="TJjF060BRnTcxZF5mInm-15" x="635.54" y="405.86" width="12" height="25" fill="none" stroke="none" pointer-events="all"/></g><g shape-node=""><g cell-id="TJjF060BRnTcxZF5mInm-15" transform="translate(-0.5 -0.5)"><switch cell-id="TJjF060BRnTcxZF5mInm-15"><foreignObject cell-id="TJjF060BRnTcxZF5mInm-15" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 10px; height: 1px; padding-top: 413px; margin-left: 637px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 14px; font-family: &quot;-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; "><div ani=""><font style="font-size: 14px">2</font></div></div></div></div></foreignObject><svg width="100%" height="100%"><defs><path id="zvKjNMGBkEn4ZwMh" d="M638.11669921875,425.09999389648436 h7.76666259765625"/></defs><text fill="rgb(0, 0, 0)" font-size="14px" font-family="&quot;-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji&quot;, &quot;VP Default&quot;" font-weight="400"><textPath xlink:href="#zvKjNMGBkEn4ZwMh" startOffset="50%" text-anchor="middle"><tspan xml:space="preserve">2</tspan></textPath></text></svg></switch></g></g><g shape-node=""><rect cell-id="TJjF060BRnTcxZF5mInm-16" x="635.54" y="481" width="12" height="25" fill="none" stroke="none" pointer-events="all"/></g><g shape-node=""><g cell-id="TJjF060BRnTcxZF5mInm-16" transform="translate(-0.5 -0.5)"><switch cell-id="TJjF060BRnTcxZF5mInm-16"><foreignObject cell-id="TJjF060BRnTcxZF5mInm-16" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 10px; height: 1px; padding-top: 488px; margin-left: 637px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 14px; font-family: &quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; "><div ani="">3</div></div></div></div></foreignObject><svg width="100%" height="100%"><defs><path id="LvKjNMGBkEn4ZwMi" d="M638.11669921875,502.7 h7.76666259765625"/></defs><text fill="rgb(0, 0, 0)" font-size="14px" font-family="&quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;" font-weight="400"><textPath xlink:href="#LvKjNMGBkEn4ZwMi" startOffset="50%" text-anchor="middle"><tspan xml:space="preserve">3</tspan></textPath></text></svg></switch></g></g><g shape-node=""><rect cell-id="TJjF060BRnTcxZF5mInm-17" x="689.92" y="481" width="12" height="25" fill="none" stroke="none" pointer-events="all"/></g><g shape-node=""><g cell-id="TJjF060BRnTcxZF5mInm-17" transform="translate(-0.5 -0.5)"><switch cell-id="TJjF060BRnTcxZF5mInm-17"><foreignObject cell-id="TJjF060BRnTcxZF5mInm-17" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 10px; height: 1px; padding-top: 488px; margin-left: 691px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 14px; font-family: &quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; "><div ani="">4</div></div></div></div></foreignObject><svg width="100%" height="100%"><defs><path id="rvKjNMGBkEn4ZwMj" d="M692.11669921875,502.7 h7.76666259765625"/></defs><text fill="rgb(0, 0, 0)" font-size="14px" font-family="&quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;" font-weight="400"><textPath xlink:href="#rvKjNMGBkEn4ZwMj" startOffset="50%" text-anchor="middle"><tspan xml:space="preserve">4</tspan></textPath></text></svg></switch></g></g><g shape-node=""><rect cell-id="TJjF060BRnTcxZF5mInm-19" x="689.92" y="405.86" width="12" height="25" fill="none" stroke="none" pointer-events="all"/></g><g shape-node=""><g cell-id="TJjF060BRnTcxZF5mInm-19" transform="translate(-0.5 -0.5)"><switch cell-id="TJjF060BRnTcxZF5mInm-19"><foreignObject cell-id="TJjF060BRnTcxZF5mInm-19" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 10px; height: 1px; padding-top: 413px; margin-left: 691px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 14px; font-family: &quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; "><div ani="">3</div></div></div></div></foreignObject><svg width="100%" height="100%"><defs><path id="bvKjNMGBkEn4ZwMk" d="M692.11669921875,427.7 h7.76666259765625"/></defs><text fill="rgb(0, 0, 0)" font-size="14px" font-family="&quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;" font-weight="400"><textPath xlink:href="#bvKjNMGBkEn4ZwMk" startOffset="50%" text-anchor="middle"><tspan xml:space="preserve">3</tspan></textPath></text></svg></switch></g></g><g shape-node=""><rect cell-id="TJjF060BRnTcxZF5mInm-20" x="609.42" y="346" width="12" height="25" fill="none" stroke="none" pointer-events="all"/></g><g shape-node=""><g cell-id="TJjF060BRnTcxZF5mInm-20" transform="translate(-0.5 -0.5)"><switch cell-id="TJjF060BRnTcxZF5mInm-20"><foreignObject cell-id="TJjF060BRnTcxZF5mInm-20" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 10px; height: 1px; padding-top: 353px; margin-left: 610px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 14px; font-family: &quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; "><div ani="">1</div></div></div></div></foreignObject><svg width="100%" height="100%"><defs><path id="7vKjNMGBkEn4ZwMl" d="M611.11669921875,367.7 h7.76666259765625"/></defs><text fill="rgb(0, 0, 0)" font-size="14px" font-family="&quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;" font-weight="400"><textPath xlink:href="#7vKjNMGBkEn4ZwMl" startOffset="50%" text-anchor="middle"><tspan xml:space="preserve">1</tspan></textPath></text></svg></switch></g></g><g shape-node=""><rect cell-id="TJjF060BRnTcxZF5mInm-22" x="635.54" y="321" width="12" height="25" fill="none" stroke="none" pointer-events="all"/></g><g shape-node=""><g cell-id="TJjF060BRnTcxZF5mInm-22" transform="translate(-0.5 -0.5)"><switch cell-id="TJjF060BRnTcxZF5mInm-22"><foreignObject cell-id="TJjF060BRnTcxZF5mInm-22" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 10px; height: 1px; padding-top: 328px; margin-left: 637px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 14px; font-family: &quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; "><div ani="">0</div></div></div></div></foreignObject><svg width="100%" height="100%"><defs><path id="HvKjNMGBkEn4ZwMm" d="M638.11669921875,342.7 h7.76666259765625"/></defs><text fill="rgb(0, 0, 0)" font-size="14px" font-family="&quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;" font-weight="400"><textPath xlink:href="#HvKjNMGBkEn4ZwMm" startOffset="50%" text-anchor="middle"><tspan xml:space="preserve">0</tspan></textPath></text></svg></switch></g></g><g shape-node=""><rect cell-id="TJjF060BRnTcxZF5mInm-23" x="791.26" y="296" width="85" height="25" fill="none" stroke="none" pointer-events="all"/></g><g shape-node=""><g cell-id="TJjF060BRnTcxZF5mInm-23" transform="translate(-0.5 -0.5)"><switch cell-id="TJjF060BRnTcxZF5mInm-23"><foreignObject cell-id="TJjF060BRnTcxZF5mInm-23" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 83px; height: 1px; padding-top: 303px; margin-left: 792px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 14px; font-family: &quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; "><div ani="">ETHERNET</div></div></div></div></foreignObject><svg width="100%" height="100%"><defs><path id="XvKjNMGBkEn4ZwMn" d="M798.1666870117188,317.7 h70.66665649414062"/></defs><text fill="rgb(0, 0, 0)" font-size="14px" font-family="&quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;" font-weight="400"><textPath xlink:href="#XvKjNMGBkEn4ZwMn" startOffset="50%" text-anchor="middle"><tspan xml:space="preserve">ETHERNET</tspan></textPath></text></svg></switch></g></g><g shape-node=""><rect cell-id="TJjF060BRnTcxZF5mInm-24" x="834.42" y="542.86" width="85" height="25" fill="none" stroke="none" pointer-events="all"/></g><g shape-node=""><g cell-id="TJjF060BRnTcxZF5mInm-24" transform="translate(-0.5 -0.5)"><switch cell-id="TJjF060BRnTcxZF5mInm-24"><foreignObject cell-id="TJjF060BRnTcxZF5mInm-24" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 83px; height: 1px; padding-top: 550px; margin-left: 835px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 14px; font-family: &quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; "><div ani="">ETHERNET</div></div></div></div></foreignObject><svg width="100%" height="100%"><defs><path id="3vKjNMGBkEn4ZwMo" d="M841.1666870117188,564.7 h70.66665649414062"/></defs><text fill="rgb(0, 0, 0)" font-size="14px" font-family="&quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;" font-weight="400"><textPath xlink:href="#3vKjNMGBkEn4ZwMo" startOffset="50%" text-anchor="middle"><tspan xml:space="preserve">ETHERNET</tspan></textPath></text></svg></switch></g></g><g shape-node=""><rect cell-id="TJjF060BRnTcxZF5mInm-27" x="791.26" y="0" width="85" height="25" fill="none" stroke="none" pointer-events="all"/></g><g shape-node=""><g cell-id="TJjF060BRnTcxZF5mInm-27" transform="translate(-0.5 -0.5)"><switch cell-id="TJjF060BRnTcxZF5mInm-27"><foreignObject cell-id="TJjF060BRnTcxZF5mInm-27" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 83px; height: 1px; padding-top: 7px; margin-left: 792px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 14px; font-family: &quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; "><div ani="">USB</div></div></div></div></foreignObject><svg width="100%" height="100%"><defs><path id="PvKjNMGBkEn4ZwMp" d="M819.75,21.7 h27.48333740234375"/></defs><text fill="rgb(0, 0, 0)" font-size="14px" font-family="&quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;" font-weight="400"><textPath xlink:href="#PvKjNMGBkEn4ZwMp" startOffset="50%" text-anchor="middle"><tspan xml:space="preserve">USB</tspan></textPath></text></svg></switch></g></g><g shape-node=""><rect cell-id="TJjF060BRnTcxZF5mInm-29" x="509.42" y="29.01" width="33" height="25" fill="none" stroke="none" pointer-events="all"/></g><g shape-node=""><g cell-id="TJjF060BRnTcxZF5mInm-29" transform="translate(-0.5 -0.5)"><switch cell-id="TJjF060BRnTcxZF5mInm-29"><foreignObject cell-id="TJjF060BRnTcxZF5mInm-29" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 31px; height: 1px; padding-top: 36px; margin-left: 510px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 14px; font-family: &quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; "><div ani="">+5V</div></div></div></div></foreignObject><svg width="100%" height="100%"><defs><path id="vvKjNMGBkEn4ZwMq" d="M513.7000122070312,50.7 h23.583343505859375"/></defs><text fill="rgb(0, 0, 0)" font-size="14px" font-family="&quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;" font-weight="400"><textPath xlink:href="#vvKjNMGBkEn4ZwMq" startOffset="50%" text-anchor="middle"><tspan xml:space="preserve">+5V</tspan></textPath></text></svg></switch></g></g><g shape-node=""><rect cell-id="TJjF060BRnTcxZF5mInm-30" x="389.42" y="128.93" width="33" height="25" fill="none" stroke="none" pointer-events="all"/></g><g shape-node=""><g cell-id="TJjF060BRnTcxZF5mInm-30" transform="translate(-0.5 -0.5)"><switch cell-id="TJjF060BRnTcxZF5mInm-30"><foreignObject cell-id="TJjF060BRnTcxZF5mInm-30" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 31px; height: 1px; padding-top: 136px; margin-left: 390px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 14px; font-family: &quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; "><div ani="">-5V</div></div></div></div></foreignObject><svg width="100%" height="100%"><defs><path id="fvKjNMGBkEn4ZwMr" d="M395.16668701171875,150.7 h20.666656494140625"/></defs><text fill="rgb(0, 0, 0)" font-size="14px" font-family="&quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;" font-weight="400"><textPath xlink:href="#fvKjNMGBkEn4ZwMr" startOffset="50%" text-anchor="middle"><tspan xml:space="preserve">-5V</tspan></textPath></text></svg></switch></g></g><g shape-node=""><rect cell-id="TJjF060BRnTcxZF5mInm-32" x="32" y="346" width="390.42" height="254" fill="#ffffff" stroke="#000000" pointer-events="all"/></g><g shape-node=""><rect cell-id="BDP-dl5oN6H2CXiR1R3_-1" x="238.34" y="501" width="144" height="32" fill="none" stroke="none" pointer-events="all"/></g><g shape-node=""><g cell-id="BDP-dl5oN6H2CXiR1R3_-1" transform="translate(-0.5 -0.5)"><switch cell-id="BDP-dl5oN6H2CXiR1R3_-1"><foreignObject cell-id="BDP-dl5oN6H2CXiR1R3_-1" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 142px; height: 1px; padding-top: 508px; margin-left: 239px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 20px; font-family: &quot;Open Sans&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; "><div ani="">CONFOCAL MICORSCOP</div></div></div></div></foreignObject><svg width="100%" height="100%"><defs><path id="_vKjNMGBkEn4ZwMs" d="M239,529 h142 M239,553 h142"/></defs><text fill="rgb(0, 0, 0)" font-size="20px" font-family="&quot;Open Sans&quot;, &quot;VP Default&quot;" font-weight="400"><textPath xlink:href="#_vKjNMGBkEn4ZwMs"><tspan xml:space="preserve">CONFOCAL MICORSCOP</tspan></textPath></text></svg></switch></g></g><g shape-node=""><rect cell-id="BDP-dl5oN6H2CXiR1R3_-2" x="167.21" y="371" width="120" height="59.86" fill="#ffffff" stroke="#000000" pointer-events="all"/></g><g shape-node=""><g cell-id="BDP-dl5oN6H2CXiR1R3_-2" transform="translate(-0.5 -0.5)"><switch cell-id="BDP-dl5oN6H2CXiR1R3_-2"><foreignObject cell-id="BDP-dl5oN6H2CXiR1R3_-2" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 401px; margin-left: 168px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 20px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; "><div ani="">LASER</div></div></div></div></foreignObject><svg width="100%" height="100%"><defs><path id="AfKjNMGBkEn4ZwMt" d="M194.28334045410156,410 h65.41665649414062"/></defs><text fill="rgb(0, 0, 0)" font-size="20px" font-family="&quot;Helvetica&quot;, &quot;VP Default&quot;" font-weight="400"><textPath xlink:href="#AfKjNMGBkEn4ZwMt" startOffset="50%" text-anchor="middle"><tspan xml:space="preserve">LASER</tspan></textPath></text></svg></switch></g></g><g shape-node=""><path cell-id="BDP-dl5oN6H2CXiR1R3_-5" d="M 47 473 L 0 473 L 0 284 L 674 284 L 674 234" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><rect cell-id="BDP-dl5oN6H2CXiR1R3_-3" x="47.21" y="443.07" width="120" height="59.86" fill="#ffffff" stroke="#000000" pointer-events="all"/></g><g shape-node=""><g cell-id="BDP-dl5oN6H2CXiR1R3_-3" transform="translate(-0.5 -0.5)"><switch cell-id="BDP-dl5oN6H2CXiR1R3_-3"><foreignObject cell-id="BDP-dl5oN6H2CXiR1R3_-3" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 473px; margin-left: 48px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 20px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; "><div ani="">ANTENNA</div></div></div></div></foreignObject><svg width="100%" height="100%"><defs><path id="gfKjNMGBkEn4ZwMu" d="M59.616668701171875,482 h94.75"/></defs><text fill="rgb(0, 0, 0)" font-size="20px" font-family="&quot;Helvetica&quot;, &quot;VP Default&quot;" font-weight="400"><textPath xlink:href="#gfKjNMGBkEn4ZwMu" startOffset="50%" text-anchor="middle"><tspan xml:space="preserve">ANTENNA</tspan></textPath></text></svg></switch></g></g><g shape-node=""><path cell-id="lmwvJ-e4FMnLol4LgREc-4" d="M 407 473 L 780 473" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><rect cell-id="lmwvJ-e4FMnLol4LgREc-1" x="287.21" y="443.07" width="120" height="59.86" fill="#ffffff" stroke="#000000" pointer-events="all"/></g><g shape-node=""><g cell-id="lmwvJ-e4FMnLol4LgREc-1" transform="translate(-0.5 -0.5)"><switch cell-id="lmwvJ-e4FMnLol4LgREc-1"><foreignObject cell-id="lmwvJ-e4FMnLol4LgREc-1" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 473px; margin-left: 288px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 20px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; "><div ani="">OPTIC FIBER</div></div></div></div></foreignObject><svg width="100%" height="100%"><defs><path id="wfKjNMGBkEn4ZwMv" d="M288,470 h118 M288,494 h118"/></defs><text fill="rgb(0, 0, 0)" font-size="20px" font-family="&quot;Helvetica&quot;, &quot;VP Default&quot;" font-weight="400"><textPath xlink:href="#wfKjNMGBkEn4ZwMv"><tspan xml:space="preserve">OPTIC FIBER</tspan></textPath></text></svg></switch></g></g><g shape-node=""><path cell-id="lmwvJ-e4FMnLol4LgREc-6" d="M 900 473 L 978 473 L 978 312" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><path cell-id="lmwvJ-e4FMnLol4LgREc-7" d="M 810 503 L 809 503 L 809 606 L 655 606 L 655 568" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><rect cell-id="lmwvJ-e4FMnLol4LgREc-2" x="780" y="443.07" width="120" height="59.86" fill="#ffffff" stroke="#000000" pointer-events="all"/></g><g shape-node=""><g cell-id="lmwvJ-e4FMnLol4LgREc-2" transform="translate(-0.5 -0.5)"><switch cell-id="lmwvJ-e4FMnLol4LgREc-2"><foreignObject cell-id="lmwvJ-e4FMnLol4LgREc-2" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 473px; margin-left: 781px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 20px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; "><div ani="">APD</div></div></div></div></foreignObject><svg width="100%" height="100%"><defs><path id="IfKjNMGBkEn4ZwMw" d="M819.7666625976562,482 h40.44999694824219"/></defs><text fill="rgb(0, 0, 0)" font-size="20px" font-family="&quot;Helvetica&quot;, &quot;VP Default&quot;" font-weight="400"><textPath xlink:href="#IfKjNMGBkEn4ZwMw" startOffset="50%" text-anchor="middle"><tspan xml:space="preserve">APD</tspan></textPath></text></svg></switch></g></g><g shape-node=""><rect cell-id="lmwvJ-e4FMnLol4LgREc-8" x="635.54" y="567.86" width="12" height="25" fill="none" stroke="none" pointer-events="all"/></g><g shape-node=""><g cell-id="lmwvJ-e4FMnLol4LgREc-8" transform="translate(-0.5 -0.5)"><switch cell-id="lmwvJ-e4FMnLol4LgREc-8"><foreignObject cell-id="lmwvJ-e4FMnLol4LgREc-8" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 10px; height: 1px; padding-top: 575px; margin-left: 637px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 14px; font-family: &quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; "><div ani="">1</div></div></div></div></foreignObject><svg width="100%" height="100%"><defs><path id="ofKjNMGBkEn4ZwMx" d="M638.11669921875,589.7 h7.76666259765625"/></defs><text fill="rgb(0, 0, 0)" font-size="14px" font-family="&quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;" font-weight="400"><textPath xlink:href="#ofKjNMGBkEn4ZwMx" startOffset="50%" text-anchor="middle"><tspan xml:space="preserve">1</tspan></textPath></text></svg></switch></g></g><g shape-node=""><path cell-id="3wXI9LbIplzqWNrjtrVz-9" d="M 840 163 L 840 153 L 769 153 L 769 169 L 734 169" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><path cell-id="3wXI9LbIplzqWNrjtrVz-10" d="M 840 235 L 840 244.8 L 769 244.8 L 769 229 L 734 229" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><path cell-id="3wXI9LbIplzqWNrjtrVz-17" d="M 512 120 L 512 136.9 L 674 136.9 L 674 164" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><g cell-id="TJjF060BRnTcxZF5mInm-13" transform="translate(-0.5 -0.5)"><switch cell-id="TJjF060BRnTcxZF5mInm-13"><foreignObject cell-id="TJjF060BRnTcxZF5mInm-13" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 154px; margin-left: 518px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 14px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; background-color: #ffffff; white-space: nowrap; "><div ani="">RF OUT</div></div></div></div></foreignObject><svg width="100%" height="100%"><defs><path id="4fKjNMGBkEn4ZwMy" d="M492.6166687011719,160.3000061035156 h51.76666259765625"/></defs><text fill="rgb(0, 0, 0)" font-size="14px" font-family="&quot;Helvetica&quot;, &quot;VP Default&quot;" font-weight="400"><textPath xlink:href="#4fKjNMGBkEn4ZwMy" startOffset="50%" text-anchor="middle"><tspan xml:space="preserve">RF OUT</tspan></textPath></text></svg></switch></g></g><g shape-node=""><path cell-id="3wXI9LbIplzqWNrjtrVz-15" d="M 625 30 L 452 30 L 452 60" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><g cell-id="3wXI9LbIplzqWNrjtrVz-15" transform="translate(-0.5 -0.5)"><switch cell-id="3wXI9LbIplzqWNrjtrVz-15"><foreignObject cell-id="3wXI9LbIplzqWNrjtrVz-15" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 11px; margin-left: 452px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 14px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; "><div ani=""><font style="font-size: 14px">RF IN</font></div></div></div></div></foreignObject><svg width="100%" height="100%"><defs><path id="EfKjNMGBkEn4ZwMz" d="M434.316650390625,18.2 h36.383331298828125"/></defs><text fill="rgb(0, 0, 0)" font-size="14px" font-family="&quot;Helvetica&quot;, &quot;VP Default&quot;" font-weight="400"><textPath xlink:href="#EfKjNMGBkEn4ZwMz" startOffset="50%" text-anchor="middle"><tspan xml:space="preserve">RF IN</tspan></textPath></text></svg></switch></g></g><g shape-node=""><path cell-id="xV_tRoPG8BEpDhfjFHFV-20" d="M 745 30 L 959.5 30 L 959.5 199" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><path cell-id="xV_tRoPG8BEpDhfjFHFV-8" d="M 625 376 L 482 376 L 482 120" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><g cell-id="xV_tRoPG8BEpDhfjFHFV-8" transform="translate(-0.5 -0.5)"><switch cell-id="xV_tRoPG8BEpDhfjFHFV-8"><foreignObject cell-id="xV_tRoPG8BEpDhfjFHFV-8" style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 154px; margin-left: 460px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 14px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; "><div ani=""><font style="font-size: 14px">TTL</font></div></div></div></div></foreignObject><svg width="100%" height="100%"><defs><path id="kfKjNMGBkEn4ZwM0" d="M448.01666259765625,161.2 h24.9666748046875"/></defs><text fill="rgb(0, 0, 0)" font-size="14px" font-family="&quot;Helvetica&quot;, &quot;VP Default&quot;" font-weight="400"><textPath xlink:href="#kfKjNMGBkEn4ZwM0" startOffset="50%" text-anchor="middle"><tspan xml:space="preserve">TTL</tspan></textPath></text></svg></switch></g></g><g shape-node=""><path cell-id="xV_tRoPG8BEpDhfjFHFV-18" d="M 685 346 L 685 326.8 L 958 326.8 L 958 305" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><path cell-id="TJjF060BRnTcxZF5mInm-2" d="M 655 406 L 655 508" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><path cell-id="TJjF060BRnTcxZF5mInm-3" d="M 685 406 L 685 508" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><path cell-id="BDP-dl5oN6H2CXiR1R3_-4" d="M 655 346 L 655 325 L 227 325 L 227 371" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><path cell-id="xV_tRoPG8BEpDhfjFHFV-19" d="M 745 538 L 998 538 L 998 297" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><path cell-id="xV_tRoPG8BEpDhfjFHFV-2" d="M 310 54 L 310 44 L 512 44 L 512 60" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><path cell-id="xV_tRoPG8BEpDhfjFHFV-4" d="M 310 126 L 310 135.8 L 452 135.8 L 452 120" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><path cell-id="BDP-dl5oN6H2CXiR1R3_-5" d="M 47 473 L 0 473 L 0 284 L 674 284 L 674 234" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><path cell-id="lmwvJ-e4FMnLol4LgREc-4" d="M 407 473 L 780 473" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><path cell-id="lmwvJ-e4FMnLol4LgREc-6" d="M 900 473 L 978 473 L 978 312" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g><g shape-node=""><path cell-id="lmwvJ-e4FMnLol4LgREc-7" d="M 810 503 L 809 503 L 809 606 L 655 606 L 655 568" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/></g></g><switch><g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/><a transform="translate(0,-5)"><text text-anchor="middle" font-size="10px" x="50%" y="100%"></text></a></switch><g fill="#787878" font-family="Arial,Helvetica" pointer-events="none" font-size="12px"><text pointer-events="none" x="6" y="15">Visual Paradigm Online Free Edition</text></g><g fill="#787878" font-family="Arial,Helvetica" pointer-events="none" text-anchor="end" font-size="12px"><text pointer-events="none" x="995" y="602">Visual Paradigm Online Free Edition</text></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="1006px"
+   height="608px"
+   viewBox="-0.5 -0.5 1006 608"
+   content="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1cYKOvfc"
+   id="svg4792"
+   sodipodi:docname="general_circuit.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <sodipodi:namedview
+     id="namedview4794"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.82474096"
+     inkscape:cx="625.04474"
+     inkscape:cy="378.3006"
+     inkscape:window-width="1906"
+     inkscape:window-height="986"
+     inkscape:window-x="5"
+     inkscape:window-y="39"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g4774" />
+  <defs
+     id="defs4087">
+    <style
+       type="text/css"
+       id="style4083">ul { margin-top: 0px; margin-bottom: 10px; }
+ol { margin-top: 0px; margin-bottom: 10px; }
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { margin-bottom: .5rem; font-weight: 500; line-height: 1.2; }
+h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: .5rem; }
+.h1, h1 { font-size: 2.5rem; }
+h2 { font-size: 1.5em; font-weight: bold; }
+h3 { font-size: 1.17em; font-weight: bold; }
+.h4, h4 { font-size: 1.5rem; }
+.h5, h5 { font-size: 1.25rem; }
+.h6, h6 { font-size: 1rem; }
+p { margin-top: 0; margin-bottom: 1rem; }
+a { color: #007bff; }
+ul { margin-top: 0px; margin-bottom: 10px; }
+ol { margin-top: 0px; margin-bottom: 10px; }
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { margin-bottom: .5rem; font-weight: 500; line-height: 1.2; }
+h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: .5rem; }
+.h1, h1 { font-size: 2.5rem; }
+h2 { font-size: 1.5em; font-weight: bold; }
+h3 { font-size: 1.17em; font-weight: bold; }
+.h4, h4 { font-size: 1.5rem; }
+.h5, h5 { font-size: 1.25rem; }
+.h6, h6 { font-size: 1rem; }
+p { margin-top: 0; margin-bottom: 1rem; }
+a { color: #007bff; }
+ul { margin-top: 0px; margin-bottom: 10px; }
+ol { margin-top: 0px; margin-bottom: 10px; }
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { margin-bottom: .5rem; font-weight: 500; line-height: 1.2; }
+h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: .5rem; }
+.h1, h1 { font-size: 2.5rem; }
+h2 { font-size: 1.5em; font-weight: bold; }
+h3 { font-size: 1.17em; font-weight: bold; }
+.h4, h4 { font-size: 1.5rem; }
+.h5, h5 { font-size: 1.25rem; }
+.h6, h6 { font-size: 1rem; }
+p { margin-top: 0; margin-bottom: 1rem; }
+a { color: #007bff; }
+</style>
+    <style
+       type="text/css"
+       id="style4085">@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap);
+@import url(https://fonts.googleapis.com/css2?family=-apple-system,+BlinkMacSystemFont,+Segoe+UI,+Roboto,+Helvetica+Neue,+Arial,+Noto+Sans,+sans-serif,+Apple+Color+Emoji,+Segoe+UI+Emoji,+Segoe+UI+Symbol,+Noto+Color+Emoji:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap);
+@import url(https://fonts.googleapis.com/css2?family=-apple-system,BlinkMacSystemFont,Segoe+UI,Roboto,Helvetica+Neue,Arial,Noto+Sans,sans-serif,Apple+Color+Emoji,Segoe+UI+Emoji,Segoe+UI+Symbol,Noto+Color+Emoji:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap);
+</style>
+  </defs>
+  <g
+     id="g4774">
+    <g
+       shape-node=""
+       id="g4091">
+      <path
+         cell-id="SUMUeBp4xDxWZTccLxFt-3"
+         d="M 517 120 L 517 169 L 626 169"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path4089" />
+    </g>
+    <g
+       shape-node=""
+       id="g4095">
+      <rect
+         cell-id="bB8dqP7FYS2GWR04Ka5Q-3"
+         x="427.42"
+         y="60"
+         width="120"
+         height="59.86"
+         fill="#ffffff"
+         stroke="#000000"
+         pointer-events="all"
+         id="rect4093" />
+    </g>
+    <g
+       shape-node=""
+       id="g4112">
+      <g
+         cell-id="bB8dqP7FYS2GWR04Ka5Q-3"
+         transform="translate(-0.5 -0.5)"
+         id="g4110">
+        <switch
+           cell-id="bB8dqP7FYS2GWR04Ka5Q-3"
+           id="switch4108">
+          <foreignObject
+             cell-id="bB8dqP7FYS2GWR04Ka5Q-3"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 90px; margin-left: 428px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 20px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; ">
+                  <xhtml:div
+                     ani="">SWITCH</xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg4106">
+            <defs
+               id="defs4098">
+              <path
+                 id="zPJfDsGFcPksKwMZ"
+                 d="M448.76666259765625,99 h76.4666748046875" />
+            </defs>
+            <text
+               fill="#000000"
+               font-size="20px"
+               font-family="Helvetica, 'VP Default'"
+               font-weight="400"
+               id="text4104"><textPath
+                 xlink:href="#zPJfDsGFcPksKwMZ"
+                 startOffset="50%"
+                 text-anchor="middle"
+                 id="textPath4102"><tspan
+                   xml:space="preserve"
+                   id="tspan4100" /></textPath></text>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g4116">
+      <image
+         cell-id="bB8dqP7FYS2GWR04Ka5Q-4"
+         x="923.92"
+         y="198.5"
+         width="80.13"
+         height="108.59"
+         xlink:href="https://cdn-v17-0.visual-paradigm.com/diagrams/img/lib/allied_telesis/computer_and_terminals/Personal_Computer.svg"
+         id="image4114" />
+    </g>
+    <g
+       shape-node=""
+       id="g4120">
+      <path
+         cell-id="3wXI9LbIplzqWNrjtrVz-15"
+         d="M 630 30 L 457 30 L 457 60"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path4118" />
+    </g>
+    <g
+       shape-node=""
+       id="g4141">
+      <path
+         cell-id="xV_tRoPG8BEpDhfjFHFV-20"
+         d="M 750 30 L 964.5 30 L 964.5 199"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path4139" />
+    </g>
+    <g
+       shape-node=""
+       id="g4145">
+      <rect
+         cell-id="bB8dqP7FYS2GWR04Ka5Q-9"
+         x="629.54"
+         y="0"
+         width="120"
+         height="60"
+         fill="#ffffff"
+         stroke="#000000"
+         pointer-events="all"
+         id="rect4143" />
+    </g>
+    <g
+       shape-node=""
+       id="g4162">
+      <g
+         cell-id="bB8dqP7FYS2GWR04Ka5Q-9"
+         transform="translate(-0.5 -0.5)"
+         id="g4160">
+        <switch
+           cell-id="bB8dqP7FYS2GWR04Ka5Q-9"
+           id="switch4158">
+          <foreignObject
+             cell-id="bB8dqP7FYS2GWR04Ka5Q-9"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 30px; margin-left: 631px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 20px; font-family: &quot;Helvetica&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; ">
+                  <xhtml:div
+                     ani="">
+                    <xhtml:font
+                       color="#000000">MW</xhtml:font>
+                  </xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <svg
+             width="100%"
+             height="100%"
+             version="1.1"
+             id="svg4156">
+            <defs
+               id="defs4148">
+              <path
+                 id="bPJfDsGFcPksKwMb"
+                 d="M672.3333129882812,40.5 h35.31666564941406" />
+            </defs>
+          </svg>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g4166">
+      <path
+         cell-id="xV_tRoPG8BEpDhfjFHFV-8"
+         d="M 630 376 L 487 376 L 487 120"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path4164" />
+    </g>
+    <g
+       shape-node=""
+       id="g4187">
+      <path
+         cell-id="xV_tRoPG8BEpDhfjFHFV-18"
+         d="M 690 346 L 690 326.8 L 963 326.8 L 963 305"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path4185" />
+    </g>
+    <g
+       shape-node=""
+       id="g4191">
+      <path
+         cell-id="TJjF060BRnTcxZF5mInm-2"
+         d="M 660 406 L 660 508"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path4189" />
+    </g>
+    <g
+       shape-node=""
+       id="g4195">
+      <path
+         cell-id="TJjF060BRnTcxZF5mInm-3"
+         d="M 690 406 L 690 508"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path4193" />
+    </g>
+    <g
+       shape-node=""
+       id="g4199">
+      <path
+         cell-id="BDP-dl5oN6H2CXiR1R3_-4"
+         d="M 660 346 L 660 325 L 232 325 L 232 371"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path4197" />
+    </g>
+    <g
+       shape-node=""
+       id="g4203">
+      <rect
+         cell-id="3wXI9LbIplzqWNrjtrVz-3"
+         x="629.54"
+         y="346"
+         width="120"
+         height="59.86"
+         fill="#ffffff"
+         stroke="#000000"
+         pointer-events="all"
+         id="rect4201" />
+    </g>
+    <g
+       shape-node=""
+       id="g4224">
+      <path
+         cell-id="xV_tRoPG8BEpDhfjFHFV-19"
+         d="M 750 538 L 1003 538 L 1003 297"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path4222" />
+    </g>
+    <g
+       shape-node=""
+       id="g4228">
+      <rect
+         cell-id="3wXI9LbIplzqWNrjtrVz-4"
+         x="629.54"
+         y="508"
+         width="120"
+         height="59.86"
+         fill="#ffffff"
+         stroke="#000000"
+         pointer-events="all"
+         id="rect4226" />
+    </g>
+    <g
+       shape-node=""
+       id="g4249">
+      <path
+         cell-id="xV_tRoPG8BEpDhfjFHFV-2"
+         d="M 315 54 L 315 44 L 517 44 L 517 60"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path4247" />
+    </g>
+    <g
+       shape-node=""
+       id="g4253">
+      <path
+         cell-id="xV_tRoPG8BEpDhfjFHFV-4"
+         d="M 315 126 L 315 135.8 L 457 135.8 L 457 120"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path4251" />
+    </g>
+    <g
+       shape-node=""
+       id="g4259">
+      <ellipse
+         cell-id="3wXI9LbIplzqWNrjtrVz-23"
+         cx="315.34"
+         cy="89.93"
+         rx="35.92"
+         ry="35.92"
+         fill="#ffffff"
+         stroke="#000000"
+         pointer-events="all"
+         id="ellipse4255" />
+      <path
+         cell-id="3wXI9LbIplzqWNrjtrVz-23"
+         d="M 311.75 60.6 L 318.93 60.6 M 315.34 57.01 L 315.34 64.19 M 311.75 119.26 L 318.93 119.26"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path4257" />
+    </g>
+    <g
+       shape-node=""
+       id="g4263">
+      <rect
+         cell-id="TJjF060BRnTcxZF5mInm-15"
+         x="640.54"
+         y="405.86"
+         width="12"
+         height="25"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect4261" />
+    </g>
+    <g
+       shape-node=""
+       id="g4284">
+      <rect
+         cell-id="TJjF060BRnTcxZF5mInm-16"
+         x="640.54"
+         y="481"
+         width="12"
+         height="25"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect4282" />
+    </g>
+    <g
+       shape-node=""
+       id="g4305">
+      <rect
+         cell-id="TJjF060BRnTcxZF5mInm-17"
+         x="694.92"
+         y="481"
+         width="12"
+         height="25"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect4303" />
+    </g>
+    <g
+       shape-node=""
+       id="g4326">
+      <rect
+         cell-id="TJjF060BRnTcxZF5mInm-19"
+         x="694.92"
+         y="405.86"
+         width="12"
+         height="25"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect4324" />
+    </g>
+    <g
+       shape-node=""
+       id="g4347">
+      <rect
+         cell-id="TJjF060BRnTcxZF5mInm-20"
+         x="614.42"
+         y="346"
+         width="12"
+         height="25"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect4345" />
+    </g>
+    <g
+       shape-node=""
+       id="g4368">
+      <rect
+         cell-id="TJjF060BRnTcxZF5mInm-22"
+         x="640.54"
+         y="321"
+         width="12"
+         height="25"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect4366" />
+    </g>
+    <g
+       shape-node=""
+       id="g4389">
+      <rect
+         cell-id="TJjF060BRnTcxZF5mInm-23"
+         x="796.26"
+         y="296"
+         width="85"
+         height="25"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect4387" />
+    </g>
+    <g
+       shape-node=""
+       id="g4410">
+      <rect
+         cell-id="TJjF060BRnTcxZF5mInm-24"
+         x="839.42"
+         y="542.86"
+         width="85"
+         height="25"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect4408" />
+    </g>
+    <g
+       shape-node=""
+       id="g4431">
+      <rect
+         cell-id="TJjF060BRnTcxZF5mInm-27"
+         x="796.26"
+         y="0"
+         width="85"
+         height="25"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect4429" />
+    </g>
+    <g
+       shape-node=""
+       id="g4452">
+      <rect
+         cell-id="TJjF060BRnTcxZF5mInm-29"
+         x="514.42"
+         y="29.01"
+         width="33"
+         height="25"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect4450" />
+    </g>
+    <g
+       shape-node=""
+       id="g4469">
+      <g
+         cell-id="TJjF060BRnTcxZF5mInm-29"
+         transform="translate(-0.5 -0.5)"
+         id="g4467">
+        <switch
+           cell-id="TJjF060BRnTcxZF5mInm-29"
+           id="switch4465">
+          <foreignObject
+             cell-id="TJjF060BRnTcxZF5mInm-29"
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 31px; height: 1px; padding-top: 36px; margin-left: 515px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 14px; font-family: &quot;-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji&quot;, &quot;VP Default&quot;; color: #000000; line-height: 1.2; pointer-events: all; word-break: break-word; white-space: normal; word-wrap: normal; ">
+                  <xhtml:div
+                     ani="">+5V</xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <text
+             xml:space="preserve"
+             style="font-size:13.3333px;font-family:'Noto Sans Duployan';-inkscape-font-specification:'Noto Sans Duployan';fill:#000000;fill-opacity:1"
+             x="521.72302"
+             y="53.177094"
+             id="text7699"><tspan
+               sodipodi:role="line"
+               id="tspan7697"
+               x="521.72302"
+               y="53.177094">+5V</tspan></text>
+        </switch>
+      </g>
+    </g>
+    <g
+       shape-node=""
+       id="g4473">
+      <rect
+         cell-id="TJjF060BRnTcxZF5mInm-30"
+         x="394.42"
+         y="128.93"
+         width="33"
+         height="25"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect4471" />
+    </g>
+    <g
+       shape-node=""
+       id="g4494">
+      <rect
+         cell-id="TJjF060BRnTcxZF5mInm-32"
+         x="37"
+         y="346"
+         width="390.42"
+         height="254"
+         fill="#ffffff"
+         stroke="#000000"
+         pointer-events="all"
+         id="rect4492" />
+    </g>
+    <g
+       shape-node=""
+       id="g4498">
+      <rect
+         cell-id="BDP-dl5oN6H2CXiR1R3_-1"
+         x="243.34"
+         y="501"
+         width="144"
+         height="32"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect4496" />
+    </g>
+    <g
+       shape-node=""
+       id="g4519">
+      <rect
+         cell-id="BDP-dl5oN6H2CXiR1R3_-2"
+         x="172.21"
+         y="371"
+         width="120"
+         height="59.86"
+         fill="#ffffff"
+         stroke="#000000"
+         pointer-events="all"
+         id="rect4517" />
+    </g>
+    <g
+       shape-node=""
+       id="g4540">
+      <rect
+         cell-id="BDP-dl5oN6H2CXiR1R3_-3"
+         x="52.21"
+         y="443.07"
+         width="120"
+         height="59.86"
+         fill="#ffffff"
+         stroke="#000000"
+         pointer-events="all"
+         id="rect4538" />
+    </g>
+    <g
+       shape-node=""
+       id="g4561">
+      <path
+         cell-id="lmwvJ-e4FMnLol4LgREc-4"
+         d="M 412 473 L 785 473"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path4559" />
+    </g>
+    <g
+       shape-node=""
+       id="g4565">
+      <rect
+         cell-id="lmwvJ-e4FMnLol4LgREc-1"
+         x="292.21"
+         y="443.07"
+         width="120"
+         height="59.86"
+         fill="#ffffff"
+         stroke="#000000"
+         pointer-events="all"
+         id="rect4563" />
+    </g>
+    <g
+       shape-node=""
+       id="g4586">
+      <path
+         cell-id="lmwvJ-e4FMnLol4LgREc-6"
+         d="M 905 473 L 983 473 L 983 312"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path4584" />
+    </g>
+    <g
+       shape-node=""
+       id="g4590">
+      <path
+         cell-id="lmwvJ-e4FMnLol4LgREc-7"
+         d="M 815 503 L 814 503 L 814 606 L 660 606 L 660 568"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path4588" />
+    </g>
+    <g
+       shape-node=""
+       id="g4594">
+      <rect
+         cell-id="lmwvJ-e4FMnLol4LgREc-2"
+         x="785"
+         y="443.07"
+         width="120"
+         height="59.86"
+         fill="#ffffff"
+         stroke="#000000"
+         pointer-events="all"
+         id="rect4592" />
+    </g>
+    <g
+       shape-node=""
+       id="g4615">
+      <rect
+         cell-id="lmwvJ-e4FMnLol4LgREc-8"
+         x="640.54"
+         y="567.86"
+         width="12"
+         height="25"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect4613" />
+    </g>
+    <g
+       shape-node=""
+       id="g4636">
+      <path
+         cell-id="SUMUeBp4xDxWZTccLxFt-4"
+         d="M 626 199 L 0 199 L 0 473 L 52 473"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path4634" />
+    </g>
+    <g
+       shape-node=""
+       id="g4640">
+      <rect
+         cell-id="SUMUeBp4xDxWZTccLxFt-1"
+         x="626.42"
+         y="153.93"
+         width="120"
+         height="59.86"
+         fill="#ffffff"
+         stroke="#000000"
+         pointer-events="all"
+         id="rect4638" />
+    </g>
+    <g
+       shape-node=""
+       id="g4661">
+      <rect
+         cell-id="SUMUeBp4xDxWZTccLxFt-5"
+         x="531"
+         y="134"
+         width="59.29"
+         height="32"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect4659" />
+    </g>
+    <g
+       shape-node=""
+       id="g4682">
+      <path
+         cell-id="SUMUeBp4xDxWZTccLxFt-3"
+         d="M 517 120 L 517 169 L 626 169"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path4680" />
+    </g>
+    <g
+       shape-node=""
+       id="g4686">
+      <path
+         cell-id="3wXI9LbIplzqWNrjtrVz-15"
+         d="M 630 30 L 457 30 L 457 60"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path4684" />
+    </g>
+    <g
+       shape-node=""
+       id="g4707">
+      <path
+         cell-id="xV_tRoPG8BEpDhfjFHFV-20"
+         d="M 750 30 L 964.5 30 L 964.5 199"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path4705" />
+    </g>
+    <g
+       shape-node=""
+       id="g4711">
+      <path
+         cell-id="xV_tRoPG8BEpDhfjFHFV-8"
+         d="M 630 376 L 487 376 L 487 120"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path4709" />
+    </g>
+    <g
+       shape-node=""
+       id="g4732">
+      <path
+         cell-id="xV_tRoPG8BEpDhfjFHFV-18"
+         d="M 690 346 L 690 326.8 L 963 326.8 L 963 305"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path4730" />
+    </g>
+    <g
+       shape-node=""
+       id="g4736">
+      <path
+         cell-id="TJjF060BRnTcxZF5mInm-2"
+         d="M 660 406 L 660 508"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path4734" />
+    </g>
+    <g
+       shape-node=""
+       id="g4740">
+      <path
+         cell-id="TJjF060BRnTcxZF5mInm-3"
+         d="M 690 406 L 690 508"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path4738" />
+    </g>
+    <g
+       shape-node=""
+       id="g4744">
+      <path
+         cell-id="BDP-dl5oN6H2CXiR1R3_-4"
+         d="M 660 346 L 660 325 L 232 325 L 232 371"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path4742" />
+    </g>
+    <g
+       shape-node=""
+       id="g4748">
+      <path
+         cell-id="xV_tRoPG8BEpDhfjFHFV-19"
+         d="M 750 538 L 1003 538 L 1003 297"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path4746" />
+    </g>
+    <g
+       shape-node=""
+       id="g4752">
+      <path
+         cell-id="xV_tRoPG8BEpDhfjFHFV-2"
+         d="M 315 54 L 315 44 L 517 44 L 517 60"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path4750" />
+    </g>
+    <g
+       shape-node=""
+       id="g4756">
+      <path
+         cell-id="xV_tRoPG8BEpDhfjFHFV-4"
+         d="M 315 126 L 315 135.8 L 457 135.8 L 457 120"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path4754" />
+    </g>
+    <g
+       shape-node=""
+       id="g4760">
+      <path
+         cell-id="lmwvJ-e4FMnLol4LgREc-4"
+         d="M 412 473 L 785 473"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path4758" />
+    </g>
+    <g
+       shape-node=""
+       id="g4764">
+      <path
+         cell-id="lmwvJ-e4FMnLol4LgREc-6"
+         d="M 905 473 L 983 473 L 983 312"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path4762" />
+    </g>
+    <g
+       shape-node=""
+       id="g4768">
+      <path
+         cell-id="lmwvJ-e4FMnLol4LgREc-7"
+         d="M 815 503 L 814 503 L 814 606 L 660 606 L 660 568"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path4766" />
+    </g>
+    <g
+       shape-node=""
+       id="g4772">
+      <path
+         cell-id="SUMUeBp4xDxWZTccLxFt-4"
+         d="M 626 199 L 0 199 L 0 473 L 52 473"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path4770" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:21.3333px;font-family:'Noto Sans Duployan';-inkscape-font-specification:'Noto Sans Duployan';fill:#000000;fill-opacity:1"
+       x="669.16949"
+       y="37.279427"
+       id="text7688"><tspan
+         sodipodi:role="line"
+         id="tspan7686"
+         x="669.16949"
+         y="37.279427">MW</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:13.3333px;font-family:'Noto Sans Duployan';-inkscape-font-specification:'Noto Sans Duployan';fill:#000000;fill-opacity:1"
+       x="455.08853"
+       y="22.216734"
+       id="text7692"><tspan
+         sodipodi:role="line"
+         id="tspan7690"
+         x="455.08853"
+         y="22.216734">RF IN</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:13.3333px;font-family:'Noto Sans Duployan';-inkscape-font-specification:'Noto Sans Duployan';fill:#000000;fill-opacity:1"
+       x="417.48926"
+       y="151.67609"
+       id="text7699-4"><tspan
+         sodipodi:role="line"
+         id="tspan7697-7"
+         x="417.48926"
+         y="151.67609">-5V</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:13.3333px;font-family:'Noto Sans Duployan';-inkscape-font-specification:'Noto Sans Duployan';fill:#000000;fill-opacity:1"
+       x="456.59967"
+       y="161.7999"
+       id="text7733"><tspan
+         sodipodi:role="line"
+         id="tspan7731"
+         x="456.59967"
+         y="161.7999">TTL</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:13.3333px;font-family:'Noto Sans Duployan';-inkscape-font-specification:'Noto Sans Duployan';fill:#000000;fill-opacity:1"
+       x="523.70776"
+       y="161.81761"
+       id="text7737"><tspan
+         sodipodi:role="line"
+         id="tspan7735"
+         x="523.70776"
+         y="161.81761">RF OUT</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:13.3333px;font-family:'Noto Sans Duployan';-inkscape-font-specification:'Noto Sans Duployan';fill:#000000;fill-opacity:1"
+       x="829.17529"
+       y="23.482693"
+       id="text7743"><tspan
+         sodipodi:role="line"
+         id="tspan7741"
+         x="829.17529"
+         y="23.482693">USB</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:13.3333px;font-family:'Noto Sans Duployan';-inkscape-font-specification:'Noto Sans Duployan';fill:#000000;fill-opacity:1"
+       x="810.74963"
+       y="316.61899"
+       id="text7748"><tspan
+         sodipodi:role="line"
+         id="tspan7746"
+         x="810.74963"
+         y="316.61899">ETHERNET</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:13.3333px;font-family:'Noto Sans Duployan';-inkscape-font-specification:'Noto Sans Duployan';fill:#000000;fill-opacity:1"
+       x="878.08264"
+       y="557.8894"
+       id="text7748-8"><tspan
+         sodipodi:role="line"
+         id="tspan7746-4"
+         x="878.08264"
+         y="557.8894">ETHERNET</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:13.3333px;font-family:'Noto Sans Duployan';-inkscape-font-specification:'Noto Sans Duployan';fill:#000000;fill-opacity:1"
+       x="647.3252"
+       y="583.51727"
+       id="text7781"><tspan
+         sodipodi:role="line"
+         id="tspan7779"
+         x="647.3252"
+         y="583.51727">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:13.3333px;font-family:'Noto Sans Duployan';-inkscape-font-specification:'Noto Sans Duployan';fill:#000000;fill-opacity:1"
+       x="614.41034"
+       y="369.58081"
+       id="text7785"><tspan
+         sodipodi:role="line"
+         id="tspan7783"
+         x="614.41034"
+         y="369.58081">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:13.3333px;font-family:'Noto Sans Duployan';-inkscape-font-specification:'Noto Sans Duployan';fill:#000000;fill-opacity:1"
+       x="646.04205"
+       y="340.66614"
+       id="text7789"><tspan
+         sodipodi:role="line"
+         id="tspan7787"
+         x="646.04205"
+         y="340.66614">0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:13.3333px;font-family:'Noto Sans Duployan';-inkscape-font-specification:'Noto Sans Duployan';fill:#000000;fill-opacity:1"
+       x="645.3103"
+       y="422.73734"
+       id="text7793"><tspan
+         sodipodi:role="line"
+         id="tspan7791"
+         x="645.3103"
+         y="422.73734">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:13.3333px;font-family:'Noto Sans Duployan';-inkscape-font-specification:'Noto Sans Duployan';fill:#000000;fill-opacity:1"
+       x="697.16162"
+       y="421.39911"
+       id="text7797"><tspan
+         sodipodi:role="line"
+         id="tspan7795"
+         x="697.16162"
+         y="421.39911">3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:13.3333px;font-family:'Noto Sans Duployan';-inkscape-font-specification:'Noto Sans Duployan';fill:#000000;fill-opacity:1"
+       x="696.84546"
+       y="500.78857"
+       id="text7801"><tspan
+         sodipodi:role="line"
+         id="tspan7799"
+         x="696.84546"
+         y="500.78857">4</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:13.3333px;font-family:'Noto Sans Duployan';-inkscape-font-specification:'Noto Sans Duployan';fill:#000000;fill-opacity:1"
+       x="646.29773"
+       y="500.65479"
+       id="text7805"><tspan
+         sodipodi:role="line"
+         id="tspan7803"
+         x="646.29773"
+         y="500.65479">3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:21.3333px;font-family:'Noto Sans Duployan';-inkscape-font-specification:'Noto Sans Duployan';fill:#000000;fill-opacity:1"
+       x="447.16901"
+       y="97.651604"
+       id="text7815"><tspan
+         sodipodi:role="line"
+         id="tspan7813"
+         x="447.16901"
+         y="97.651604"
+         style="font-size:21.3333px">SWITCH</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:21.3333px;font-family:'Noto Sans Duployan';-inkscape-font-specification:'Noto Sans Duployan';fill:#000000;fill-opacity:1"
+       x="663.21509"
+       y="190.85716"
+       id="text7819"><tspan
+         sodipodi:role="line"
+         id="tspan7817"
+         x="663.21509"
+         y="190.85716">AMP</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:21.3333px;font-family:'Noto Sans Duployan';-inkscape-font-specification:'Noto Sans Duployan';fill:#000000;fill-opacity:1"
+       x="635.99677"
+       y="370.26859"
+       id="text7823"><tspan
+         sodipodi:role="line"
+         id="tspan7821"
+         x="635.99677"
+         y="370.26859">   PULSE</tspan><tspan
+         sodipodi:role="line"
+         x="635.99677"
+         y="396.93521"
+         id="tspan7825">STREAMER</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:21.3333px;font-family:'Noto Sans Duployan';-inkscape-font-specification:'Noto Sans Duployan';fill:#000000;fill-opacity:1"
+       x="823.6897"
+       y="479.75668"
+       id="text7829"><tspan
+         sodipodi:role="line"
+         id="tspan7827"
+         x="823.6897"
+         y="479.75668">APD</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:21.3333px;font-family:'Noto Sans Duployan';-inkscape-font-specification:'Noto Sans Duployan';fill:#000000;fill-opacity:1"
+       x="650.42712"
+       y="531.93549"
+       id="text7833"><tspan
+         sodipodi:role="line"
+         id="tspan7831"
+         x="650.42712"
+         y="531.93549">  TIME</tspan><tspan
+         sodipodi:role="line"
+         x="650.42712"
+         y="558.60211"
+         id="tspan7835">TAGGER</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:21.3333px;font-family:'Noto Sans Duployan';-inkscape-font-specification:'Noto Sans Duployan';fill:#000000;fill-opacity:1"
+       x="320.54395"
+       y="467.73016"
+       id="text7839"><tspan
+         sodipodi:role="line"
+         id="tspan7837"
+         x="320.54395"
+         y="467.73016">OPTIC</tspan><tspan
+         sodipodi:role="line"
+         x="320.54395"
+         y="494.39679"
+         id="tspan7841">FIBER</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:21.3333px;font-family:'Noto Sans Duployan';-inkscape-font-specification:'Noto Sans Duployan';fill:#000000;fill-opacity:1"
+       x="201.92337"
+       y="410.32501"
+       id="text7845"><tspan
+         sodipodi:role="line"
+         id="tspan7843"
+         x="201.92337"
+         y="410.32501">LASER</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:21.3333px;font-family:'Noto Sans Duployan';-inkscape-font-specification:'Noto Sans Duployan';fill:#000000;fill-opacity:1"
+       x="291.07211"
+       y="556.90363"
+       id="text7849"><tspan
+         sodipodi:role="line"
+         id="tspan7847"
+         x="291.07211"
+         y="556.90363">CONFOCAL</tspan><tspan
+         sodipodi:role="line"
+         x="291.07211"
+         y="583.57025"
+         id="tspan7851">MICROSCOP</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:21.3333px;font-family:'Noto Sans Duployan';-inkscape-font-specification:'Noto Sans Duployan';fill:#000000;fill-opacity:1"
+       x="62.359245"
+       y="481.65558"
+       id="text7855"><tspan
+         sodipodi:role="line"
+         id="tspan7853"
+         x="62.359245"
+         y="481.65558">ANTENNA</tspan></text>
+  </g>
+  <switch
+     id="switch4782">
+    <g
+       requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+       id="g4776" />
+    <a
+       transform="translate(0,-5)"
+       id="a4780">
+      <text
+         text-anchor="middle"
+         font-size="10px"
+         x="50%"
+         y="100%"
+         id="text4778" />
+    </a>
+  </switch>
+</svg>

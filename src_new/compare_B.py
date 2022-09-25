@@ -1,6 +1,9 @@
 import numpy as np
 TOTAL = "../data/total_B.txt"
 NORMAL = "../data/normal_B.txt"
+def print_table(bx,bxe,by,bye,bz,bze,hbx,hbxe,hbz,hbze):
+    for i in range(0,len(bx)):
+        print('$',str("{:.2f}".format(bx[i])),'\pm',str("{:.2f}".format(bxe[i])),'$','&','$',str("{:.2f}".format(by[i])),'\pm',str("{:.2f}".format(bye[i])),'$','&','$',str("{:.2f}".format(bz[i])),'\pm',str("{:.2f}".format(bze[i])),'$','&','$',str("{:.2f}".format(hbx[i])),'\pm',str("{:.2f}".format(hbxe[i])),'$','&','$',str("{:.2f}".format(hbz[i])),'\pm',str("{:.2f}".format(hbze[i])), '\\','\hline')
 
 def main(file):
     f, B_x, B_x_err, B_y ,B_y_err ,B_z ,B_z_err, B_xH, B_zH = np.loadtxt(file, unpack=True, skiprows=1 ) 
@@ -20,6 +23,7 @@ def main(file):
             print('X ok')
         if Z_z[i] < 1.96:
             print('Z ok')
+    print_table(B_x[::-1], np.abs(B_x_err[::-1]), B_y ,np.abs(B_y_err[::-1]) ,B_z[::-1] ,np.abs(B_z_err[::-1]), B_xH[::-1], np.abs(B_xH_err[::-1]), B_zH[::-1], np.abs(B_zH_err[::-1]))
 print('NORMAL')
 main(NORMAL)
 print('TOTAL')

@@ -301,10 +301,10 @@ def B_calc(file,B_arr,peaks,peaks_err):
                 print('permutation',perm[i])
 
     print_array("Magnetic Field Components:", "B", True, B_xyz_t*1e+3, B_xyz_err_t*1e3, "mT", index_output)
-    # if len(wid)>2:
-    #     # write_field(file,B_xyz_t[0],B_xyz_err_t[0],B_xyz_t[1],B_xyz_err_t[1],B_xyz_t[2],B_xyz_err_t[2], 'total_B','../data/')
-    # else:
-    #     write_field(file,B_xyz_t[0],B_xyz_err_t[0],B_xyz_t[1],B_xyz_err_t[1],B_xyz_t[2],B_xyz_err_t[2], 'normal_B','../data/')
+    if len(wid)>2:
+        write_field(file,B_xyz_t[0],B_xyz_err_t[0],B_xyz_t[1],B_xyz_err_t[1],B_xyz_t[2],B_xyz_err_t[2], 'total_B','../data/')
+    else:
+        write_field(file,B_xyz_t[0],B_xyz_err_t[0],B_xyz_t[1],B_xyz_err_t[1],B_xyz_t[2],B_xyz_err_t[2], 'normal_B','../data/')
     print("")
     print("Magnetic Field Module:")
     print("|B| :", B_xyz_module_t*1000, "mT")
