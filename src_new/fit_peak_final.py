@@ -191,7 +191,7 @@ def splitting(file):
     for i in peaks_found:
         ax.axvline(x=spec['x'][i], c='black', linestyle='dotted')
     
-    plot_to_output(fig, file+'-peaks.svg')
+    # plot_to_output(fig, file+'-peaks.svg')
     
     model, params = generate_model(spec)
     output = model.fit(spec['y'], params, x=spec['x'])
@@ -202,9 +202,11 @@ def splitting(file):
     plt.ylabel('[Normalized Counts / s]')
     components = output.eval_components(x=spec['x'])
     sum = 0
+    c = ['red','orange','black','blue','green','red','red','green','blue','black']
     for i, model in enumerate(spec['model']):
         sum = sum + components[f'm{i}_']
-        ax.plot(spec['x'], components[f'm{i}_'] + offset)
+        ax.plot(spec['x'], components[f'm{i}_'] + offset,c[i])
+        # ax.plot(spec['x'], components[f'm{i}_'] + offset)
     plot_to_output(fig, file+'-complex-components.svg')
 
     # fig = output.plot()
@@ -214,10 +216,10 @@ def splitting(file):
     ax.plot(spec['x'], sum + offset, c='orange', label='$\mid B \mid=[0.27 \pm 0.17]mT$'+'\n'+  '$\ \ B_i = [ 0.16 \pm 0.09 ] mT$' )
     ax.scatter(spec['x'], spec['y'] + offset, s=4)
     ax.legend()
-    plt.xlabel('[GHz]')
-    plt.ylabel('[Normalized Counts / s]')
+    plt.xlabel('$[GHz]$')
+    plt.ylabel('$[Normalized \ Counts / s]$')
     plt.show() 
-    plot_to_output(fig, file+'-total.svg')
+    # plot_to_output(fig, file+'-total.svg')
     
     
     print_best_values(spec, output)
@@ -352,7 +354,7 @@ def analyze(file):
 # f = '20220715-1553-11'
 # f = '20220802-1208-48'
 # f = '20220715-1510-55'
-# f = '20220729-0934-41'
+f = '20220729-0934-41'
 # f = '20220728-1309-54'
 # f = '20220715-1324-10'
 # f = '20220729-1634-16'
@@ -406,14 +408,14 @@ def analyze(file):
 # f = '20220802-1049-25'
 # f = '20220802-1225-51'
 # f = '20220802-1153-00'
-f = '20220801-1030-48'
+# f = '20220801-1030-48'
 # f = '20220728-1351-20'
 # f = '20220801-1657-14'
 # f = '20220729-1418-49'
 # f = '20220802-1356-34'
 
 #Amplitude
-a = 1/0.0689
+a = 1/0.0589
 #Peaks width
 pw = (1.5,)
 #Peaks distance

@@ -24,15 +24,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="0.61302087"
-     inkscape:cx="475.51399"
-     inkscape:cy="455.12316"
-     inkscape:window-width="948"
-     inkscape:window-height="1020"
-     inkscape:window-x="963"
-     inkscape:window-y="51"
+     inkscape:zoom="1.3519928"
+     inkscape:cx="520.34302"
+     inkscape:cy="190.08978"
+     inkscape:window-width="1904"
+     inkscape:window-height="1016"
+     inkscape:window-x="5"
+     inkscape:window-y="53"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g75106" />
+     inkscape:current-layer="svg75124" />
   <defs
      id="defs74696">
     <style
@@ -871,17 +871,17 @@ a { color: #007bff; }
     <text
        xml:space="preserve"
        style="font-size:21.3333px;font-family:'Noto Sans Duployan';-inkscape-font-specification:'Noto Sans Duployan';fill:#000000;fill-opacity:1"
-       x="292.89133"
-       y="393.50916"
+       x="284.89133"
+       y="395.50916"
        id="text7849"><tspan
          sodipodi:role="line"
          id="tspan7847"
-         x="292.89133"
-         y="393.50916">CONFOCAL</tspan><tspan
+         x="284.89133"
+         y="395.50916">CONFOCAL</tspan><tspan
          sodipodi:role="line"
-         x="292.89133"
-         y="420.17578"
-         id="tspan7851">MICROSCOP</tspan></text>
+         x="284.89133"
+         y="422.17578"
+         id="tspan7851">MICROSCOPE</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:21.3333px;font-family:'Noto Sans Duployan';-inkscape-font-specification:'Noto Sans Duployan';fill:#000000;fill-opacity:1"

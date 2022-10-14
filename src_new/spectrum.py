@@ -5,22 +5,30 @@ from matplotlib import pyplot as plt
 DIR = "../data/monocromatore"
 PROVA = "../output/prova"
 counter = 0 
-c = ['orange','red']
-title = ['$NV^0$','$NV^-$']
+c = ['red','orange']
+title = ['ZPL','ZPL']
 def main(file):
     global counter
-    freq, count = np.loadtxt(file, unpack=True) 
+    lenght = np.array([])
+    count = np.array([])
+    lenght_d, count_d = np.loadtxt(file, unpack=True) 
+    for i in range(0,len(lenght_d)):
+        if lenght_d[i]>580:
+            lenght = np.append(lenght,lenght_d[i])
+            count = np.append(count,count_d[i])
     indicies = signal.find_peaks(count, prominence=600, distance=1000)[0]
     fig, ax = plt.subplots(figsize=(8, 8))
-    ax.plot(freq,count, c='black')
+    ax.plot(lenght,count, c='black')
 
     for i in range(0,len(indicies)):
-        if freq[indicies][i]<650:
-            ax.scatter(freq[indicies][i],count[indicies][i], label=title[i]+':\t '+str("{:.1f}".format(freq[indicies][i]))+' nm', c=c[i])
+        if lenght[indicies][i]<650:
+            ax.scatter(lenght[indicies][i],count[indicies][i], label=title[i]+': '+str("{:.1f}".format(lenght[indicies][i]))+' nm', c=c[i])
     print(indicies)
-    ax.set_xlabel('$\lambda \ [nm]$')
-    ax.set_ylabel('$Counts/s$')
-    ax.legend()
+    ax.legend( prop={'size': 15})
+    plt.xlabel('$\lambda \ [nm]$', fontsize=18)
+    plt.ylabel('$Fluorescence  \ [Counts/s]$', fontsize=18)
+    plt.xticks(fontsize=15)
+    plt.yticks(fontsize=15)
     plt.savefig(f'{PROVA}/prova_spectr'+str(counter)+'.svg')
     counter += 1
     return

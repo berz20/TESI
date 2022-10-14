@@ -41,16 +41,16 @@ def splitting(file, counter):
     i_y_iu = spec['y'][peaks_found[int(len(peaks_found)/2)+1]]
     i_y_id = spec['y'][peaks_found[int(len(peaks_found)/2)-2]]
 
-    ax[0].plot(spec['x'], sum - 0.02*counter, c='orange')
-    ax[0].plot(p_eu,y_eu - 0.02*counter, marker='.',color='black') 
-    ax[0].plot(p_ed,y_ed - 0.02*counter, marker='.',color='black') 
-    ax[0].plot(p_iu,y_iu - 0.02*counter, 'r.') 
-    ax[0].plot(p_id,y_id - 0.02*counter, 'r.') 
-    ax[0].plot(i_p_eu,i_y_eu - 0.02*counter, marker='.',color='blue') 
-    ax[0].plot(i_p_ed,i_y_ed - 0.02*counter, marker='.',color='blue') 
-    ax[0].plot(i_p_iu,i_y_iu - 0.02*counter, marker='.',color='green') 
-    ax[0].plot(i_p_id,i_y_id - 0.02*counter, marker='.',color='green') 
-    ax[0].scatter(spec['x'], spec['y'] - 0.02*counter, s=4, label=b_str)
+    ax[0].plot(spec['x'], sum + 0.02*counter, c='orange')
+    ax[0].plot(p_eu,y_eu + 0.02*counter, marker='.',color='black') 
+    ax[0].plot(p_ed,y_ed + 0.02*counter, marker='.',color='black') 
+    ax[0].plot(p_iu,y_iu + 0.02*counter, 'r.') 
+    ax[0].plot(p_id,y_id + 0.02*counter, 'r.') 
+    ax[0].plot(i_p_eu,i_y_eu + 0.02*counter, marker='.',color='blue') 
+    ax[0].plot(i_p_ed,i_y_ed + 0.02*counter, marker='.',color='blue') 
+    ax[0].plot(i_p_iu,i_y_iu + 0.02*counter, marker='.',color='green') 
+    ax[0].plot(i_p_id,i_y_id + 0.02*counter, marker='.',color='green') 
+    ax[0].scatter(spec['x'], spec['y'] + 0.02*counter, s=4, label=b_str)
     ax[0].axes.yaxis.set_visible(False)
     ax[0].set_xlabel('[GHz]')
     # plot_to_output(fig, file+'-total.png')
@@ -213,23 +213,23 @@ def center_split():
     # 2.87 GHz line
     ax[1].axhline(2.87, c='black', linestyle='dotted', label='$2.87 \ GHz$')
     # Labels
-    ax[1].set_xlabel('B [mT]')
-    ax[1].set_ylabel('Tansition frequencies [GHz]')
+    ax[1].set_xlabel('$External \ magnetic \ field \ [mT]$')
+    ax[1].set_ylabel('$Transition \ frequencies \ [GHz]$')
     ax[1].legend()
     # plot_to_output(fig, 'deviation.pdf')
     print("")
     print('Amplitude Factor:',a,'\nPeak Width:',pw)
     print('')
 files = [
-        # #(3-11)
-        # '20220802-1407-11',
-        # '20220802-1332-19',
-        # '20220802-1306-04',
-        # '20220802-1252-09',
-        # # '20220802-1238-26',
-        # '20220802-1153-00',
-        # '20220802-1136-53',
-        # # '20220802-1101-15',
+        #(3-11)
+        '20220802-1407-11',
+        '20220802-1332-19',
+        '20220802-1306-04',
+        '20220802-1252-09',
+        # '20220802-1238-26',
+        '20220802-1153-00',
+        '20220802-1136-53',
+        # '20220802-1101-15',
         # #(3-15)
         # '20220802-1407-11',
         # # '20220802-1332-19',
@@ -239,25 +239,27 @@ files = [
         # # '20220802-1153-00',
         # '20220802-1136-53',
         # '20220802-1101-15',
-        #(All)
-        '20220802-1407-11',
-        '20220802-1332-19',
-        '20220802-1306-04',
-        '20220802-1252-09',
-        '20220802-1238-26',
-        '20220802-1153-00',
-        '20220802-1136-53',
-        '20220802-1101-15',
+        # #(All)
+        # '20220802-1407-11',
+        # '20220802-1332-19',
+        # '20220802-1306-04',
+        # '20220802-1252-09',
+        # '20220802-1238-26',
+        # '20220802-1153-00',
+        # '20220802-1136-53',
+        # '20220802-1101-15',
         ]
+files = files[::-1]
 fig, ax = plt.subplots(figsize=(16, 8), ncols=2)
 
 ## PARAMETER DATA
 #  Peaks amplitude-contrast
-a = [30,38,27,40,40,50,55,95]
+# a = [30,38,27,40,40,50,55,95]
 #(3-11)
-# a = [30,38,27,40,50,55]
+a = [30,38,27,40,50,55]
 #(3-15)
 # a = [30,27,40,55,95]
+a = a[::-1]
 #  Peaks width
 pw = (1.5,)
 #  Peaks distance
@@ -270,11 +272,11 @@ for f,i in zip(files, range(0,len(files))):
     splitting(f,i)
 
 handles, labels = ax[0].get_legend_handles_labels()
-ax[0].legend(title='B Field', loc='upper left')
+ax[0].legend(handles[::-1], labels[::-1],title='B Field', loc='upper left')
 
 center_split()
-plt.savefig(f'{OUTIMGDIR}/total_double_deg.pdf')
-plt.savefig(f'{OUTIMGDIR}/total_double_deg.svg')
+plt.savefig(f'{OUTIMGDIR}/total_double_deg(3-11).pdf')
+plt.savefig(f'{OUTIMGDIR}/total_double_deg(3-11).svg')
 plt.show()
 
 # File used 
