@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="750"
+   height="750"
+   viewBox="0 0 198.43751 198.43751"
+   version="1.1"
+   id="svg102934"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14, custom)"
+   sodipodi:docname="diamond-gap.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview102936"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.57247497"
+     inkscape:cx="376.43567"
+     inkscape:cy="487.35755"
+     inkscape:window-width="1904"
+     inkscape:window-height="1016"
+     inkscape:window-x="5"
+     inkscape:window-y="53"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs102931">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient28989">
+      <stop
+         style="stop-color:#d71717;stop-opacity:1;"
+         offset="0"
+         id="stop28985" />
+      <stop
+         style="stop-color:#ee0000;stop-opacity:0;"
+         offset="1"
+         id="stop28987" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient28855">
+      <stop
+         style="stop-color:#19bbd5;stop-opacity:1;"
+         offset="0"
+         id="stop28851" />
+      <stop
+         style="stop-color:#66b1cc;stop-opacity:0;"
+         offset="1"
+         id="stop28853" />
+    </linearGradient>
+    <clipPath
+       id="clipPath6935-3">
+      <path
+         clip-rule="nonzero"
+         d="M 2,0 H 4 V 20.664062 H 2 Z m 0,0"
+         id="path2380-6" />
+    </clipPath>
+    <clipPath
+       id="clipPath7175-7">
+      <path
+         clip-rule="nonzero"
+         d="m 16,0 h 5 v 20.664062 h -5 z m 0,0"
+         id="path7393-5" />
+    </clipPath>
+    <clipPath
+       id="clipPath4866-3-5">
+      <path
+         clip-rule="nonzero"
+         d="M 2,0 H 4 V 20.664062 H 2 Z m 0,0"
+         id="path3487-5" />
+    </clipPath>
+    <clipPath
+       id="clipPath576-6">
+      <path
+         clip-rule="nonzero"
+         d="m 17,0 h 5 v 20.664062 h -5 z m 0,0"
+         id="path466-2" />
+    </clipPath>
+    <clipPath
+       id="clipPath1315-9">
+      <path
+         clip-rule="nonzero"
+         d="M 2,0 H 21 V 20.664062 H 2 Z m 0,0"
+         id="path1458-1" />
+    </clipPath>
+    <clipPath
+       id="clipPath4771-2">
+      <path
+         clip-rule="nonzero"
+         d="m 32,0 h 6 v 20.664062 h -6 z m 0,0"
+         id="path6974-7" />
+    </clipPath>
+    <clipPath
+       id="clipPath5714-0">
+      <path
+         clip-rule="nonzero"
+         d="m 39,12 h 8 v 9.386719 h -8 z m 0,0"
+         id="path7056-9-9" />
+    </clipPath>
+    <clipPath
+       id="clipPath9061-3">
+      <path
+         clip-rule="nonzero"
+         d="m 23,12 h 7 v 9.386719 h -7 z m 0,0"
+         id="path9482-6" />
+    </clipPath>
+    <clipPath
+       id="clipPath8113-0">
+      <path
+         clip-rule="nonzero"
+         d="M 2,0 H 4 V 20.664062 H 2 Z m 0,0"
+         id="path5989-6" />
+    </clipPath>
+    <clipPath
+       id="clipPath2512-2">
+      <path
+         clip-rule="nonzero"
+         d="m 16,0 h 5 v 20.664062 h -5 z m 0,0"
+         id="path855-6" />
+    </clipPath>
+    <clipPath
+       id="clipPath9782-1">
+      <path
+         clip-rule="nonzero"
+         d="M 2,0 H 4 V 20.664062 H 2 Z m 0,0"
+         id="path6471-8" />
+    </clipPath>
+    <clipPath
+       id="clipPath2331-7">
+      <path
+         clip-rule="nonzero"
+         d="m 16,0 h 6 v 20.664062 h -6 z m 0,0"
+         id="path9119-9" />
+    </clipPath>
+    <clipPath
+       id="clipPath735-2">
+      <path
+         clip-rule="nonzero"
+         d="M 1,0 H 9 V 20.664062 H 1 Z m 0,0"
+         id="path7947-0" />
+    </clipPath>
+    <clipPath
+       id="clipPath4984-2">
+      <path
+         clip-rule="nonzero"
+         d="M 1,0 H 9 V 20.664062 H 1 Z m 0,0"
+         id="path8717-3" />
+    </clipPath>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient28855"
+       id="linearGradient28859"
+       x1="94.088631"
+       y1="54.000515"
+       x2="94.161942"
+       y2="29.34271"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient28989"
+       id="linearGradient28991"
+       x1="98.029289"
+       y1="167.11021"
+       x2="98.646019"
+       y2="193.15469"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:14.9904px;display:inline;fill:#000000;fill-opacity:1;stroke-width:0.936903;stroke-linecap:butt;stroke-linejoin:round"
+       x="80.320488"
+       y="114.95074"
+       id="text256498-5"
+       transform="scale(0.989242,1.010875)"><tspan
+         sodipodi:role="line"
+         id="tspan256496-3"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.9904px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';fill:#000000;fill-opacity:1;stroke-width:0.936903"
+         x="80.320488"
+         y="114.95074">5.5 eV</tspan></text>
+    <rect
+       style="display:inline;fill:url(#linearGradient28991);fill-opacity:1;stroke-width:1.19074;stroke-linecap:butt;stroke-linejoin:round"
+       id="rect256990"
+       width="145.88353"
+       height="25.155001"
+       x="26.262003"
+       y="167.1389" />
+    <rect
+       style="display:inline;fill:url(#linearGradient28859);fill-opacity:1;stroke-width:1.19073;stroke-linecap:butt;stroke-linejoin:round"
+       id="rect256990-6"
+       width="145.88353"
+       height="25.154997"
+       x="26.172892"
+       y="28.979319" />
+    <rect
+       style="display:inline;fill:#000000;fill-opacity:1;stroke-width:0.336201;stroke-linecap:butt;stroke-linejoin:round"
+       id="rect259618"
+       width="1.8496672"
+       height="42"
+       x="99.777946"
+       y="119.16589" />
+    <rect
+       style="display:inline;fill:#000000;fill-opacity:1;stroke-width:0.915657;stroke-linecap:butt;stroke-linejoin:round"
+       id="rect259642"
+       width="1.8089871"
+       height="42"
+       x="100.02328"
+       y="61.085739" />
+    <path
+       style="display:inline;fill:#000000;fill-opacity:1;stroke-width:2.79614;stroke-linecap:butt;stroke-linejoin:round"
+       d="m 97.366,61.038378 7.24784,0.300068 -3.71994,-6.953939 z"
+       id="path259929-6" />
+    <path
+       style="display:inline;fill:#000000;fill-opacity:1;stroke-width:2.79614;stroke-linecap:butt;stroke-linejoin:round"
+       d="m 104.20485,160.99077 -7.25385,-0.30006 3.7199,6.95389 z"
+       id="path259929-6-9" />
+    <text
+       xml:space="preserve"
+       style="font-size:13.3251px;display:inline;fill:#000000;fill-opacity:1;stroke-width:0.624619;stroke-linecap:butt;stroke-linejoin:round"
+       x="50.369713"
+       y="47.184757"
+       id="text21913-7"
+       transform="scale(0.98923621,1.0108809)"><tspan
+         sodipodi:role="line"
+         id="tspan21911-0"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3251px;font-family:'Noto Sans Duployan';-inkscape-font-specification:'Noto Sans Duployan';fill:#000000;fill-opacity:1;stroke-width:0.624619"
+         x="50.369713"
+         y="47.184757">conduction band</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:13.3251px;display:inline;fill:#000000;fill-opacity:1;stroke-width:0.624618;stroke-linecap:butt;stroke-linejoin:round"
+       x="61.714115"
+       y="181.06866"
+       id="text21913-7-9"
+       transform="scale(0.98923514,1.010882)"><tspan
+         sodipodi:role="line"
+         id="tspan21911-0-3"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3251px;font-family:'Noto Sans Duployan';-inkscape-font-specification:'Noto Sans Duployan';fill:#000000;fill-opacity:1;stroke-width:0.624618"
+         x="61.714115"
+         y="181.06866">valence band</tspan></text>
+  </g>
+</svg>
