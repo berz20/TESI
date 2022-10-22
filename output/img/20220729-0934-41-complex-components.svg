@@ -27,14 +27,14 @@
      inkscape:document-units="pt"
      showgrid="false"
      inkscape:zoom="0.83754838"
-     inkscape:cx="352.81544"
+     inkscape:cx="350.42752"
      inkscape:cy="380.87352"
      inkscape:window-width="1904"
      inkscape:window-height="1016"
      inkscape:window-x="5"
      inkscape:window-y="53"
      inkscape:window-maximized="1"
-     inkscape:current-layer="patch_3" />
+     inkscape:current-layer="matplotlib.axis_1" />
   <metadata
      id="metadata153282">
     <rdf:RDF>
@@ -1098,7 +1098,8 @@
           </g>
         </g>
         <g
-           id="text_7">
+           id="text_7"
+           transform="matrix(1.4999685,0,0,1.4999685,-148.44072,-201.06628)">
           <!-- [GHz] -->
           <g
              transform="matrix(0.1,0,0,-0.1,281.03984,412.75656)"
@@ -1508,7 +1509,8 @@
           </g>
         </g>
         <g
-           id="text_16">
+           id="text_16"
+           transform="matrix(1.4999947,0,0,1.4999947,-17.346755,-110.12447)">
           <!-- [Normalized Counts / s] -->
           <g
              transform="matrix(0,-0.1,-0.1,0,30.292187,276.92641)"
