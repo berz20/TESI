@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.8.28)  14 OCT 2022 18:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.8.28)  23 OCT 2022 22:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -277,15 +277,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--48
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./hamiltonian.aux) ) 
 Here is how much of TeX's memory you used:
- 8037 strings out of 478238
- 178531 string characters out of 5850456
+ 8036 strings out of 478238
+ 178518 string characters out of 5850456
  485213 words of memory out of 5000000
- 26228 multiletter control sequences out of 15000+600000
+ 26227 multiletter control sequences out of 15000+600000
  470958 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,9n,77p,361b,513s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on hamiltonian.pdf (2 pages, 88053 bytes).
+Output written on hamiltonian.pdf (2 pages, 87932 bytes).
 PDF statistics:
  56 PDF objects out of 1000 (max. 8388607)
  33 compressed objects within 1 object stream
