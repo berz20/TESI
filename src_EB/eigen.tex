@@ -1,0 +1,169 @@
+% This LaTeX was auto-generated from MATLAB code.
+% To make changes, update the MATLAB code and export to LaTeX again.
+
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{epstopdf}
+\usepackage[table]{xcolor}
+\usepackage{matlab}
+
+\sloppy
+\epstopdfsetup{outdir=./}
+\graphicspath{ {./eigen_images/} }
+
+\begin{document}
+
+\begin{matlabcode}
+syms x y z D g
+% H = D*([1 0; 0 -1]^2 -2/3*[1 0; 0 1]) + g*(x*[0 1;1 0]+y*[0 -1i;1i 0]+z*[1 0;0 -1])
+H = D*([1 0 0;0 0 0;0 0 -1]^2 ) + g*(x*[0 1 0;1 0 1;0 1 0]+y*[0 -1i 0;1i 0 -1i;0 1i 0]+z*[1 0 0;0 0 0;0 0 -1])
+\end{matlabcode}
+\begin{matlabsymbolicoutput}
+H = 
+
+\hskip1em $\displaystyle \left(\begin{array}{ccc}
+\textrm{D}+g\,z & g\,{\left(x-y\,\mathrm{i}\right)} & 0\\
+g\,{\left(x+y\,\mathrm{i}\right)} & 0 & g\,{\left(x-y\,\mathrm{i}\right)}\\
+0 & g\,{\left(x+y\,\mathrm{i}\right)} & \textrm{D}-g\,z
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabcode}
+% H = D*([1 0 0;0 0 0;0 0 -1]^2) + g*(x*[0 1 0;1 0 1;0 1 0]+y*[0 -1i 0;1i 0 -1i;0 1i 0]+z*[1 0 0;0 0 0;0 0 -1])
+e = eig(H)
+\end{matlabcode}
+\begin{matlabsymbolicoutput}
+e = 
+
+\hskip1em $\displaystyle \begin{array}{l}
+\left(\begin{array}{c}
+\frac{2\,\textrm{D}}{3}+\frac{\sigma_2 }{\sigma_1 }+\sigma_1 \\
+\frac{2\,\textrm{D}}{3}-\frac{\sigma_2 }{2\,\sigma_1 }-\frac{\sigma_1 }{2}-\frac{\sqrt{3}\,{\left(\frac{\sigma_2 }{\sigma_1 }-\sigma_1 \right)}\,\mathrm{i}}{2}\\
+\frac{2\,\textrm{D}}{3}-\frac{\sigma_2 }{2\,\sigma_1 }-\frac{\sigma_1 }{2}+\frac{\sqrt{3}\,{\left(\frac{\sigma_2 }{\sigma_1 }-\sigma_1 \right)}\,\mathrm{i}}{2}
+\end{array}\right)\\
+\mathrm{}\\
+\textrm{where}\\
+\mathrm{}\\
+\;\;\sigma_1 ={{\left(\sigma_3 +\sqrt{{{\left(\sigma_3 +\frac{8\,{\textrm{D}}^3 }{27}-\textrm{D}\,g^2 \,x^2 -\textrm{D}\,g^2 \,y^2 \right)}}^2 -{\sigma_2 }^3 }+\frac{8\,{\textrm{D}}^3 }{27}-\textrm{D}\,g^2 \,x^2 -\textrm{D}\,g^2 \,y^2 \right)}}^{1/3} \\
+\mathrm{}\\
+\;\;\sigma_2 =\frac{{\textrm{D}}^2 }{9}+\frac{2\,g^2 \,x^2 }{3}+\frac{2\,g^2 \,y^2 }{3}+\frac{g^2 \,z^2 }{3}\\
+\mathrm{}\\
+\;\;\sigma_3 =\frac{\textrm{D}\,{\left(-{\textrm{D}}^2 +2\,g^2 \,x^2 +2\,g^2 \,y^2 +g^2 \,z^2 \right)}}{3}
+\end{array}$
+\end{matlabsymbolicoutput}
+
+\begin{matlabcode}
+% Compute simplified symbolic expression
+simplifiedExpr2 = simplify(e,"Steps",6400)
+\end{matlabcode}
+\begin{matlabsymbolicoutput}
+simplifiedExpr2 = 
+
+\hskip1em $\displaystyle \begin{array}{l}
+\left(\begin{array}{c}
+\sigma_1 +\frac{{\sigma_2 }^{1/3} }{3}+\frac{\sigma_3 }{3\,{\sigma_2 }^{1/3} }\\
+-\frac{{\sigma_2 }^{2/3} -\sqrt{3}\,{\sigma_2 }^{2/3} \,\mathrm{i}+\sqrt{3}\,{\textrm{D}}^2 \,\mathrm{i}-4\,\textrm{D}\,{\sigma_2 }^{1/3} +{\textrm{D}}^2 +\sigma_5 +\sigma_4 +\sigma_6 +6\,\sqrt{3}\,g^2 \,x^2 \,\mathrm{i}+6\,\sqrt{3}\,g^2 \,y^2 \,\mathrm{i}+3\,\sqrt{3}\,g^2 \,z^2 \,\mathrm{i}}{6\,{\sigma_2 }^{1/3} }\\
+\sigma_1 -\frac{\frac{{\textrm{D}}^2 }{6}+g^2 \,x^2 +g^2 \,y^2 +\frac{g^2 \,z^2 }{2}}{{\sigma_2 }^{1/3} }-\frac{{\sigma_2 }^{1/3} }{6}+\frac{\sqrt{3}\,{\left(-\frac{{\sigma_2 }^{2/3} \,\mathrm{i}}{6}+\frac{{\textrm{D}}^2 \,\mathrm{i}}{6}+g^2 \,x^2 \,\mathrm{i}+g^2 \,y^2 \,\mathrm{i}+\frac{g^2 \,z^2 \,\mathrm{i}}{2}\right)}}{{\sigma_2 }^{1/3} }
+\end{array}\right)\\
+\mathrm{}\\
+\textrm{where}\\
+\mathrm{}\\
+\;\;\sigma_1 =\frac{2\,\textrm{D}}{3}\\
+\mathrm{}\\
+\;\;\sigma_2 =\sqrt{{\textrm{D}}^2 \,{{\left({\textrm{D}}^2 +9\,g^2 \,x^2 +9\,g^2 \,y^2 -9\,g^2 \,z^2 \right)}}^2 -{\sigma_3 }^3 }-{\textrm{D}}^3 -9\,\textrm{D}\,g^2 \,x^2 -9\,\textrm{D}\,g^2 \,y^2 +9\,\textrm{D}\,g^2 \,z^2 \\
+\mathrm{}\\
+\;\;\sigma_3 ={\textrm{D}}^2 +\sigma_5 +\sigma_4 +\sigma_6 \\
+\mathrm{}\\
+\;\;\sigma_4 =6\,g^2 \,y^2 \\
+\mathrm{}\\
+\;\;\sigma_5 =6\,g^2 \,x^2 \\
+\mathrm{}\\
+\;\;\sigma_6 =3\,g^2 \,z^2 
+\end{array}$
+\end{matlabsymbolicoutput}
+\begin{matlabcode}
+
+% e = eig(subs(H,[x y],[0 0]))
+f_plus = e(1)-e(3)
+\end{matlabcode}
+\begin{matlabsymbolicoutput}
+f\_plus = 
+
+\hskip1em $\displaystyle \begin{array}{l}
+\frac{3\,\sigma_2 }{2\,\sigma_1 }+\frac{3\,\sigma_1 }{2}-\frac{\sqrt{3}\,{\left(\frac{\sigma_2 }{\sigma_1 }-\sigma_1 \right)}\,\mathrm{i}}{2}\\
+\mathrm{}\\
+\textrm{where}\\
+\mathrm{}\\
+\;\;\sigma_1 ={{\left(\sigma_3 +\sqrt{{{\left(\sigma_3 +\frac{8\,{\textrm{D}}^3 }{27}-\textrm{D}\,g^2 \,x^2 -\textrm{D}\,g^2 \,y^2 \right)}}^2 -{\sigma_2 }^3 }+\frac{8\,{\textrm{D}}^3 }{27}-\textrm{D}\,g^2 \,x^2 -\textrm{D}\,g^2 \,y^2 \right)}}^{1/3} \\
+\mathrm{}\\
+\;\;\sigma_2 =\frac{{\textrm{D}}^2 }{9}+\frac{2\,g^2 \,x^2 }{3}+\frac{2\,g^2 \,y^2 }{3}+\frac{g^2 \,z^2 }{3}\\
+\mathrm{}\\
+\;\;\sigma_3 =\frac{\textrm{D}\,{\left(-{\textrm{D}}^2 +2\,g^2 \,x^2 +2\,g^2 \,y^2 +g^2 \,z^2 \right)}}{3}
+\end{array}$
+\end{matlabsymbolicoutput}
+\begin{matlabcode}
+f_minus = e(2)-e(3)
+\end{matlabcode}
+\begin{matlabsymbolicoutput}
+f\_minus = 
+
+\hskip1em $\displaystyle \begin{array}{l}
+-\sqrt{3}\,{\left(\frac{\sigma_2 }{\sigma_1 }-\sigma_1 \right)}\,\mathrm{i}\\
+\mathrm{}\\
+\textrm{where}\\
+\mathrm{}\\
+\;\;\sigma_1 ={{\left(\sigma_3 +\sqrt{{{\left(\sigma_3 +\frac{8\,{\textrm{D}}^3 }{27}-\textrm{D}\,g^2 \,x^2 -\textrm{D}\,g^2 \,y^2 \right)}}^2 -{\sigma_2 }^3 }+\frac{8\,{\textrm{D}}^3 }{27}-\textrm{D}\,g^2 \,x^2 -\textrm{D}\,g^2 \,y^2 \right)}}^{1/3} \\
+\mathrm{}\\
+\;\;\sigma_2 =\frac{{\textrm{D}}^2 }{9}+\frac{2\,g^2 \,x^2 }{3}+\frac{2\,g^2 \,y^2 }{3}+\frac{g^2 \,z^2 }{3}\\
+\mathrm{}\\
+\;\;\sigma_3 =\frac{\textrm{D}\,{\left(-{\textrm{D}}^2 +2\,g^2 \,x^2 +2\,g^2 \,y^2 +g^2 \,z^2 \right)}}{3}
+\end{array}$
+\end{matlabsymbolicoutput}
+\begin{matlabcode}
+f = laplace(sin(D*x))
+\end{matlabcode}
+\begin{matlabsymbolicoutput}
+f = 
+
+\hskip1em $\displaystyle \frac{\textrm{D}}{{\textrm{D}}^2 +s^2 }$
+\end{matlabsymbolicoutput}
+\begin{matlabcode}
+% p1=subs(f_plus,[D g x y z], [2.87 28 0.0 0.0 0.0])
+% p2=subs(f_plus,[D g x y z], [2.87 28 0.71 0.71 0.71])
+% p3=subs(f_plus,[D g x y z], [2.87 28 0.72 0.72 0.72])
+% p4=subs(f_plus,[D g x y z], [2.87 28 0.73 0.73 0.73])
+% p5=subs(f_plus,[D g x y z], [2.87 28 0.80 0.80 0.80])
+% p6=subs(f_plus,[D g x y z], [2.87 28 0.81 0.81 0.81])
+% p7=subs(f_plus,[D g x y z], [2.87 28 0.82 0.82 0.82])
+% p8=subs(f_plus,[D g x y z], [2.87 28 0.83 0.83 0.83])
+% plot([0.0 0.71 0.72 0.73 0.80 0.81 0.82 0.83], [p1 p2 p3 p4 p5 p6 p7 p8 ])
+% syms r t p
+% subs(H,x,r*sin(t)*cos(p))
+% subs(H,y,r*sin(t)*sin(p))
+% subs(H,z,r*cos(t))
+% a = subs(H,[x y z],[r*sin(t)*cos(p) r*sin(t)*sin(p) r*cos(t)])
+% b = eig(a)
+% plot(sqrt(cos([1 2 3 4 55])))
+e = eig(subs(H,[x y],[0 0]))
+\end{matlabcode}
+\begin{matlabsymbolicoutput}
+e = 
+
+\hskip1em $\displaystyle \left(\begin{array}{c}
+0\\
+\textrm{D}+g\,z\\
+\textrm{D}-g\,z
+\end{array}\right)$
+\end{matlabsymbolicoutput}
+\begin{matlabcode}
+
+\end{matlabcode}
+
+\end{document}

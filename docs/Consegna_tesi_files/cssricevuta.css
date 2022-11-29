@@ -1,0 +1,53 @@
+#divCont
+{
+    LEFT: 10px;
+    WIDTH: 150px;
+    POSITION: absolute;
+    TOP: 30px;
+    HEIGHT: 400px
+}
+.text
+{
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Tahoma, Arial, Serif;
+    FONT-VARIANT: normal;
+    TEXT-DECORATION: none
+}
+.textbolder
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Tahoma, Arial, Serif;
+    FONT-VARIANT: normal;
+    TEXT-DECORATION: none
+}
+.textbolder_sfondo
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Tahoma, Arial, Serif;
+    BACKGROUND-COLOR: #e5e5e5;
+    FONT-VARIANT: normal;
+    TEXT-DECORATION: none
+}
+.text_sfondo
+{
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Tahoma, Arial, Serif;
+    BACKGROUND-COLOR: #e5e5e5;
+    FONT-VARIANT: normal;
+    TEXT-DECORATION: none
+}
+.pulsante
+{
+    FONT-SIZE: 11px;
+    WIDTH: 90px;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Tahoma, Arial, Serif;
+    FONT-VARIANT: normal;
+    TEXT-DECORATION: none
+}
