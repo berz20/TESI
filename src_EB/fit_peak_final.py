@@ -10,64 +10,75 @@ from matplotlib import pyplot as plt
 import pickle
 import ROOT
 import csv
-from utilities import * # My functions: pair_dat_err, uncertainties_to_root_graph_errors
+
+# from utilities import * # My functions: pair_dat_err, uncertainties_to_root_graph_errors
 from uncertainties import umath
 from scipy.optimize import leastsq
 from scipy import optimize, signal, interpolate
 from lmfit import models
 import csv
 import scipy.constants as cons
-from functions import * 
+from functions import *
+
 DATADIR = "../data"
 ODMR = "../data/ODMR/"
 OUTPUTDIR = "../output/"
 OUTIMGDIR = "../output/img/"
 OUTTXTDIR = "../output/txt/"
 index_output = ["x", "y", "z"]  # z direction confocal
-u1 = np.sqrt(2/3)*np.array([0, 1, 1/np.sqrt(2)])
-u2 = np.sqrt(2/3)*np.array([0, -1, 1/np.sqrt(2)])
-u3 = np.sqrt(2/3)*np.array([1, 0, -1/np.sqrt(2)])
-u4 = np.sqrt(2/3)*np.array([-1, 0, -1/np.sqrt(2)])
+u1 = np.sqrt(2 / 3) * np.array([0, 1, 1 / np.sqrt(2)])
+u2 = np.sqrt(2 / 3) * np.array([0, -1, 1 / np.sqrt(2)])
+u3 = np.sqrt(2 / 3) * np.array([1, 0, -1 / np.sqrt(2)])
+u4 = np.sqrt(2 / 3) * np.array([-1, 0, -1 / np.sqrt(2)])
+
 
 # ignore used to produce images for blog
 def plot_to_output(fig, figure_name):
-    filename = os.path.expanduser(f'{OUTIMGDIR}/{figure_name}')
+    filename = os.path.expanduser(f"{OUTIMGDIR}/{figure_name}")
     fig.set_figheight(6)
     fig.set_figwidth(8)
 
     fig.savefig(filename)
     return filename
 
+
 def generate_model(spec):
     composite_model = None
     params = None
-    x = spec['x']
-    y = spec['y']
+    x = spec["x"]
+    y = spec["y"]
     x_min = np.min(x)
     x_max = np.max(x)
     x_range = x_max - x_min
     y_max = np.max(y)
     y_min = np.min(y)
-    for i, basis_func in enumerate(spec['model']):
-        prefix = f'm{i}_'
-        model = getattr(models, basis_func['type'])(prefix=prefix)
-        if basis_func['type'] in ['GaussianModel', 'LorentzianModel','InvLorentzianModel', 'VoigtModel']: # for now VoigtModel has gamma constrained to sigma
-            model.set_param_hint('sigma', min=1e-6, max=x_range)
-            model.set_param_hint('center', min=x_min, max=x_max)
-            model.set_param_hint('height', min=1e-6, max=1.1*(y_max-y_min))
-            model.set_param_hint('amplitude', min=1e-6)
+    for i, basis_func in enumerate(spec["model"]):
+        prefix = f"m{i}_"
+        model = getattr(models, basis_func["type"])(prefix=prefix)
+        if basis_func["type"] in [
+            "GaussianModel",
+            "LorentzianModel",
+            "InvLorentzianModel",
+            "VoigtModel",
+        ]:  # for now VoigtModel has gamma constrained to sigma
+            model.set_param_hint("sigma", min=1e-6, max=x_range)
+            model.set_param_hint("center", min=x_min, max=x_max)
+            model.set_param_hint("height", min=1e-6, max=1.1 * (y_max - y_min))
+            model.set_param_hint("amplitude", min=1e-6)
             # default guess is horrible!! do not use guess()
             default_params = {
-                prefix+'center': x_min + x_range * random.random(),
-                prefix+'height': y_max * random.random(),
-                prefix+'sigma': x_range * random.random()
+                prefix + "center": x_min + x_range * random.random(),
+                prefix + "height": y_max * random.random(),
+                prefix + "sigma": x_range * random.random(),
             }
         else:
             raise NotImplemented(f'model {basis_func["type"]} not implemented yet')
-        if 'help' in basis_func:  # allow override of settings in parameter
-            for param, options in basis_func['help'].items():
+        if "help" in basis_func:  # allow override of settings in parameter
+            for param, options in basis_func["help"].items():
                 model.set_param_hint(param, **options)
-        model_params = model.make_params(**default_params, **basis_func.get('params', {}))
+        model_params = model.make_params(
+            **default_params, **basis_func.get("params", {})
+        )
         if params is None:
             params = model_params
         else:
@@ -78,86 +89,105 @@ def generate_model(spec):
             composite_model = composite_model + model
     return composite_model, params
 
-def update_spec_from_peaks(spec,peak_indicies, pw=(0, 150), **kwargs):
-    x = spec['x']
-    y = spec['y']
+
+def update_spec_from_peaks(spec, peak_indicies, pw=(0, 150), **kwargs):
+    x = spec["x"]
+    y = spec["y"]
     x_range = np.max(x) - np.min(x)
     # np.random.shuffle(peak_indicies)
-    for peak_indicie, model_indicie in zip(peak_indicies.tolist(), range(0,len(peak_indicies))):
-        spec['model'].append({'type': 'InvLorentzianModel'})
-        model = spec['model'][model_indicie]
-        if model['type'] in ['GaussianModel', 'LorentzianModel','InvLorentzianModel', 'VoigtModel']:
+    for peak_indicie, model_indicie in zip(
+        peak_indicies.tolist(), range(0, len(peak_indicies))
+    ):
+        spec["model"].append({"type": "InvLorentzianModel"})
+        model = spec["model"][model_indicie]
+        if model["type"] in [
+            "GaussianModel",
+            "LorentzianModel",
+            "InvLorentzianModel",
+            "VoigtModel",
+        ]:
             params = {
-                'height': max(y)-y[peak_indicie],
-                'sigma': x_range / len(x) * np.min(pw),
-                'center': x[peak_indicie]
+                "height": max(y) - y[peak_indicie],
+                "sigma": x_range / len(x) * np.min(pw),
+                "center": x[peak_indicie],
             }
-            if 'params' in model:
+            if "params" in model:
                 model.update(params)
             else:
-                model['params'] = params
+                model["params"] = params
         else:
             raise NotImplemented(f'model {basis_func["type"]} not implemented yet')
     return peak_indicies
 
+
 def peak_finder(x):
     contrast = -min(x)
-    height = (min(x)-max(x))*(1-contrast)/(1+contrast)
-    height_new = min(x)*(1-contrast*a)/(1+contrast*a)
-    print('Contrast:', contrast, '\nHeight:', height, '\nNew height:', height_new)
+    height = (min(x) - max(x)) * (1 - contrast) / (1 + contrast)
+    height_new = min(x) * (1 - contrast * a) / (1 + contrast * a)
+    print("Contrast:", contrast, "\nHeight:", height, "\nNew height:", height_new)
     print("")
-    peak_indicies, properties = signal.find_peaks(x * -1. , height = -height_new, distance = dist)
-    print('Number of peaks found:',len(peak_indicies))
+    peak_indicies, properties = signal.find_peaks(
+        x * -1.0, height=-height_new, distance=dist
+    )
+    print("Number of peaks found:", len(peak_indicies))
     return peak_indicies
+
 
 def normalize(x):
     x = x / max(x)
     arr = np.sort(x)[::-1]
-    arr = np.resize(arr,60)
+    arr = np.resize(arr, 60)
     x = x - np.mean(arr)
     return x
 
+
 def write_file(x, x_err, y, file):
-    with open(OUTTXTDIR+file+'.txt', mode='w') as f:
-        f_writer = csv.writer(f, delimiter= '\t', quotechar='#', quoting=csv.QUOTE_MINIMAL)
-        f_writer.writerow(['x', 'x_err', 'y'])
+    with open(OUTTXTDIR + file + ".txt", mode="w") as f:
+        f_writer = csv.writer(
+            f, delimiter="\t", quotechar="#", quoting=csv.QUOTE_MINIMAL
+        )
+        f_writer.writerow(["x", "x_err", "y"])
 
         for i in range(0, len(x)):
             f_writer.writerow([x[i], x_err[i], y[i]])
+
 
 def print_best_values(spec, output):
     sigma = []
     center = []
     amplitude = []
     model_params = {
-        'GaussianModel':   ['amplitude', 'sigma'],
-        'LorentzianModel': ['amplitude', 'sigma'],
-        'InvLorentzianModel': ['amplitude', 'sigma'],
-        'VoigtModel':      ['amplitude', 'sigma', 'gamma']
+        "GaussianModel": ["amplitude", "sigma"],
+        "LorentzianModel": ["amplitude", "sigma"],
+        "InvLorentzianModel": ["amplitude", "sigma"],
+        "VoigtModel": ["amplitude", "sigma", "gamma"],
     }
     best_values = output.best_values
-    print('center\tmodel\tamplitude\tsigma')
-    for i, model in enumerate(spec['model']):
-        prefix = f'm{i}_'
-        values = ',\t'.join(f'{best_values[prefix+param]:8.5f}' for param in model_params[model["type"]])
-        sigma = np.append(sigma,best_values[prefix+'sigma'])
-        center = np.append(center,best_values[prefix+'center'])
-        amplitude = np.append(amplitude,best_values[prefix+'amplitude'])
+    print("center\tmodel\tamplitude\tsigma")
+    for i, model in enumerate(spec["model"]):
+        prefix = f"m{i}_"
+        values = ",\t".join(
+            f"{best_values[prefix+param]:8.5f}" for param in model_params[model["type"]]
+        )
+        sigma = np.append(sigma, best_values[prefix + "sigma"])
+        center = np.append(center, best_values[prefix + "center"])
+        amplitude = np.append(amplitude, best_values[prefix + "amplitude"])
         print(f'[{best_values[prefix+"center"]:3.3f}]\t{model["type"]:16}:\t{values}')
-    write_file(center,sigma,amplitude,f)
-     
+    write_file(center, sigma, amplitude, f)
+
+
 def splitting(file):
     # file = '20220801-1527-34'
     # file = '20220802-1101-15'
     # x, y = np.loadtxt(f'{DATADIR}/ODMR/'+file+'_ODMR_data_ch0_range0.dat', unpack=True, skiprows=19 )
-    ft = ODMR+file+'_ODMR_data_ch0_range0.dat'
-    x, y = np.loadtxt(ft, unpack=True, skiprows=19 )
+    ft = ODMR + file + "_ODMR_data_ch0_range0.dat"
+    x, y = np.loadtxt(ft, unpack=True, skiprows=19)
     # x, y = np.loadtxt('../data/lor_try.dat', unpack=True, skiprows=19 )
-    print('######################################')
-    print('File:',file)
+    print("######################################")
+    print("File:", file)
     print("")
     y = normalize(y)
-    x = x / 1e+9
+    x = x / 1e9
 
     # for i in range(0,len(y)):
     #     # if i > len(y)*98/100:
@@ -170,60 +200,74 @@ def splitting(file):
     #         y[i]=y[i]+0.0004
     #     elif i > len(y)*60/100:
     #         y[i]=y[i]+0.0003
-        # elif i > len(y)*45/100:
-        #     y[i]=y[i]+0.0007
-        # elif i > len(y)*35/100:
-        #     y[i]=y[i]+0.0005
-        # elif i > len(y)*25/100:
-        #     y[i]=y[i]+0.0001
-        
-    spec = {
-        'x': x,
-        'y': y,
-        'model': []
-    }
+    # elif i > len(y)*45/100:
+    #     y[i]=y[i]+0.0007
+    # elif i > len(y)*35/100:
+    #     y[i]=y[i]+0.0005
+    # elif i > len(y)*25/100:
+    #     y[i]=y[i]+0.0001
+
+    spec = {"x": x, "y": y, "model": []}
     spec.update
-    peaks_found = update_spec_from_peaks(spec,peak_finder(y), pw)
+    peaks_found = update_spec_from_peaks(spec, peak_finder(y), pw)
     fig, ax = plt.subplots()
-    plt.xlabel('[GHz]')
-    plt.ylabel('[Normalized Counts / s]')
-    ax.scatter(spec['x'], spec['y'] + offset, s=4)
+    plt.xlabel("[GHz]")
+    plt.ylabel("[Normalized Counts / s]")
+    ax.scatter(spec["x"], spec["y"] + offset, s=4)
     for i in peaks_found:
-        ax.axvline(x=spec['x'][i], c='black', linestyle='dotted')
-    
+        ax.axvline(x=spec["x"][i], c="black", linestyle="dotted")
+
     # plot_to_output(fig, file+'-peaks.svg')
-    
+
     model, params = generate_model(spec)
-    output = model.fit(spec['y'], params, x=spec['x'])
+    output = model.fit(spec["y"], params, x=spec["x"])
 
     fig, ax = plt.subplots()
-    ax.scatter(spec['x'], spec['y'] + offset, s=4)
-    plt.xlabel('[GHz]')
-    plt.ylabel('[Normalized Counts / s]')
-    components = output.eval_components(x=spec['x'])
+    ax.scatter(spec["x"], spec["y"] + offset, s=4)
+    plt.xlabel("[GHz]")
+    plt.ylabel("[Normalized Counts / s]")
+    components = output.eval_components(x=spec["x"])
     sum = 0
-    c = ['red','orange','black','blue','green','red','red','green','blue','black']
-    for i, model in enumerate(spec['model']):
-        sum = sum + components[f'm{i}_']
-        ax.plot(spec['x'], components[f'm{i}_'] + offset,c[i])
+    c = [
+        "red",
+        "orange",
+        "black",
+        "blue",
+        "green",
+        "red",
+        "red",
+        "green",
+        "blue",
+        "black",
+    ]
+    for i, model in enumerate(spec["model"]):
+        sum = sum + components[f"m{i}_"]
+        ax.plot(spec["x"], components[f"m{i}_"] + offset, c[i])
         # ax.plot(spec['x'], components[f'm{i}_'] + offset)
-    plot_to_output(fig, file+'-complex-components.svg')
+    plot_to_output(fig, file + "-complex-components.svg")
 
     # fig = output.plot()
     fig, ax = plt.subplots()
     for i in peaks_found:
-        ax.axvline(x=spec['x'][i], c='black', linestyle='dotted')
-    ax.plot(spec['x'], sum + offset, c='orange', label='$\mid B \mid=[0.27 \pm 0.17]mT$'+'\n'+  '$\ \ B_i = [ 0.16 \pm 0.09 ] mT$' )
-    ax.scatter(spec['x'], spec['y'] + offset, s=4)
+        ax.axvline(x=spec["x"][i], c="black", linestyle="dotted")
+    ax.plot(
+        spec["x"],
+        sum + offset,
+        c="orange",
+        label="$\mid B \mid=[0.27 \pm 0.17]mT$"
+        + "\n"
+        + "$\ \ B_i = [ 0.16 \pm 0.09 ] mT$",
+    )
+    ax.scatter(spec["x"], spec["y"] + offset, s=4)
     ax.legend()
-    plt.xlabel('$[GHz]$')
-    plt.ylabel('$[Normalized \ Counts / s]$')
-    plt.show() 
+    plt.xlabel("$[GHz]$")
+    plt.ylabel("$[Normalized \ Counts / s]$")
+    plt.show()
     # plot_to_output(fig, file+'-total.svg')
-    
-    
+
     print_best_values(spec, output)
     print("")
+
 
 def print_array(title, word, bool, array, array_err, unit, index):
     print("")
@@ -238,18 +282,29 @@ def print_array(title, word, bool, array, array_err, unit, index):
 
 def diff_peaks(peaks, freq):
     freq_peaks = freq[peaks]
-    if ((len(peaks) % 2) == 0):
+    if (len(peaks) % 2) == 0:
         diff = np.array([])
         cen = np.array([])
         print("\nPeaks positions:")
-        for i in range(0, int(len(peaks)/2)):
-            diff = np.append(diff, freq_peaks[len(peaks)-1-i] - freq_peaks[i])
-            cen = np.append(cen, (freq_peaks[len(peaks)-1-i] + freq_peaks[i])/2)
-            print("Resonance", i, ":", freq_peaks[i], "GHz ||", freq_peaks[len(peaks)-1-i], "GHz")
+        for i in range(0, int(len(peaks) / 2)):
+            diff = np.append(diff, freq_peaks[len(peaks) - 1 - i] - freq_peaks[i])
+            cen = np.append(cen, (freq_peaks[len(peaks) - 1 - i] + freq_peaks[i]) / 2)
+            print(
+                "Resonance",
+                i,
+                ":",
+                freq_peaks[i],
+                "GHz ||",
+                freq_peaks[len(peaks) - 1 - i],
+                "GHz",
+            )
         return diff, cen
 
+
 def analyze(file):
-    peaks, peaks_err, peaks_amp = np.loadtxt(OUTTXTDIR+file+'.txt', unpack=True, skiprows=1)
+    peaks, peaks_err, peaks_amp = np.loadtxt(
+        OUTTXTDIR + file + ".txt", unpack=True, skiprows=1
+    )
     # if (((len(peaks) % 2) & (len(peaks) < 9)) == 0):
     #     wid = np.array([])
     #     wid_err = np.array([])
@@ -328,7 +383,8 @@ def analyze(file):
     # print("")
     # print('Amplitude Factor:',a,'\nPeak Width:',pw)
     # print('')
-    B_calc(file,B_arr,peaks,peaks_err)
+    B_calc(file, B_arr, peaks, peaks_err)
+
 
 # f = '20220801-1233-32'
 # f = '20220715-1334-31'
@@ -354,7 +410,7 @@ def analyze(file):
 # f = '20220715-1553-11'
 # f = '20220802-1208-48'
 # f = '20220715-1510-55'
-f = '20220729-0934-41'
+f = "20220729-0934-41"
 # f = '20220728-1309-54'
 # f = '20220715-1324-10'
 # f = '20220729-1634-16'
@@ -414,13 +470,13 @@ f = '20220729-0934-41'
 # f = '20220729-1418-49'
 # f = '20220802-1356-34'
 
-#Amplitude
-a = 1/0.0589
-#Peaks width
+# Amplitude
+a = 1 / 0.0589
+# Peaks width
 pw = (1.5,)
-#Peaks distance
-dist =  1.2
-#Offset
-offset = 1 
+# Peaks distance
+dist = 1.2
+# Offset
+offset = 1
 splitting(f)
 analyze(f)

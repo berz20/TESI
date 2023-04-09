@@ -34,6 +34,11 @@ INPUT /usr/share/texmf-dist/tex/generic/babel-italian/italian.ldf
 INPUT /usr/share/texmf-dist/tex/generic/babel-italian/italian.ldf
 INPUT /usr/share/texmf-dist/tex/generic/babel-italian/italian.ldf
 INPUT /usr/share/texmf-dist/tex/generic/babel-italian/italian.ldf
+INPUT /usr/share/texmf-dist/tex/generic/babel/locale/it/babel-italian.tex
+INPUT /usr/share/texmf-dist/tex/generic/babel/locale/it/babel-italian.tex
+INPUT /usr/share/texmf-dist/tex/generic/babel/locale/it/babel-italian.tex
+INPUT /usr/share/texmf-dist/tex/generic/babel/locale/it/babel-italian.tex
+INPUT /usr/share/texmf-dist/tex/generic/babel/locale/it/babel-it.ini
 INPUT /usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 INPUT /usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 INPUT /usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
