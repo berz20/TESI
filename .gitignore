@@ -1,0 +1,8 @@
+##########################################################################
+##   .gitignore file for files and directories at the top of the repo   ##
+##########################################################################
+
+## vim IDE  files
+src_EB/.ccls-cache
+src/.ccls-cache
+src_new/.ccls-cache
