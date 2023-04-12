@@ -1,4 +1,9 @@
-"""Basic model lineshapes and distribution functions."""
+"""
+Basic model lineshapes and distribution functions.
+Modified with invlorentzian
+line:
+    125
+"""
 
 from numpy import (
     arctan,
